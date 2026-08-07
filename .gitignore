@@ -1,0 +1,15 @@
+# Herramientas internas / OpenCode
+.omo/
+
+# Artefactos de build de GitHub Pages
+_site/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Sistema operativo
+Thumbs.db
+.DS_Store
