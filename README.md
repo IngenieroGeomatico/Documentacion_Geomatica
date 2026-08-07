@@ -2,9 +2,9 @@
 
 # Documentación Geomática
 
-> Punto de acceso a **documentación**, **software de fuente abierta** y **recursos** útiles para la **Topografía** y la **Geomática**.
+> Punto de acceso a **documentación**, **software de fuente abierta** y **recursos** útiles para la **Topografía** y la **Geomática**. El objetivo es ayudar a los Ingenieros en Geomática a encontrar recursos necesarios para nuestra bonita profesión.
 
-Este repositorio es un directorio vivo y curado de enlaces de interés en el ámbito de la Ingeniería Geomática. El propio `README.md` es la **única fuente de la verdad**: a partir de él se genera automáticamente la web publicada en GitHub Pages.
+Este repositorio es un directorio vivo y curado de enlaces de interés en el ámbito de la Ingeniería Geomática. El propio `README.md` es la fuente desde la cual se genera automáticamente la web publicada en GitHub Pages.
 
 ---
 
