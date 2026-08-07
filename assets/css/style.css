@@ -6,32 +6,26 @@
    ============================================================ */
 
 /* --- Tipografía Chulapa (Ayuntamiento de Madrid, CC BY 4.0) --- */
+/* Solo se dispone del peso Bold (OTF); se usa para todo el rango de títulos. */
 @font-face {
-  font-family: "Chulapa";
-  src: url("../fonts/Chulapa-Light.woff2") format("woff2"),
-       url("../fonts/Chulapa-Light.woff") format("woff"),
-       url("../fonts/Chulapa-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Chulapa";
-  src: url("../fonts/Chulapa-Regular.woff2") format("woff2"),
-       url("../fonts/Chulapa-Regular.woff") format("woff"),
-       url("../fonts/Chulapa-Regular.ttf") format("truetype");
+  font-family: "Chulapa Vmod";
+  src: url("../fonts/Chulapa-Bold_vmod.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: "Chulapa";
-  src: url("../fonts/Chulapa-Bold.woff2") format("woff2"),
-       url("../fonts/Chulapa-Bold.woff") format("woff"),
-       url("../fonts/Chulapa-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+
+/* Ligaduras de Chulapa (parte esencial de su estilo): activa ligaduras
+   comunes ("liga") y discrecionales ("dlig") para reproducir el dinamismo
+   de la rotulación original. */
+.site-title,
+.content h2,
+.content h3,
+.content h4,
+.chulapa {
+  font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  text-rendering: optimizeLegibility;
 }
 
 /* --- Paleta inspirada en la cerámica del callejero histórico de Madrid --- */
@@ -47,7 +41,7 @@
   --tinta-suave: #55504a;
   --sombra: rgba(31, 78, 121, 0.12);
 
-  --fuente-titulo: "Chulapa", "Segoe UI Semibold", "Trebuchet MS", Verdana, sans-serif;
+  --fuente-titulo: "Chulapa Vmod", "Chulapa", "Segoe UI Semibold", "Trebuchet MS", Verdana, sans-serif;
   --fuente-texto: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
   --ancho-max: 960px;
@@ -109,7 +103,7 @@ body {
 
 .site-title {
   font-family: var(--fuente-titulo);
-  font-weight: 700;
+  font-weight: 400;
   font-size: clamp(2.5rem, 6vw, 4.25rem);
   line-height: 1.02;
   margin: 0;
@@ -231,7 +225,7 @@ body {
 /* --- Clase decorativa chulapa reutilizable --- */
 .chulapa {
   font-family: var(--fuente-titulo);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 /* --- Pie --- */
