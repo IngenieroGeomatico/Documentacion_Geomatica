@@ -48,6 +48,14 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 - [Emlid / documentación RTK](https://docs.emlid.com/) — Referencia sobre flujos de trabajo RTK/PPK.
 - [GNU Gama](https://www.gnu.org/software/gama/) — Ajuste riguroso de redes geodésicas y topográficas por mínimos cuadrados (línea de comandos).
 
+#### Librerías
+
+- 🐍 [pyproj](https://pyproj4.github.io/pyproj/) — Interfaz de Python para PROJ: proyecciones cartográficas y transformación de coordenadas.
+- 🐍 [PyGeodesy](https://pypi.org/project/PyGeodesy/) — Cálculos geodésicos elipsoidales y esféricos (distancias, rumbos, intersecciones) en Python puro.
+- 🐍 [georinex](https://github.com/geospace-code/georinex) — Lectura rápida de ficheros RINEX (2, 3, 4) de observación y navegación GNSS.
+- 🐍 [gnss-lib-py](https://github.com/Stanford-NavLab/gnss_lib_py) — Marco modular para parsear, analizar y visualizar datos GNSS y estimar posición.
+- 🟨 [proj4js](https://proj4js.org/) — Transformación de coordenadas entre sistemas de referencia y proyecciones (paquete npm `proj4`).
+
 ### Fotogrametría, LiDAR y nubes de puntos
 
 - [OpenDroneMap (ODM / WebODM)](https://www.opendronemap.org/) — Fotogrametría con drones de código abierto.
@@ -60,13 +68,13 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 
 #### Librerías
 
-- [COLMAP](https://colmap.github.io/) — Pipeline de Structure-from-Motion (SfM) y Multi-View Stereo (MVS) de propósito general, con bindings de Python (pycolmap).
+- 🐍 [COLMAP](https://colmap.github.io/) — Pipeline de Structure-from-Motion (SfM) y Multi-View Stereo (MVS) de propósito general, con bindings de Python (pycolmap).
 - [OpenMVG](https://github.com/openMVG/OpenMVG) — Librería de geometría de vistas múltiples centrada en pipelines de SfM (C++).
 - [OpenMVS](https://cdcseacave.github.io/openMVS/) — Librería de Multi-View Stereo para reconstrucción densa y mallado (C++), complemento habitual de COLMAP.
 - [MicMac](https://micmac.ensg.eu/) — Suite fotogramétrica completa de reconstrucción 3D del IGN francés (C++).
-- [Open3D](https://www.open3d.org/) — Librería moderna de procesado de datos 3D, mallas y nubes de puntos (Python/C++).
+- 🐍 [Open3D](https://www.open3d.org/) — Librería moderna de procesado de datos 3D, mallas y nubes de puntos (Python/C++).
 - [PCL — Point Cloud Library](https://pointclouds.org/) — Librería de referencia para procesado de nubes de puntos 2D/3D (C++).
-- [laspy](https://laspy.readthedocs.io/) — Lectura y escritura de nubes de puntos LiDAR en formato LAS/LAZ desde Python.
+- 🐍 [laspy](https://laspy.readthedocs.io/) — Lectura y escritura de nubes de puntos LiDAR en formato LAS/LAZ desde Python.
 
 ### Bases de datos y servidores geoespaciales
 
@@ -84,6 +92,12 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 - [GeoNetwork](https://geonetwork-opensource.org/) — Catálogo de metadatos geoespaciales (CSW) para infraestructuras de datos espaciales.
 - [GeoNode](https://geonode.org/) — Plataforma/CMS geoespacial para gestionar y publicar datos y mapas.
 
+#### Librerías
+
+- 🐍 [psycopg](https://www.psycopg.org/) — Adaptador moderno de PostgreSQL para Python con soporte asyncio (sucesor de psycopg2); base para conectar con PostGIS.
+- 🐍 [SQLAlchemy](https://www.sqlalchemy.org/) — Toolkit SQL y ORM estándar de Python.
+- 🐍 [GeoAlchemy2](https://geoalchemy-2.readthedocs.io/) — Extensión geoespacial de SQLAlchemy para trabajar con bases de datos como PostGIS.
+
 ### Cartografía web y visualización
 
 - [Leaflet](https://leafletjs.com/) — Librería JavaScript ligera para mapas interactivos.
@@ -95,69 +109,59 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 - [Terria.js](https://terria.io/) — Framework para crear catálogos y visores geoespaciales 3D interactivos (sobre Cesium/Leaflet).
 - [MapStore](https://mapstore.geosolutionsgroup.com/) — Plataforma para crear aplicaciones WebGIS y geoportales sin programar.
 
+#### Librerías
 
-### Librerías Python
-
-#### Datos vectoriales y ráster (base)
-
-- [GDAL (bindings de Python)](https://pypi.org/project/GDAL/) — Wrapper oficial de Python para GDAL/OGR (módulo `osgeo`); acceso completo a la librería desde Python.
-- [pyogrio](https://pyogrio.readthedocs.io/) — Wrapper vectorial rápido sobre GDAL/OGR para leer/escribir datos vectoriales en Python.
-- [Shapely](https://shapely.readthedocs.io/) — Geometría vectorial en Python.
-- [GeoPandas](https://geopandas.org/) — Análisis de datos geoespaciales en Python.
-- [Rasterio](https://rasterio.readthedocs.io/) — Lectura/escritura de datos ráster en Python.
-- [Fiona](https://fiona.readthedocs.io/) — Acceso a formatos vectoriales en Python.
-
-#### Geodesia, coordenadas y GNSS
-
-- [pyproj](https://pyproj4.github.io/pyproj/) — Interfaz de Python para PROJ: proyecciones cartográficas y transformación de coordenadas.
-- [PyGeodesy](https://pypi.org/project/PyGeodesy/) — Cálculos geodésicos elipsoidales y esféricos (distancias, rumbos, intersecciones) en Python puro.
-- [georinex](https://github.com/geospace-code/georinex) — Lectura rápida de ficheros RINEX (2, 3, 4) de observación y navegación GNSS.
-- [gnss-lib-py](https://github.com/Stanford-NavLab/gnss_lib_py) — Marco modular para parsear, analizar y visualizar datos GNSS y estimar posición.
-
-#### Teledetección y análisis ráster
-
-- [rioxarray](https://corteva.github.io/rioxarray/) — Extensión geoespacial de Xarray que integra Rasterio con arrays multidimensionales etiquetados.
-- [xarray](https://docs.xarray.dev/) — Arrays N-dimensionales etiquetados, base para el análisis de datos climáticos y de teledetección.
-- [rasterstats](https://pythonhosted.org/rasterstats/) — Estadísticas zonales de datos ráster a partir de geometrías vectoriales.
-- [pystac / pystac-client](https://pystac.readthedocs.io/) — Trabajo con catálogos SpatioTemporal Asset Catalogs (STAC) para descubrir y acceder a datos de observación de la Tierra.
-- [stackstac](https://stackstac.readthedocs.io/) — Convierte ítems STAC en cubos de datos Xarray de carga perezosa con Dask.
-- [Satpy](https://satpy.readthedocs.io/) — Lectura, manipulación y escritura de datos de satélites meteorológicos.
-
-#### Cartografía temática y visualización
-
-- [Cartopy](https://scitools.org.uk/cartopy/) — Procesado de datos geoespaciales y creación de mapas de calidad para publicación.
-- [contextily](https://contextily.readthedocs.io/) — Añade mapas base de teselas de internet como fondo en gráficos.
-- [mapclassify](https://mapclassify.readthedocs.io/) — Esquemas de clasificación para mapas coropléticos.
-- [leafmap](https://leafmap.org/) — Mapas interactivos ligeros para diversos formatos y proveedores de datos geoespaciales.
-- [geemap](https://geemap.org/) — Análisis y cartografía interactiva específicos para Google Earth Engine.
-
-#### Acceso a bases de datos espaciales
-
-- [psycopg](https://www.psycopg.org/) — Adaptador moderno de PostgreSQL para Python con soporte asyncio (sucesor de psycopg2); base para conectar con PostGIS.
-- [SQLAlchemy](https://www.sqlalchemy.org/) — Toolkit SQL y ORM estándar de Python.
-- [GeoAlchemy2](https://geoalchemy-2.readthedocs.io/) — Extensión geoespacial de SQLAlchemy para trabajar con bases de datos como PostGIS.
-
-### Librerías JavaScript
-
-- [Turf.js](https://turfjs.org/) — Motor modular de análisis geoespacial sobre GeoJSON en navegador y Node.js.
-- [proj4js](https://proj4js.org/) — Transformación de coordenadas entre sistemas de referencia y proyecciones (paquete npm `proj4`).
-- [JSTS](https://bjornharrtell.github.io/jsts/) — Port a JavaScript de JTS Topology Suite para predicados espaciales y operaciones geométricas.
-- [Deck.gl](https://deck.gl/) — Framework de alto rendimiento sobre WebGL para explorar y analizar grandes conjuntos de datos geoespaciales.
-- [geojson-vt](https://maplibre.org/geojson-vt/) — Corte eficiente de GeoJSON masivo en teselas vectoriales al vuelo en el navegador.
-- [Terra Draw](https://terradraw.io/) — Dibujo y edición de geometrías compatible con Leaflet, MapLibre, OpenLayers y otros motores de mapas.
-- [geotiff.js](https://geotiffjs.github.io/geotiff.js/) — Lectura y acceso a datos ráster GeoTIFF directamente en navegador o Node.js.
-- [FlatGeobuf](https://flatgeobuf.org/) — Formato geoespacial binario de alto rendimiento para streaming y acceso aleatorio a grandes conjuntos de datos.
-- [TopoJSON](https://github.com/topojson/topojson) — Extensión de GeoJSON que codifica topología para reducir notablemente el tamaño de los ficheros.
-- [H3-js](https://uber.github.io/h3-js/) — Port a JavaScript del sistema de indexación geoespacial hexagonal jerárquico H3 de Uber.
-- [shpjs](https://github.com/calvinmetcalf/shpjs) — Lectura de Shapefiles (SHP, DBF, PRJ) directamente en el navegador o Node.js.
-- [georaster](https://github.com/geotiffjs/georaster) — Parsea formatos ráster (GeoTIFF, etc.) a una estructura unificada para mapas web.
-- [PMTiles](https://pmtiles.org/) — Formato de archivo único para pirámides de teselas (ráster o vectoriales) servibles desde almacenamiento en la nube.
-- [wkx](https://github.com/cschwarz/wkx) — Parseo y serialización de geometrías en Well-Known Text (WKT) y Well-Known Binary (WKB).
+- 🟨 [Deck.gl](https://deck.gl/) — Framework de alto rendimiento sobre WebGL para explorar y analizar grandes conjuntos de datos geoespaciales.
+- 🟨 [Terra Draw](https://terradraw.io/) — Dibujo y edición de geometrías compatible con Leaflet, MapLibre, OpenLayers y otros motores de mapas.
+- 🟨 [geojson-vt](https://maplibre.org/geojson-vt/) — Corte eficiente de GeoJSON masivo en teselas vectoriales al vuelo en el navegador.
+- 🟨 [geotiff.js](https://geotiffjs.github.io/geotiff.js/) — Lectura y acceso a datos ráster GeoTIFF directamente en navegador o Node.js.
+- 🟨 [georaster](https://github.com/geotiffjs/georaster) — Parsea formatos ráster (GeoTIFF, etc.) a una estructura unificada para mapas web.
+- 🟨 [PMTiles](https://pmtiles.org/) — Formato de archivo único para pirámides de teselas (ráster o vectoriales) servibles desde almacenamiento en la nube.
 
 ### 3D Tiles y visualización 3D
 
 - [3D Tiles Tools (CesiumGS)](https://github.com/CesiumGS/3d-tiles-tools) — Herramientas oficiales para convertir, optimizar, procesar y analizar datos 3D Tiles.
 - [Recursos y generadores de 3D Tiles](https://github.com/CesiumGS/3d-tiles/blob/main/RESOURCES.md#generators) — Catálogo oficial de herramientas y librerías para generar tilesets 3D Tiles.
+
+## Librerías de propósito geoespacial
+
+Librerías de programación de uso transversal que no encajan en una única categoría de software. El icono indica el lenguaje: 🐍 Python · 🟨 JavaScript.
+
+### Datos vectoriales y ráster (base)
+
+- 🐍 [GDAL (bindings de Python)](https://pypi.org/project/GDAL/) — Wrapper oficial de Python para GDAL/OGR (módulo `osgeo`); acceso completo a la librería desde Python.
+- 🐍 [pyogrio](https://pyogrio.readthedocs.io/) — Wrapper vectorial rápido sobre GDAL/OGR para leer/escribir datos vectoriales en Python.
+- 🐍 [Shapely](https://shapely.readthedocs.io/) — Geometría vectorial en Python.
+- 🐍 [GeoPandas](https://geopandas.org/) — Análisis de datos geoespaciales en Python.
+- 🐍 [Rasterio](https://rasterio.readthedocs.io/) — Lectura/escritura de datos ráster en Python.
+- 🐍 [Fiona](https://fiona.readthedocs.io/) — Acceso a formatos vectoriales en Python.
+- 🟨 [Turf.js](https://turfjs.org/) — Motor modular de análisis geoespacial sobre GeoJSON en navegador y Node.js.
+- 🟨 [JSTS](https://bjornharrtell.github.io/jsts/) — Port a JavaScript de JTS Topology Suite para predicados espaciales y operaciones geométricas.
+
+### Teledetección y análisis ráster
+
+- 🐍 [rioxarray](https://corteva.github.io/rioxarray/) — Extensión geoespacial de Xarray que integra Rasterio con arrays multidimensionales etiquetados.
+- 🐍 [xarray](https://docs.xarray.dev/) — Arrays N-dimensionales etiquetados, base para el análisis de datos climáticos y de teledetección.
+- 🐍 [rasterstats](https://pythonhosted.org/rasterstats/) — Estadísticas zonales de datos ráster a partir de geometrías vectoriales.
+- 🐍 [pystac / pystac-client](https://pystac.readthedocs.io/) — Trabajo con catálogos SpatioTemporal Asset Catalogs (STAC) para descubrir y acceder a datos de observación de la Tierra.
+- 🐍 [stackstac](https://stackstac.readthedocs.io/) — Convierte ítems STAC en cubos de datos Xarray de carga perezosa con Dask.
+- 🐍 [Satpy](https://satpy.readthedocs.io/) — Lectura, manipulación y escritura de datos de satélites meteorológicos.
+
+### Cartografía temática y visualización
+
+- 🐍 [Cartopy](https://scitools.org.uk/cartopy/) — Procesado de datos geoespaciales y creación de mapas de calidad para publicación.
+- 🐍 [contextily](https://contextily.readthedocs.io/) — Añade mapas base de teselas de internet como fondo en gráficos.
+- 🐍 [mapclassify](https://mapclassify.readthedocs.io/) — Esquemas de clasificación para mapas coropléticos.
+- 🐍 [leafmap](https://leafmap.org/) — Mapas interactivos ligeros para diversos formatos y proveedores de datos geoespaciales.
+- 🐍 [geemap](https://geemap.org/) — Análisis y cartografía interactiva específicos para Google Earth Engine.
+
+### Formatos e indexación
+
+- 🟨 [FlatGeobuf](https://flatgeobuf.org/) — Formato geoespacial binario de alto rendimiento para streaming y acceso aleatorio a grandes conjuntos de datos.
+- 🟨 [TopoJSON](https://github.com/topojson/topojson) — Extensión de GeoJSON que codifica topología para reducir notablemente el tamaño de los ficheros.
+- 🟨 [H3-js](https://uber.github.io/h3-js/) — Port a JavaScript del sistema de indexación geoespacial hexagonal jerárquico H3 de Uber.
+- 🟨 [shpjs](https://github.com/calvinmetcalf/shpjs) — Lectura de Shapefiles (SHP, DBF, PRJ) directamente en el navegador o Node.js.
+- 🟨 [wkx](https://github.com/cschwarz/wkx) — Parseo y serialización de geometrías en Well-Known Text (WKT) y Well-Known Binary (WKB).
 
 ## Herramientas de propósito general
 
