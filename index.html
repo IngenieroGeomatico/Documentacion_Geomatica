@@ -31,13 +31,65 @@
 <li><a href="https://docs.qgis.org/">Documentación oficial de QGIS</a> — Manual de usuario, guía de formación y manual de PyQGIS.</li>
 <li><a href="https://gdal.org/">Documentación de GDAL/OGR</a> — Librería de referencia para lectura/escritura de datos ráster y vectoriales.</li>
 <li><a href="https://proj.org/">PROJ — Transformaciones de coordenadas</a> — Biblioteca para proyecciones y transformaciones de sistemas de referencia.</li>
-<li><a href="https://epsg.org/">EPSG</a> — Registro EPSG de sistemas de referencia de coordenadas (CRS).</li>
 <li><a href="https://www.ign.es/">Instituto Geográfico Nacional (IGN España)</a> — Cartografía oficial, geodesia, nivelación y redes GNSS.</li>
 <li><a href="https://www.cnig.es/">Centro Nacional de Información geográfica (CNIG)</a> — Centro de descargas de datos geográficos oficiales de España.</li>
-<li><a href="https://www.ogc.org/">OGC — Open Geospatial Consortium</a> — Estándares abiertos geoespaciales (WMS, WFS, WMTS, GeoPackage, etc.).</li>
-<li><a href="https://ogcapi.ogc.org/">OGC APIs</a> — Nueva familia de estándares OGC basados en OpenAPI/REST (Features, Tiles, Maps, Coverages…), el futuro de los servicios geoespaciales.</li>
+<li><a href="https://www.ogc.org/">OGC — Open Geospatial Consortium</a> — Organización que define los estándares abiertos geoespaciales.</li>
 <li><a href="https://postgis.net/docs/reference.html">Referencia de funciones PostGIS</a> — Documentación oficial de las funciones espaciales SQL (<code>ST_*</code>) y operadores de PostGIS.</li>
-<li><a href="https://www.ogc.org/standard/3dtiles/">Especificación 3D Tiles (OGC)</a> — Estándar abierto para streaming y renderizado de datos geoespaciales 3D masivos (mallas, nubes de puntos, edificios).</li>
+</ul>
+<h2 id="estandares-y-formatos">Estándares y formatos<a class="headerlink" href="#estandares-y-formatos" title="Enlace a esta sección">🔗</a></h2>
+<p>Formatos de datos, servicios web y sistemas de referencia estandarizados en el ámbito geoespacial.</p>
+<h3 id="formatos-de-datos-vectoriales">Formatos de datos vectoriales<a class="headerlink" href="#formatos-de-datos-vectoriales" title="Enlace a esta sección">🔗</a></h3>
+<ul>
+<li><a href="https://geojson.org/">GeoJSON</a> — Formato de intercambio de datos geoespaciales basado en JSON (IETF, RFC 7946).</li>
+<li><a href="https://www.geopackage.org/">GeoPackage</a> — Contenedor abierto basado en SQLite para datos vectoriales y ráster (OGC).</li>
+<li><a href="https://www.ogc.org/standards/gml/">GML</a> — Codificación XML para modelar, transportar y almacenar entidades geográficas (OGC/ISO).</li>
+<li><a href="https://www.ogc.org/standards/kml/">KML</a> — Gramática XML para la visualización geográfica en globos virtuales (OGC).</li>
+<li><a href="https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf">Shapefile</a> — Formato clásico de Esri para geometría vectorial y atributos (estándar de facto).</li>
+<li><a href="https://flatgeobuf.org/">FlatGeobuf</a> — Formato binario de alto rendimiento basado en FlatBuffers (estándar de facto).</li>
+<li><a href="https://geoparquet.org/">GeoParquet</a> — Formato columnar binario para datos geoespaciales sobre Apache Parquet.</li>
+<li><a href="https://github.com/mapbox/vector-tile-spec">Vector Tiles (MVT)</a> — Formato binario de teselas vectoriales para renderizado web (Mapbox, de facto).</li>
+<li><a href="https://www.ogc.org/standards/sfa/">WKT / WKB</a> — Representación en texto/binario de geometrías, definida en Simple Features (OGC/ISO).</li>
+</ul>
+<h3 id="formatos-de-datos-raster">Formatos de datos ráster<a class="headerlink" href="#formatos-de-datos-raster" title="Enlace a esta sección">🔗</a></h3>
+<ul>
+<li><a href="https://www.ogc.org/standards/geotiff/">GeoTIFF</a> — TIFF extendido con metadatos geoespaciales (OGC).</li>
+<li><a href="https://www.cogeo.org/">Cloud Optimized GeoTIFF (COG)</a> — GeoTIFF optimizado para acceso remoto y eficiente en la nube (de facto).</li>
+<li><a href="https://www.unidata.ucar.edu/software/netcdf/">NetCDF</a> — Formato autodescriptivo para datos multidimensionales orientados a arrays (Unidata).</li>
+<li><a href="https://zarr.dev/">Zarr</a> — Formato de arrays N-dimensionales comprimidos y en bloques (estándar comunitario OGC).</li>
+</ul>
+<h3 id="formatos-de-nubes-de-puntos">Formatos de nubes de puntos<a class="headerlink" href="#formatos-de-nubes-de-puntos" title="Enlace a esta sección">🔗</a></h3>
+<ul>
+<li><a href="https://www.asprs.org/divisions-committees/lidar-division/laser-file-format-exchange-activities">LAS/LAZ</a> — Formato binario estándar para el intercambio de datos LiDAR (ASPRS).</li>
+<li><a href="https://copc.io/">COPC</a> — Cloud Optimized Point Cloud, nube de puntos optimizada para la nube basada en LAS.</li>
+<li><a href="https://www.ogc.org/standard/3dtiles/">3D Tiles</a> — Especificación para streaming y renderizado de datos 3D geoespaciales masivos (OGC).</li>
+</ul>
+<h3 id="servicios-web-ogc">Servicios web OGC<a class="headerlink" href="#servicios-web-ogc" title="Enlace a esta sección">🔗</a></h3>
+<p>Servicios clásicos de la OGC para publicar y consumir datos geoespaciales:</p>
+<ul>
+<li><a href="https://www.ogc.org/standards/wms/">WMS</a> — Web Map Service: solicitud de imágenes de mapa georreferenciadas.</li>
+<li><a href="https://www.ogc.org/standards/wfs/">WFS</a> — Web Feature Service: acceso directo a datos vectoriales (entidades).</li>
+<li><a href="https://www.ogc.org/standards/wmts/">WMTS</a> — Web Map Tile Service: servicio de teselas de mapa prerrenderizadas.</li>
+<li><a href="https://www.ogc.org/standards/wcs/">WCS</a> — Web Coverage Service: acceso a datos de cobertura (coverages) multidimensionales.</li>
+<li><a href="https://www.ogc.org/standards/cat/">CSW</a> — Catalogue Service: publicación y búsqueda de catálogos de metadatos.</li>
+<li><a href="https://www.ogc.org/standards/wps/">WPS</a> — Web Processing Service: ejecución de geoprocesos remotos.</li>
+<li><a href="https://www.ogc.org/standards/sos/">SOS</a> — Sensor Observation Service: acceso a datos y observaciones de sensores.</li>
+</ul>
+<h3 id="ogc-apis-y-catalogos-modernos">OGC APIs y catálogos modernos<a class="headerlink" href="#ogc-apis-y-catalogos-modernos" title="Enlace a esta sección">🔗</a></h3>
+<p>Nueva familia de estándares OGC basados en OpenAPI/REST, sucesores de los servicios clásicos:</p>
+<ul>
+<li><a href="https://ogcapi.ogc.org/">OGC APIs</a> — Página general de la familia de OGC APIs (Features, Tiles, Maps, Coverages, Processes, Records…).</li>
+<li><a href="https://stacspec.org/">STAC — SpatioTemporal Asset Catalog</a> — Especificación comunitaria para catalogar e indexar activos espaciotemporales (imágenes de satélite, etc.).</li>
+</ul>
+<h3 id="estilos-de-mapas-web">Estilos de mapas web<a class="headerlink" href="#estilos-de-mapas-web" title="Enlace a esta sección">🔗</a></h3>
+<ul>
+<li><a href="https://maplibre.org/maplibre-style-spec/">MapLibre Style Spec</a> — Especificación de los documentos JSON de estilo de MapLibre GL (fuentes, capas, simbología).</li>
+</ul>
+<h3 id="sistemas-de-referencia-y-metadatos">Sistemas de referencia y metadatos<a class="headerlink" href="#sistemas-de-referencia-y-metadatos" title="Enlace a esta sección">🔗</a></h3>
+<ul>
+<li><a href="https://epsg.org/">EPSG</a> — Registro autoritativo de sistemas de referencia de coordenadas (CRS) y transformaciones.</li>
+<li><a href="https://www.iso.org/standard/74039.html">WKT-CRS (ISO 19162)</a> — Representación en texto conocido (WKT) de sistemas de referencia de coordenadas.</li>
+<li><a href="https://www.iso.org/standard/53798.html">ISO 19115</a> — Estándar que define el esquema de metadatos para información geográfica.</li>
+<li><a href="https://inspire.ec.europa.eu/">INSPIRE</a> — Directiva europea que establece la infraestructura de información espacial en la UE.</li>
 </ul>
 <h2 id="software-de-fuente-abierta">Software de fuente abierta<a class="headerlink" href="#software-de-fuente-abierta" title="Enlace a esta sección">🔗</a></h2>
 <p>Herramientas libres para adquisición, procesado, análisis y publicación de datos geoespaciales.</p>

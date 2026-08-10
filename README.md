@@ -20,13 +20,69 @@ Manuales, normativa y material formativo de referencia.
 - [Documentación oficial de QGIS](https://docs.qgis.org/) — Manual de usuario, guía de formación y manual de PyQGIS.
 - [Documentación de GDAL/OGR](https://gdal.org/) — Librería de referencia para lectura/escritura de datos ráster y vectoriales.
 - [PROJ — Transformaciones de coordenadas](https://proj.org/) — Biblioteca para proyecciones y transformaciones de sistemas de referencia.
-- [EPSG](https://epsg.org/) — Registro EPSG de sistemas de referencia de coordenadas (CRS).
 - [Instituto Geográfico Nacional (IGN España)](https://www.ign.es/) — Cartografía oficial, geodesia, nivelación y redes GNSS.
 - [Centro Nacional de Información geográfica (CNIG)](https://www.cnig.es/) — Centro de descargas de datos geográficos oficiales de España.
-- [OGC — Open Geospatial Consortium](https://www.ogc.org/) — Estándares abiertos geoespaciales (WMS, WFS, WMTS, GeoPackage, etc.).
-- [OGC APIs](https://ogcapi.ogc.org/) — Nueva familia de estándares OGC basados en OpenAPI/REST (Features, Tiles, Maps, Coverages…), el futuro de los servicios geoespaciales.
+- [OGC — Open Geospatial Consortium](https://www.ogc.org/) — Organización que define los estándares abiertos geoespaciales.
 - [Referencia de funciones PostGIS](https://postgis.net/docs/reference.html) — Documentación oficial de las funciones espaciales SQL (`ST_*`) y operadores de PostGIS.
-- [Especificación 3D Tiles (OGC)](https://www.ogc.org/standard/3dtiles/) — Estándar abierto para streaming y renderizado de datos geoespaciales 3D masivos (mallas, nubes de puntos, edificios).
+
+## Estándares y formatos
+
+Formatos de datos, servicios web y sistemas de referencia estandarizados en el ámbito geoespacial.
+
+### Formatos de datos vectoriales
+
+- [GeoJSON](https://geojson.org/) — Formato de intercambio de datos geoespaciales basado en JSON (IETF, RFC 7946).
+- [GeoPackage](https://www.geopackage.org/) — Contenedor abierto basado en SQLite para datos vectoriales y ráster (OGC).
+- [GML](https://www.ogc.org/standards/gml/) — Codificación XML para modelar, transportar y almacenar entidades geográficas (OGC/ISO).
+- [KML](https://www.ogc.org/standards/kml/) — Gramática XML para la visualización geográfica en globos virtuales (OGC).
+- [Shapefile](https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf) — Formato clásico de Esri para geometría vectorial y atributos (estándar de facto).
+- [FlatGeobuf](https://flatgeobuf.org/) — Formato binario de alto rendimiento basado en FlatBuffers (estándar de facto).
+- [GeoParquet](https://geoparquet.org/) — Formato columnar binario para datos geoespaciales sobre Apache Parquet.
+- [Vector Tiles (MVT)](https://github.com/mapbox/vector-tile-spec) — Formato binario de teselas vectoriales para renderizado web (Mapbox, de facto).
+- [WKT / WKB](https://www.ogc.org/standards/sfa/) — Representación en texto/binario de geometrías, definida en Simple Features (OGC/ISO).
+
+### Formatos de datos ráster
+
+- [GeoTIFF](https://www.ogc.org/standards/geotiff/) — TIFF extendido con metadatos geoespaciales (OGC).
+- [Cloud Optimized GeoTIFF (COG)](https://www.cogeo.org/) — GeoTIFF optimizado para acceso remoto y eficiente en la nube (de facto).
+- [NetCDF](https://www.unidata.ucar.edu/software/netcdf/) — Formato autodescriptivo para datos multidimensionales orientados a arrays (Unidata).
+- [Zarr](https://zarr.dev/) — Formato de arrays N-dimensionales comprimidos y en bloques (estándar comunitario OGC).
+
+### Formatos de nubes de puntos
+
+- [LAS/LAZ](https://www.asprs.org/divisions-committees/lidar-division/laser-file-format-exchange-activities) — Formato binario estándar para el intercambio de datos LiDAR (ASPRS).
+- [COPC](https://copc.io/) — Cloud Optimized Point Cloud, nube de puntos optimizada para la nube basada en LAS.
+- [3D Tiles](https://www.ogc.org/standard/3dtiles/) — Especificación para streaming y renderizado de datos 3D geoespaciales masivos (OGC).
+
+### Servicios web OGC
+
+Servicios clásicos de la OGC para publicar y consumir datos geoespaciales:
+
+- [WMS](https://www.ogc.org/standards/wms/) — Web Map Service: solicitud de imágenes de mapa georreferenciadas.
+- [WFS](https://www.ogc.org/standards/wfs/) — Web Feature Service: acceso directo a datos vectoriales (entidades).
+- [WMTS](https://www.ogc.org/standards/wmts/) — Web Map Tile Service: servicio de teselas de mapa prerrenderizadas.
+- [WCS](https://www.ogc.org/standards/wcs/) — Web Coverage Service: acceso a datos de cobertura (coverages) multidimensionales.
+- [CSW](https://www.ogc.org/standards/cat/) — Catalogue Service: publicación y búsqueda de catálogos de metadatos.
+- [WPS](https://www.ogc.org/standards/wps/) — Web Processing Service: ejecución de geoprocesos remotos.
+- [SOS](https://www.ogc.org/standards/sos/) — Sensor Observation Service: acceso a datos y observaciones de sensores.
+
+### OGC APIs y catálogos modernos
+
+Nueva familia de estándares OGC basados en OpenAPI/REST, sucesores de los servicios clásicos:
+
+- [OGC APIs](https://ogcapi.ogc.org/) — Página general de la familia de OGC APIs (Features, Tiles, Maps, Coverages, Processes, Records…).
+- [STAC — SpatioTemporal Asset Catalog](https://stacspec.org/) — Especificación comunitaria para catalogar e indexar activos espaciotemporales (imágenes de satélite, etc.).
+
+### Estilos de mapas web
+
+- [MapLibre Style Spec](https://maplibre.org/maplibre-style-spec/) — Especificación de los documentos JSON de estilo de MapLibre GL (fuentes, capas, simbología).
+
+### Sistemas de referencia y metadatos
+
+- [EPSG](https://epsg.org/) — Registro autoritativo de sistemas de referencia de coordenadas (CRS) y transformaciones.
+- [WKT-CRS (ISO 19162)](https://www.iso.org/standard/74039.html) — Representación en texto conocido (WKT) de sistemas de referencia de coordenadas.
+- [ISO 19115](https://www.iso.org/standard/53798.html) — Estándar que define el esquema de metadatos para información geográfica.
+- [INSPIRE](https://inspire.ec.europa.eu/) — Directiva europea que establece la infraestructura de información espacial en la UE.
 
 ## Software de fuente abierta
 
