@@ -235,7 +235,7 @@ Software libre y librerías que, aunque no son específicamente geomáticos, res
 - [Kdenlive](https://kdenlive.org/) — Editor de vídeo no lineal, para montar animaciones y presentaciones de resultados.
 - [OBS Studio](https://obsproject.com/) — Grabación de pantalla y streaming, útil para tutoriales y documentación audiovisual.
 
-### Cómputo científico (Python)
+### Cómputo científico y estadística
 
 - [NumPy](https://numpy.org/) — Cálculo numérico con arrays N-dimensionales, base del ecosistema científico de Python.
 - [SciPy](https://scipy.org/) — Algoritmos científicos (optimización, álgebra lineal, estadística, interpolación).
@@ -243,6 +243,7 @@ Software libre y librerías que, aunque no son específicamente geomáticos, res
 - [Matplotlib](https://matplotlib.org/) — Creación de gráficos y visualizaciones estáticas y de calidad para publicación.
 - [Jupyter](https://jupyter.org/) — Cuadernos interactivos para análisis, prototipado y documentación reproducible.
 - [scikit-learn](https://scikit-learn.org/) — Aprendizaje automático de propósito general (clasificación, regresión, clustering).
+- [PSPP](https://www.gnu.org/software/pspp/) — Programa de análisis estadístico (descriptivos, T-tests, ANOVA, regresión…), alternativa libre a SPSS.
 
 ## Datos y recursos
 
