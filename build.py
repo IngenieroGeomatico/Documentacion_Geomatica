@@ -36,7 +36,12 @@ MD_EXTENSIONS = [
 ]
 MD_EXTENSION_CONFIGS = {
     "codehilite": {"guess_lang": False},
-    "toc": {"permalink": False},
+    "toc": {
+        # Ancla clicable en cada título para compartir/enlazar secciones.
+        "permalink": "🔗",
+        "permalink_title": "Enlace a esta sección",
+        "toc_depth": "2-4",
+    },
 }
 
 
