@@ -94,8 +94,7 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 - [iTowns](https://www.itowns-project.org/) — Framework del IGN francés para visualización geoespacial 3D/2D a gran escala en el navegador.
 - [Terria.js](https://terria.io/) — Framework para crear catálogos y visores geoespaciales 3D interactivos (sobre Cesium/Leaflet).
 - [MapStore](https://mapstore.geosolutionsgroup.com/) — Plataforma para crear aplicaciones WebGIS y geoportales sin programar.
-- [Lizmap](https://www.lizmap.com/) — Publicación de proyectos de QGIS como aplicaciones web (sobre QGIS Server).
-- [QGIS2Web](https://qgis2web.github.io/) — Plugin de QGIS que exporta proyectos a visores web (OpenLayers/Leaflet/MapLibre).
+
 
 ### Librerías Python
 
@@ -159,6 +158,28 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 
 - [3D Tiles Tools (CesiumGS)](https://github.com/CesiumGS/3d-tiles-tools) — Herramientas oficiales para convertir, optimizar, procesar y analizar datos 3D Tiles.
 - [Recursos y generadores de 3D Tiles](https://github.com/CesiumGS/3d-tiles/blob/main/RESOURCES.md#generators) — Catálogo oficial de herramientas y librerías para generar tilesets 3D Tiles.
+
+## Herramientas de propósito general
+
+Software libre y librerías que, aunque no son específicamente geomáticos, resultan muy útiles en el día a día: edición de imágenes y vídeo, maquetación de planos, cómputo científico, etc.
+
+### Edición gráfica y multimedia
+
+- [GIMP](https://www.gimp.org/) — Editor de imágenes rasterizadas (retoque fotográfico, texturas, mapas de bits).
+- [Inkscape](https://inkscape.org/) — Editor de gráficos vectoriales SVG, ideal para planos, símbolos y maquetación cartográfica.
+- [Krita](https://krita.org/) — Pintura digital e ilustración, útil para diseño y edición de texturas.
+- [Blender](https://www.blender.org/) — Suite de creación 3D (modelado, renderizado, animación); útil para visualización de modelos y terreno.
+- [Kdenlive](https://kdenlive.org/) — Editor de vídeo no lineal, para montar animaciones y presentaciones de resultados.
+- [OBS Studio](https://obsproject.com/) — Grabación de pantalla y streaming, útil para tutoriales y documentación audiovisual.
+
+### Cómputo científico (Python)
+
+- [NumPy](https://numpy.org/) — Cálculo numérico con arrays N-dimensionales, base del ecosistema científico de Python.
+- [SciPy](https://scipy.org/) — Algoritmos científicos (optimización, álgebra lineal, estadística, interpolación).
+- [pandas](https://pandas.pydata.org/) — Análisis y manipulación de datos tabulares.
+- [Matplotlib](https://matplotlib.org/) — Creación de gráficos y visualizaciones estáticas y de calidad para publicación.
+- [Jupyter](https://jupyter.org/) — Cuadernos interactivos para análisis, prototipado y documentación reproducible.
+- [scikit-learn](https://scikit-learn.org/) — Aprendizaje automático de propósito general (clasificación, regresión, clustering).
 
 ## Datos y recursos
 
