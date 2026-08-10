@@ -26,12 +26,13 @@ Manuales, normativa y material formativo de referencia.
 
 Herramientas libres para adquisición, procesado, análisis y publicación de datos geoespaciales.
 
-### SIG de escritorio
+### SIG de escritorio y campo
 
 - [QGIS](https://qgis.org/) — Sistema de Información Geográfica de escritorio, el estándar libre de facto.
 - [GRASS GIS](https://grass.osgeo.org/) — SIG con potente análisis ráster, vectorial y geoespacial.
 - [SAGA GIS](https://saga-gis.sourceforge.io/) — Análisis geocientífico, especialmente modelos digitales del terreno.
 - [gvSIG Desktop](https://www.gvsig.com/) — SIG de escritorio con fuerte comunidad hispanohablante.
+- [QField](https://qfield.org/) — Aplicación móvil basada en QGIS para la captura y edición de datos geoespaciales en campo.
 
 ### Geodesia, GNSS y topografía
 
