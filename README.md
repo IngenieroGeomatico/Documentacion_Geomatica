@@ -68,6 +68,7 @@ Servicios clásicos de la OGC para publicar y consumir datos geoespaciales:
 - [WMS](https://www.ogc.org/standards/wms/) — Web Map Service: solicitud de imágenes de mapa georreferenciadas.
 - [WFS](https://www.ogc.org/standards/wfs/) — Web Feature Service: acceso directo a datos vectoriales (entidades).
 - [WMTS](https://www.ogc.org/standards/wmts/) — Web Map Tile Service: servicio de teselas de mapa prerrenderizadas.
+- [TMS](https://wiki.osgeo.org/wiki/Tile_Map_Service_Specification) — Tile Map Service: especificación de la OSGeo para servir teselas de mapa mediante URLs predecibles (precursor de WMTS).
 - [WCS](https://www.ogc.org/standards/wcs/) — Web Coverage Service: acceso a datos de cobertura (coverages) multidimensionales.
 - [CSW](https://www.ogc.org/standards/cat/) — Catalogue Service: publicación y búsqueda de catálogos de metadatos.
 - [WPS](https://www.ogc.org/standards/wps/) — Web Processing Service: ejecución de geoprocesos remotos.
