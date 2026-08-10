@@ -35,11 +35,16 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 - [SAGA GIS](https://saga-gis.sourceforge.io/) — Análisis geocientífico, especialmente modelos digitales del terreno.
 - [gvSIG Desktop](https://www.gvsig.com/) — SIG de escritorio con fuerte comunidad hispanohablante.
 - [QField](https://qfield.org/) — Aplicación móvil basada en QGIS para la captura y edición de datos geoespaciales en campo.
+- [Mergin Maps](https://merginmaps.com/) — Plataforma de captura de datos en campo colaborativa con sincronización, integrada con QGIS.
+- [WhiteboxTools](https://www.whiteboxgeo.com/) — Plataforma avanzada de geoprocesado y análisis de terreno (geomorfometría, hidrología).
 
 ### Geodesia, GNSS y topografía
 
 - [RTKLIB](https://www.rtklib.com/) — Posicionamiento GNSS de precisión (RTK, PPP) de código abierto.
+- [RTKLIB-EX (demo5)](https://github.com/rtklibexplorer/RTKLIB) — Fork mantenido de RTKLIB, optimizado para receptores GNSS de bajo coste y constelaciones actuales.
 - [GNSS-SDR](https://gnss-sdr.org/) — Receptor GNSS definido por software.
+- [Ginan](https://gnss-geodesy.github.io/ginan/) — Toolkit de GNSS de alta precisión (PPP, órbitas/relojes, modelado atmosférico) de Geoscience Australia.
+- [Anubis](https://www.pecny.cz/gop/index.php/gnss/anubis/) — Control de calidad y preprocesado de datos RINEX (2/3/4), reemplazo del difunto `teqc`.
 - [Emlid / documentación RTK](https://docs.emlid.com/) — Referencia sobre flujos de trabajo RTK/PPK.
 - [GNU Gama](https://www.gnu.org/software/gama/) — Ajuste riguroso de redes geodésicas y topográficas por mínimos cuadrados (línea de comandos).
 
@@ -50,6 +55,8 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 - [PDAL — Point Data Abstraction Library](https://pdal.io/) — Procesado de nubes de puntos LiDAR.
 - [LAStools (open components)](https://rapidlasso.de/) — Herramientas para datos LiDAR en formato LAS/LAZ.
 - [Meshroom (AliceVision)](https://alicevision.org/) — Reconstrucción 3D fotogramétrica.
+- [Entwine](https://entwine.io/) — Indexado y organización de nubes de puntos masivas para streaming web y escritorio.
+- [e-foto](http://efoto.uerj.br/) — Estación fotogramétrica digital completa de código abierto (GPL), orientada a docencia e investigación.
 
 #### Librerías
 
@@ -64,10 +71,18 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 ### Bases de datos y servidores geoespaciales
 
 - [PostGIS](https://postgis.net/) — Extensión geoespacial para PostgreSQL.
+- [SpatiaLite](https://www.gaia-gis.it/fossil/libspatialite/index) — Extensión espacial para SQLite; base de datos geoespacial ligera de fichero único.
+- [DuckDB (extensión spatial)](https://duckdb.org/docs/extensions/spatial) — Base de datos analítica en proceso con soporte espacial, muy eficiente para grandes volúmenes.
 - [GeoServer](https://geoserver.org/) — Servidor de datos geoespaciales (WMS/WFS/WCS).
 - [MapServer](https://mapserver.org/) — Servidor de mapas rápido y ligero.
+- [QGIS Server](https://docs.qgis.org/latest/en/docs/server_manual/) — Servicio web OGC (WMS/WFS/WMTS/OGC API) que publica directamente proyectos de QGIS.
 - [pgRouting](https://pgrouting.org/) — Análisis de rutas sobre PostGIS.
 - [pygeoapi](https://pygeoapi.io/) — Servidor geoespacial en Python que implementa las OGC APIs (Features, Tiles, Coverages, Processes…).
+- [Martin](https://martin.maplibre.org/) — Servidor de teselas vectoriales de alto rendimiento en Rust (PostGIS, MBTiles, PMTiles).
+- [pg_tileserv](https://github.com/CrunchyData/pg_tileserv) — Servidor de teselas vectoriales MVT ligero, exclusivo para PostGIS, con capas dinámicas por funciones SQL.
+- [TiTiler](https://developmentseed.org/titiler/) — Servidor dinámico de teselas ráster para datos cloud-optimized (COG).
+- [GeoNetwork](https://geonetwork-opensource.org/) — Catálogo de metadatos geoespaciales (CSW) para infraestructuras de datos espaciales.
+- [GeoNode](https://geonode.org/) — Plataforma/CMS geoespacial para gestionar y publicar datos y mapas.
 
 ### Cartografía web y visualización
 
@@ -76,6 +91,11 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 - [MapLibre GL](https://maplibre.org/) — Renderizado de mapas vectoriales por GPU (fork libre de Mapbox GL).
 - [API-IDEE](https://github.com/IGN-CNIG/API-IDEE) — API de la Infraestructura de Datos Espaciales de España para crear visualizadores de mapas interoperables.
 - [CesiumJS](https://cesium.com/platform/cesiumjs/) — Librería JavaScript de código abierto para visualizadores 3D.
+- [iTowns](https://www.itowns-project.org/) — Framework del IGN francés para visualización geoespacial 3D/2D a gran escala en el navegador.
+- [Terria.js](https://terria.io/) — Framework para crear catálogos y visores geoespaciales 3D interactivos (sobre Cesium/Leaflet).
+- [MapStore](https://mapstore.geosolutionsgroup.com/) — Plataforma para crear aplicaciones WebGIS y geoportales sin programar.
+- [Lizmap](https://www.lizmap.com/) — Publicación de proyectos de QGIS como aplicaciones web (sobre QGIS Server).
+- [QGIS2Web](https://qgis2web.github.io/) — Plugin de QGIS que exporta proyectos a visores web (OpenLayers/Leaflet/MapLibre).
 
 ### Librerías Python
 
