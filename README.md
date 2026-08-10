@@ -42,6 +42,7 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 - [Mergin Maps](https://merginmaps.com/) — Plataforma de captura de datos en campo colaborativa con sincronización, integrada con QGIS.
 - [WhiteboxTools](https://www.whiteboxgeo.com/) — Plataforma avanzada de geoprocesado y análisis de terreno (geomorfometría, hidrología).
 - [Orfeo ToolBox (OTB)](https://www.orfeo-toolbox.org/) — Biblioteca y herramientas de procesado de imágenes de teledetección (clasificación, segmentación, ortorrectificación).
+- [Marble](https://marble.kde.org/) — Globo virtual y atlas mundial de escritorio (KDE), útil para docencia y visualización.
 
 ### Geodesia, GNSS y topografía
 
@@ -70,6 +71,7 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 - [Meshroom (AliceVision)](https://alicevision.org/) — Reconstrucción 3D fotogramétrica.
 - [Entwine](https://entwine.io/) — Indexado y organización de nubes de puntos masivas para streaming web y escritorio.
 - [e-foto](http://efoto.uerj.br/) — Estación fotogramétrica digital completa de código abierto (GPL), orientada a docencia e investigación.
+- [PerfectTIN](https://github.com/phma/perfecttin) — Conversión de nubes de puntos en redes de triángulos irregulares (TIN).
 
 #### Librerías
 
@@ -80,6 +82,7 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 - 🐍 [Open3D](https://www.open3d.org/) — Librería moderna de procesado de datos 3D, mallas y nubes de puntos (Python/C++).
 - [PCL — Point Cloud Library](https://pointclouds.org/) — Librería de referencia para procesado de nubes de puntos 2D/3D (C++).
 - 🐍 [laspy](https://laspy.readthedocs.io/) — Lectura y escritura de nubes de puntos LiDAR en formato LAS/LAZ desde Python.
+- [OSSIM](https://ossimlabs.github.io/) — Librería C++ de alto rendimiento para procesado de imágenes de teledetección y fotogrametría.
 
 ### Bases de datos y servidores geoespaciales
 
@@ -96,7 +99,13 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 - [TiTiler](https://developmentseed.org/titiler/) — Servidor dinámico de teselas ráster para datos cloud-optimized (COG).
 - [deegree](https://www.deegree.org/) — Marco Java de servicios web OGC (WMS, WFS, CSW, WPS…).
 - [MobilityDB](https://mobilitydb.com/) — Extensión de PostGIS/PostgreSQL para objetos móviles y trayectorias espaciotemporales.
+- [rasdaman](https://rasdaman.org/) — Base de datos y servidor de análisis de cubos de datos ráster multidimensionales (datacube).
 - [GeoWebCache](https://www.geowebcache.org/) — Servidor de caché de teselas para acelerar servicios WMS/WMTS.
+- [ZOO-Project](https://zoo-project.org/) — Servidor de geoprocesos OGC (WPS/OGC API Processes) con soporte multilenguaje.
+- [PyWPS](https://pywps.org/) — Implementación en Python de un servidor OGC WPS de geoprocesos.
+- [actinia](https://actinia.mundialis.de/) — API REST de geoprocesado de alto rendimiento basada en GRASS GIS.
+- [Giswater](https://www.giswater.org/) — Plataforma de gestión de redes de agua y saneamiento sobre PostGIS.
+- [GeoHealthCheck](https://geohealthcheck.org/) — Monitorización de disponibilidad y calidad de servicios web OGC.
 - [GeoNetwork](https://geonetwork-opensource.org/) — Catálogo de metadatos geoespaciales (CSW) para infraestructuras de datos espaciales.
 - [GeoNode](https://geonode.org/) — Plataforma/CMS geoespacial para gestionar y publicar datos y mapas.
 
@@ -106,6 +115,9 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 - 🐍 [SQLAlchemy](https://www.sqlalchemy.org/) — Toolkit SQL y ORM estándar de Python.
 - 🐍 [GeoAlchemy2](https://geoalchemy-2.readthedocs.io/) — Extensión geoespacial de SQLAlchemy para trabajar con bases de datos como PostGIS.
 - 🐍 [OWSLib](https://geopython.github.io/OWSLib/) — Cliente de Python para servicios web OGC (WMS, WFS, WCS, CSW…).
+- 🐍 [pygeometa](https://pygeometa.readthedocs.io/) — Generación de metadatos geoespaciales a partir de ficheros YAML.
+- 🐍 [mappyfile](https://mappyfile.readthedocs.io/) — Manipulación de mapfiles de MapServer desde Python.
+- [SFCGAL](https://sfcgal.org/) — Librería C++ de geometría 3D (basada en CGAL); backend de funciones 3D de PostGIS.
 
 ### Cartografía web y visualización
 
@@ -117,6 +129,8 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 - [iTowns](https://www.itowns-project.org/) — Framework del IGN francés para visualización geoespacial 3D/2D a gran escala en el navegador.
 - [Terria.js](https://terria.io/) — Framework para crear catálogos y visores geoespaciales 3D interactivos (sobre Cesium/Leaflet).
 - [MapStore](https://mapstore.geosolutionsgroup.com/) — Plataforma para crear aplicaciones WebGIS y geoportales sin programar.
+- [GeoMoose](https://geomoose.org/) — Framework de cartografía web para datos geoespaciales distribuidos.
+- [Mapbender](https://mapbender.org/) — Framework PHP para gestionar y publicar geoportales e infraestructuras de datos.
 
 #### Librerías
 
@@ -143,7 +157,15 @@ Herramientas para generar teselas vectoriales y crear/editar estilos de mapas (M
 ### 3D Tiles y visualización 3D
 
 - [3D Tiles Tools (CesiumGS)](https://github.com/CesiumGS/3d-tiles-tools) — Herramientas oficiales para convertir, optimizar, procesar y analizar datos 3D Tiles.
+- [py3dtiles](https://py3dtiles.org/) — Librería y CLI en Python para generar y gestionar conjuntos de datos 3D Tiles (desde nubes de puntos, etc.).
 - [Recursos y generadores de 3D Tiles](https://github.com/CesiumGS/3d-tiles/blob/main/RESOURCES.md#generators) — Catálogo oficial de herramientas y librerías para generar tilesets 3D Tiles.
+
+### Entornos y distribuciones
+
+Paquetes que reúnen e instalan de una vez un stack completo de software geoespacial.
+
+- [OSGeoLive](https://live.osgeo.org/) — Distribución Linux (basada en Lubuntu) arrancable con software geoespacial preinstalado.
+- [OSGeo4W](https://trac.osgeo.org/osgeo4w/) — Instalador para Windows de un stack completo de proyectos OSGeo (QGIS, GDAL, GRASS…).
 
 ### Geocodificación y routing
 
@@ -171,6 +193,7 @@ Librerías de programación de uso transversal que no encajan en una única cate
 - 🟨 [Turf.js](https://turfjs.org/) — Motor modular de análisis geoespacial sobre GeoJSON en navegador y Node.js.
 - 🟨 [JSTS](https://bjornharrtell.github.io/jsts/) — Port a JavaScript de JTS Topology Suite para predicados espaciales y operaciones geométricas.
 - ☕ [GeoTools](https://geotools.org/) — Toolkit de Java para manipulación de datos geoespaciales, base de GeoServer y otros proyectos.
+- [MDAL](https://mdal.xyz/) — Librería C++ para datos de malla y series temporales (formatos de mallas), backend usado por QGIS.
 
 ### Teledetección y análisis ráster
 
