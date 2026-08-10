@@ -202,6 +202,21 @@ Fuentes de datos abiertos y recursos de aprendizaje.
 
 ---
 
+## Proyectos propios
+
+Proyectos de código abierto desarrollados por [IngenieroGeomatico](https://github.com/IngenieroGeomatico).
+
+- [QGIS2API-IDEE](https://github.com/IngenieroGeomatico/QGIS2API-IDEE) — Complemento de QGIS que exporta un visualizador cartográfico web basado en la API-IDEE.
+- [serviciosIDEE2QGIS](https://github.com/IngenieroGeomatico/serviciosIDEE2QGIS) — Complemento de QGIS para añadir de forma rápida servicios web (WMS, WMTS, WFS…) de la IDEE (IGN-CNIG).
+- [apiidee-agent](https://github.com/IngenieroGeomatico/apiidee-agent) — Agente en Python para trabajar con la API-IDEE.
+- [descarga_limites_administrativos](https://github.com/IngenieroGeomatico/descarga_limites_administrativos) — Descarga centralizada de límites administrativos de fuentes libres, unificados a un mismo formato.
+- [Galeria_de_mapas](https://github.com/IngenieroGeomatico/Galeria_de_mapas) — Galería de visualizadores cartográficos web.
+- [pygeoapi_complementos](https://github.com/IngenieroGeomatico/pygeoapi_complementos) — Complementos y extensiones para pygeoapi.
+- [pygdal_PG_datasource](https://github.com/IngenieroGeomatico/pygdal_PG_datasource) — Fuente de datos PostGIS con GDAL desde Python.
+- [dockerInstall_PostGIS_GDAL_Pygeoapi_andMore](https://github.com/IngenieroGeomatico/dockerInstall_PostGIS_GDAL_Pygeoapi_andMore) — Despliegue con Docker de un stack geoespacial (PostGIS, GDAL, pygeoapi y más).
+
+---
+
 ## Contribuir
 
 ¿Conoces un recurso que debería estar aquí? Edita el `README.md` y abre un *pull request*. Recuerda: **el `README.md` es la fuente de la verdad** y la web se regenera automáticamente a partir de él.
