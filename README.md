@@ -54,6 +54,13 @@ Formatos de datos, servicios web y sistemas de referencia estandarizados en el �
 - [COPC](https://copc.io/) — Cloud Optimized Point Cloud, nube de puntos optimizada para la nube basada en LAS.
 - [3D Tiles](https://www.ogc.org/standard/3dtiles/) — Especificación para streaming y renderizado de datos 3D geoespaciales masivos (OGC).
 
+### Formatos cloud-native
+
+Formatos optimizados para acceso parcial y eficiente desde almacenamiento en la nube. Varios ya aparecen arriba (COG, Zarr, GeoParquet, FlatGeobuf, COPC).
+
+- [PMTiles](https://pmtiles.org/) — Formato de archivo único para pirámides de teselas (ráster o vectoriales) servibles directamente desde la nube.
+- [Cloud-Native Geospatial Guide](https://guide.cloudnativegeo.org/) — Guía de referencia sobre formatos geoespaciales cloud-optimized (COG, Zarr, COPC, GeoParquet, FlatGeobuf, PMTiles).
+
 ### Servicios web OGC
 
 Servicios clásicos de la OGC para publicar y consumir datos geoespaciales:
