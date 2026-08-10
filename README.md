@@ -181,6 +181,7 @@ Librerías de programación de uso transversal que no encajan en una única cate
 - 🐍 [stackstac](https://stackstac.readthedocs.io/) — Convierte ítems STAC en cubos de datos Xarray de carga perezosa con Dask.
 - 🐍 [Satpy](https://satpy.readthedocs.io/) — Lectura, manipulación y escritura de datos de satélites meteorológicos.
 - 🐍 [Open Data Cube](https://www.opendatacube.org/) — Infraestructura para gestionar y analizar grandes volúmenes de datos de observación de la Tierra.
+- 🐍 [TorchGeo](https://torchgeo.readthedocs.io/) — Librería de PyTorch con datasets, samplers, transforms y modelos preentrenados para deep learning con datos geoespaciales.
 
 ### Cartografía temática y visualización
 
