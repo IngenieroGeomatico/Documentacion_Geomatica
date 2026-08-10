@@ -92,6 +92,8 @@ Fuentes de datos abiertos y recursos de aprendizaje.
 - [Copernicus / Sentinel Hub](https://www.copernicus.eu/) — Datos de observación de la Tierra del programa europeo Copernicus.
 - [USGS EarthExplorer](https://earthexplorer.usgs.gov/) — Descarga de imágenes de satélite y modelos del terreno.
 - [Natural Earth](https://www.naturalearthdata.com/) — Cartografía base de dominio público a varias escalas.
+- [Wikidata](https://www.wikidata.org/) — Base de conocimiento libre con millones de entidades geolocalizadas (coordenadas) consultables vía SPARQL; útil para enriquecer datos SIG con identificadores autoritativos.
+- [GeoNames](https://www.geonames.org/) — Base de datos geográfica libre con más de 25 millones de topónimos y sus coordenadas, códigos administrativos y de país.
 - [Awesome Geospatial](https://github.com/sacridini/Awesome-Geospatial) — Lista curada de recursos geoespaciales.
 
 ---
