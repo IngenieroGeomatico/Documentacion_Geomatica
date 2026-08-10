@@ -39,6 +39,7 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 - [QField](https://qfield.org/) — Aplicación móvil basada en QGIS para la captura y edición de datos geoespaciales en campo.
 - [Mergin Maps](https://merginmaps.com/) — Plataforma de captura de datos en campo colaborativa con sincronización, integrada con QGIS.
 - [WhiteboxTools](https://www.whiteboxgeo.com/) — Plataforma avanzada de geoprocesado y análisis de terreno (geomorfometría, hidrología).
+- [Orfeo ToolBox (OTB)](https://www.orfeo-toolbox.org/) — Biblioteca y herramientas de procesado de imágenes de teledetección (clasificación, segmentación, ortorrectificación).
 
 ### Geodesia, GNSS y topografía
 
@@ -91,6 +92,9 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 - [Martin](https://martin.maplibre.org/) — Servidor de teselas vectoriales de alto rendimiento en Rust (PostGIS, MBTiles, PMTiles).
 - [pg_tileserv](https://github.com/CrunchyData/pg_tileserv) — Servidor de teselas vectoriales MVT ligero, exclusivo para PostGIS, con capas dinámicas por funciones SQL.
 - [TiTiler](https://developmentseed.org/titiler/) — Servidor dinámico de teselas ráster para datos cloud-optimized (COG).
+- [deegree](https://www.deegree.org/) — Marco Java de servicios web OGC (WMS, WFS, CSW, WPS…).
+- [MobilityDB](https://mobilitydb.com/) — Extensión de PostGIS/PostgreSQL para objetos móviles y trayectorias espaciotemporales.
+- [GeoWebCache](https://www.geowebcache.org/) — Servidor de caché de teselas para acelerar servicios WMS/WMTS.
 - [GeoNetwork](https://geonetwork-opensource.org/) — Catálogo de metadatos geoespaciales (CSW) para infraestructuras de datos espaciales.
 - [GeoNode](https://geonode.org/) — Plataforma/CMS geoespacial para gestionar y publicar datos y mapas.
 
@@ -99,6 +103,7 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 - 🐍 [psycopg](https://www.psycopg.org/) — Adaptador moderno de PostgreSQL para Python con soporte asyncio (sucesor de psycopg2); base para conectar con PostGIS.
 - 🐍 [SQLAlchemy](https://www.sqlalchemy.org/) — Toolkit SQL y ORM estándar de Python.
 - 🐍 [GeoAlchemy2](https://geoalchemy-2.readthedocs.io/) — Extensión geoespacial de SQLAlchemy para trabajar con bases de datos como PostGIS.
+- 🐍 [OWSLib](https://geopython.github.io/OWSLib/) — Cliente de Python para servicios web OGC (WMS, WFS, WCS, CSW…).
 
 ### Cartografía web y visualización
 
@@ -119,15 +124,39 @@ Herramientas libres para adquisición, procesado, análisis y publicación de da
 - 🟨 [geotiff.js](https://geotiffjs.github.io/geotiff.js/) — Lectura y acceso a datos ráster GeoTIFF directamente en navegador o Node.js.
 - 🟨 [georaster](https://github.com/geotiffjs/georaster) — Parsea formatos ráster (GeoTIFF, etc.) a una estructura unificada para mapas web.
 - 🟨 [PMTiles](https://pmtiles.org/) — Formato de archivo único para pirámides de teselas (ráster o vectoriales) servibles desde almacenamiento en la nube.
+- 🟨 [GeoStyler](https://geostyler.org/) — Librería para estilar datos geoespaciales mediante interfaz gráfica (SLD, Mapbox/MapLibre, OpenLayers…).
+
+### Teselas vectoriales y estilos
+
+Herramientas para generar teselas vectoriales y crear/editar estilos de mapas (MapLibre/Mapbox GL).
+
+- [Maputnik](https://maplibre.org/maputnik/) — Editor visual de estilos JSON de MapLibre/Mapbox GL.
+- [Tippecanoe](https://github.com/felt/tippecanoe) — Generación de teselas vectoriales a partir de grandes colecciones de GeoJSON (fork mantenido por Felt).
+- [Planetiler](https://github.com/onthegomap/planetiler) — Generador rápido de teselas vectoriales a escala planetaria a partir de datos de OSM.
+- [OpenMapTiles](https://openmaptiles.org/) — Esquema y herramientas para generar teselas vectoriales a partir de OpenStreetMap.
+- [VersaTiles](https://versatiles.org/) — Formato y herramientas de alto rendimiento para generar y servir teselas vectoriales.
+- [Spreet](https://github.com/maplibre/spreet) — Generador de hojas de sprites para estilos de MapLibre GL a partir de SVG.
+- [Charites](https://github.com/unvt/charites) — Gestión de estilos de MapLibre/Mapbox GL escritos en YAML para facilitar su edición.
 
 ### 3D Tiles y visualización 3D
 
 - [3D Tiles Tools (CesiumGS)](https://github.com/CesiumGS/3d-tiles-tools) — Herramientas oficiales para convertir, optimizar, procesar y analizar datos 3D Tiles.
 - [Recursos y generadores de 3D Tiles](https://github.com/CesiumGS/3d-tiles/blob/main/RESOURCES.md#generators) — Catálogo oficial de herramientas y librerías para generar tilesets 3D Tiles.
 
+### Geocodificación y routing
+
+Servidores de geocodificación (búsqueda de direcciones y topónimos) y motores de cálculo de rutas.
+
+- [Nominatim](https://nominatim.org/) — Motor de geocodificación y geocodificación inversa basado en datos de OpenStreetMap.
+- [Photon](https://photon.komoot.io/) — Geocodificador basado en OSM con búsqueda tolerante a errores y sesgo por localización (Komoot).
+- [OSRM (Open Source Routing Machine)](https://project-osrm.org/) — Motor de cálculo de rutas de alto rendimiento sobre datos de OSM.
+- [Valhalla](https://valhalla.github.io/valhalla/) — Motor de routing multimodal (coche, bici, peatón, transporte público) sobre OSM.
+- [osm2pgsql](https://osm2pgsql.org/) — Herramienta para importar datos de OpenStreetMap en PostgreSQL/PostGIS.
+- [Overpass API](https://overpass-api.de/) — API de consulta de solo lectura para extraer datos de OpenStreetMap de forma selectiva.
+
 ## Librerías de propósito geoespacial
 
-Librerías de programación de uso transversal que no encajan en una única categoría de software. El icono indica el lenguaje: 🐍 Python · 🟨 JavaScript.
+Librerías de programación de uso transversal que no encajan en una única categoría de software. El icono indica el lenguaje: 🐍 Python · 🟨 JavaScript · ☕ Java.
 
 ### Datos vectoriales y ráster (base)
 
@@ -139,6 +168,7 @@ Librerías de programación de uso transversal que no encajan en una única cate
 - 🐍 [Fiona](https://fiona.readthedocs.io/) — Acceso a formatos vectoriales en Python.
 - 🟨 [Turf.js](https://turfjs.org/) — Motor modular de análisis geoespacial sobre GeoJSON en navegador y Node.js.
 - 🟨 [JSTS](https://bjornharrtell.github.io/jsts/) — Port a JavaScript de JTS Topology Suite para predicados espaciales y operaciones geométricas.
+- ☕ [GeoTools](https://geotools.org/) — Toolkit de Java para manipulación de datos geoespaciales, base de GeoServer y otros proyectos.
 
 ### Teledetección y análisis ráster
 
@@ -148,6 +178,7 @@ Librerías de programación de uso transversal que no encajan en una única cate
 - 🐍 [pystac / pystac-client](https://pystac.readthedocs.io/) — Trabajo con catálogos SpatioTemporal Asset Catalogs (STAC) para descubrir y acceder a datos de observación de la Tierra.
 - 🐍 [stackstac](https://stackstac.readthedocs.io/) — Convierte ítems STAC en cubos de datos Xarray de carga perezosa con Dask.
 - 🐍 [Satpy](https://satpy.readthedocs.io/) — Lectura, manipulación y escritura de datos de satélites meteorológicos.
+- 🐍 [Open Data Cube](https://www.opendatacube.org/) — Infraestructura para gestionar y analizar grandes volúmenes de datos de observación de la Tierra.
 
 ### Cartografía temática y visualización
 
