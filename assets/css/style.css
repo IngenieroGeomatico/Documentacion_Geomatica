@@ -144,6 +144,36 @@ body {
   padding-bottom: 0.4rem;
   border-bottom: 3px solid var(--amarillo-ocre);
 }
+
+/* --- Enlaces de anclaje para compartir secciones --- */
+.content h2,
+.content h3,
+.content h4 { position: relative; }
+
+.content .headerlink {
+  margin-left: 0.4em;
+  font-size: 0.7em;
+  text-decoration: none;
+  border-bottom: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  vertical-align: middle;
+}
+.content h2:hover .headerlink,
+.content h3:hover .headerlink,
+.content h4:hover .headerlink,
+.content .headerlink:focus {
+  opacity: 0.6;
+}
+.content .headerlink:hover {
+  opacity: 1;
+  border-bottom: none;
+}
+
+/* En dispositivos táctiles (sin hover) se muestran siempre, atenuados. */
+@media (hover: none) {
+  .content .headerlink { opacity: 0.4; }
+}
 .content h3 {
   font-size: clamp(1.35rem, 2.5vw, 1.7rem);
   color: var(--rojo-almagre);
