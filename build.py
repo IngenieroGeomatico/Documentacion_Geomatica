@@ -51,6 +51,17 @@ def strip_leading_comments(md_text: str) -> str:
     return re.sub(r"^\s*(<!--.*?-->\s*)+", "", md_text, flags=re.DOTALL)
 
 
+def strip_web_excluded_blocks(md_text: str) -> str:
+    """Elimina los bloques marcados como exclusivos de GitHub.
+
+    El contenido entre ``<!-- WEB-EXCLUDE:START -->`` y ``<!-- WEB-EXCLUDE:END -->``
+    aparece en el README (GitHub) pero se omite en la web generada, evitando
+    elementos redundantes como el badge que enlaza a la propia web.
+    """
+    pattern = r"<!--\s*WEB-EXCLUDE:START\s*-->.*?<!--\s*WEB-EXCLUDE:END\s*-->\s*"
+    return re.sub(pattern, "", md_text, flags=re.DOTALL)
+
+
 def extract_title(md_text: str) -> str:
     match = re.search(r"^#\s+(.+?)\s*$", md_text, flags=re.MULTILINE)
     return match.group(1).strip() if match else SITE_TITLE
@@ -111,6 +122,7 @@ def render_page(title: str, body_html: str) -> str:
 def build() -> None:
     raw = read_readme()
     md_text = strip_leading_comments(raw)
+    md_text = strip_web_excluded_blocks(md_text)
     title = extract_title(md_text)
 
     # El H1 del README pasa a ser la cabecera; lo quitamos del cuerpo para no duplicarlo.
