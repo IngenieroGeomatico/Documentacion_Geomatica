@@ -51,6 +51,7 @@
 <li><a href="https://qfield.org/">QField</a> — Aplicación móvil basada en QGIS para la captura y edición de datos geoespaciales en campo.</li>
 <li><a href="https://merginmaps.com/">Mergin Maps</a> — Plataforma de captura de datos en campo colaborativa con sincronización, integrada con QGIS.</li>
 <li><a href="https://www.whiteboxgeo.com/">WhiteboxTools</a> — Plataforma avanzada de geoprocesado y análisis de terreno (geomorfometría, hidrología).</li>
+<li><a href="https://www.orfeo-toolbox.org/">Orfeo ToolBox (OTB)</a> — Biblioteca y herramientas de procesado de imágenes de teledetección (clasificación, segmentación, ortorrectificación).</li>
 </ul>
 <h3 id="geodesia-gnss-y-topografia">Geodesia, GNSS y topografía</h3>
 <ul>
@@ -103,6 +104,9 @@
 <li><a href="https://martin.maplibre.org/">Martin</a> — Servidor de teselas vectoriales de alto rendimiento en Rust (PostGIS, MBTiles, PMTiles).</li>
 <li><a href="https://github.com/CrunchyData/pg_tileserv">pg_tileserv</a> — Servidor de teselas vectoriales MVT ligero, exclusivo para PostGIS, con capas dinámicas por funciones SQL.</li>
 <li><a href="https://developmentseed.org/titiler/">TiTiler</a> — Servidor dinámico de teselas ráster para datos cloud-optimized (COG).</li>
+<li><a href="https://www.deegree.org/">deegree</a> — Marco Java de servicios web OGC (WMS, WFS, CSW, WPS…).</li>
+<li><a href="https://mobilitydb.com/">MobilityDB</a> — Extensión de PostGIS/PostgreSQL para objetos móviles y trayectorias espaciotemporales.</li>
+<li><a href="https://www.geowebcache.org/">GeoWebCache</a> — Servidor de caché de teselas para acelerar servicios WMS/WMTS.</li>
 <li><a href="https://geonetwork-opensource.org/">GeoNetwork</a> — Catálogo de metadatos geoespaciales (CSW) para infraestructuras de datos espaciales.</li>
 <li><a href="https://geonode.org/">GeoNode</a> — Plataforma/CMS geoespacial para gestionar y publicar datos y mapas.</li>
 </ul>
@@ -111,6 +115,7 @@
 <li>🐍 <a href="https://www.psycopg.org/">psycopg</a> — Adaptador moderno de PostgreSQL para Python con soporte asyncio (sucesor de psycopg2); base para conectar con PostGIS.</li>
 <li>🐍 <a href="https://www.sqlalchemy.org/">SQLAlchemy</a> — Toolkit SQL y ORM estándar de Python.</li>
 <li>🐍 <a href="https://geoalchemy-2.readthedocs.io/">GeoAlchemy2</a> — Extensión geoespacial de SQLAlchemy para trabajar con bases de datos como PostGIS.</li>
+<li>🐍 <a href="https://geopython.github.io/OWSLib/">OWSLib</a> — Cliente de Python para servicios web OGC (WMS, WFS, WCS, CSW…).</li>
 </ul>
 <h3 id="cartografia-web-y-visualizacion">Cartografía web y visualización</h3>
 <ul>
@@ -131,14 +136,36 @@
 <li>🟨 <a href="https://geotiffjs.github.io/geotiff.js/">geotiff.js</a> — Lectura y acceso a datos ráster GeoTIFF directamente en navegador o Node.js.</li>
 <li>🟨 <a href="https://github.com/geotiffjs/georaster">georaster</a> — Parsea formatos ráster (GeoTIFF, etc.) a una estructura unificada para mapas web.</li>
 <li>🟨 <a href="https://pmtiles.org/">PMTiles</a> — Formato de archivo único para pirámides de teselas (ráster o vectoriales) servibles desde almacenamiento en la nube.</li>
+<li>🟨 <a href="https://geostyler.org/">GeoStyler</a> — Librería para estilar datos geoespaciales mediante interfaz gráfica (SLD, Mapbox/MapLibre, OpenLayers…).</li>
+</ul>
+<h3 id="teselas-vectoriales-y-estilos">Teselas vectoriales y estilos</h3>
+<p>Herramientas para generar teselas vectoriales y crear/editar estilos de mapas (MapLibre/Mapbox GL).</p>
+<ul>
+<li><a href="https://maplibre.org/maputnik/">Maputnik</a> — Editor visual de estilos JSON de MapLibre/Mapbox GL.</li>
+<li><a href="https://github.com/felt/tippecanoe">Tippecanoe</a> — Generación de teselas vectoriales a partir de grandes colecciones de GeoJSON (fork mantenido por Felt).</li>
+<li><a href="https://github.com/onthegomap/planetiler">Planetiler</a> — Generador rápido de teselas vectoriales a escala planetaria a partir de datos de OSM.</li>
+<li><a href="https://openmaptiles.org/">OpenMapTiles</a> — Esquema y herramientas para generar teselas vectoriales a partir de OpenStreetMap.</li>
+<li><a href="https://versatiles.org/">VersaTiles</a> — Formato y herramientas de alto rendimiento para generar y servir teselas vectoriales.</li>
+<li><a href="https://github.com/maplibre/spreet">Spreet</a> — Generador de hojas de sprites para estilos de MapLibre GL a partir de SVG.</li>
+<li><a href="https://github.com/unvt/charites">Charites</a> — Gestión de estilos de MapLibre/Mapbox GL escritos en YAML para facilitar su edición.</li>
 </ul>
 <h3 id="3d-tiles-y-visualizacion-3d">3D Tiles y visualización 3D</h3>
 <ul>
 <li><a href="https://github.com/CesiumGS/3d-tiles-tools">3D Tiles Tools (CesiumGS)</a> — Herramientas oficiales para convertir, optimizar, procesar y analizar datos 3D Tiles.</li>
 <li><a href="https://github.com/CesiumGS/3d-tiles/blob/main/RESOURCES.md#generators">Recursos y generadores de 3D Tiles</a> — Catálogo oficial de herramientas y librerías para generar tilesets 3D Tiles.</li>
 </ul>
+<h3 id="geocodificacion-y-routing">Geocodificación y routing</h3>
+<p>Servidores de geocodificación (búsqueda de direcciones y topónimos) y motores de cálculo de rutas.</p>
+<ul>
+<li><a href="https://nominatim.org/">Nominatim</a> — Motor de geocodificación y geocodificación inversa basado en datos de OpenStreetMap.</li>
+<li><a href="https://photon.komoot.io/">Photon</a> — Geocodificador basado en OSM con búsqueda tolerante a errores y sesgo por localización (Komoot).</li>
+<li><a href="https://project-osrm.org/">OSRM (Open Source Routing Machine)</a> — Motor de cálculo de rutas de alto rendimiento sobre datos de OSM.</li>
+<li><a href="https://valhalla.github.io/valhalla/">Valhalla</a> — Motor de routing multimodal (coche, bici, peatón, transporte público) sobre OSM.</li>
+<li><a href="https://osm2pgsql.org/">osm2pgsql</a> — Herramienta para importar datos de OpenStreetMap en PostgreSQL/PostGIS.</li>
+<li><a href="https://overpass-api.de/">Overpass API</a> — API de consulta de solo lectura para extraer datos de OpenStreetMap de forma selectiva.</li>
+</ul>
 <h2 id="librerias-de-proposito-geoespacial">Librerías de propósito geoespacial</h2>
-<p>Librerías de programación de uso transversal que no encajan en una única categoría de software. El icono indica el lenguaje: 🐍 Python · 🟨 JavaScript.</p>
+<p>Librerías de programación de uso transversal que no encajan en una única categoría de software. El icono indica el lenguaje: 🐍 Python · 🟨 JavaScript · ☕ Java.</p>
 <h3 id="datos-vectoriales-y-raster-base">Datos vectoriales y ráster (base)</h3>
 <ul>
 <li>🐍 <a href="https://pypi.org/project/GDAL/">GDAL (bindings de Python)</a> — Wrapper oficial de Python para GDAL/OGR (módulo <code>osgeo</code>); acceso completo a la librería desde Python.</li>
@@ -149,6 +176,7 @@
 <li>🐍 <a href="https://fiona.readthedocs.io/">Fiona</a> — Acceso a formatos vectoriales en Python.</li>
 <li>🟨 <a href="https://turfjs.org/">Turf.js</a> — Motor modular de análisis geoespacial sobre GeoJSON en navegador y Node.js.</li>
 <li>🟨 <a href="https://bjornharrtell.github.io/jsts/">JSTS</a> — Port a JavaScript de JTS Topology Suite para predicados espaciales y operaciones geométricas.</li>
+<li>☕ <a href="https://geotools.org/">GeoTools</a> — Toolkit de Java para manipulación de datos geoespaciales, base de GeoServer y otros proyectos.</li>
 </ul>
 <h3 id="teledeteccion-y-analisis-raster">Teledetección y análisis ráster</h3>
 <ul>
@@ -158,6 +186,7 @@
 <li>🐍 <a href="https://pystac.readthedocs.io/">pystac / pystac-client</a> — Trabajo con catálogos SpatioTemporal Asset Catalogs (STAC) para descubrir y acceder a datos de observación de la Tierra.</li>
 <li>🐍 <a href="https://stackstac.readthedocs.io/">stackstac</a> — Convierte ítems STAC en cubos de datos Xarray de carga perezosa con Dask.</li>
 <li>🐍 <a href="https://satpy.readthedocs.io/">Satpy</a> — Lectura, manipulación y escritura de datos de satélites meteorológicos.</li>
+<li>🐍 <a href="https://www.opendatacube.org/">Open Data Cube</a> — Infraestructura para gestionar y analizar grandes volúmenes de datos de observación de la Tierra.</li>
 </ul>
 <h3 id="cartografia-tematica-y-visualizacion">Cartografía temática y visualización</h3>
 <ul>
