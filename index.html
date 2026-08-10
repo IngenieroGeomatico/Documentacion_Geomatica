@@ -20,7 +20,7 @@
 
   <main id="contenido" class="wrap content">
     <blockquote>
-<p>Punto de acceso a <strong>documentación</strong>, <strong>software de fuente abierta</strong> y <strong>recursos</strong> útiles para la <strong>Topografía</strong> y la <strong>Geomática</strong>. El objetivo es ayudar a los Ingenieros en Geomática a encontrar recursos necesarios para nuestra bonita profesión.</p>
+<p>Punto de acceso a <strong>documentación</strong>, <strong>software de fuente abierta</strong> y <strong>recursos</strong> útiles para la <strong>Topografía</strong> y la <strong>Geomática</strong>. El objetivo es ayudar a los <strong>Ingenieros en Geomática y Topografía</strong> a encontrar recursos necesarios para nuestra bonita profesión.</p>
 </blockquote>
 <p>Este repositorio es un directorio vivo y curado de enlaces de interés en el ámbito de la Ingeniería Geomática. El propio <code>README.md</code> es la fuente desde la cual se genera automáticamente la web publicada en GitHub Pages.</p>
 <hr>
@@ -31,10 +31,11 @@
 <li><a href="https://docs.qgis.org/">Documentación oficial de QGIS</a> — Manual de usuario, guía de formación y manual de PyQGIS.</li>
 <li><a href="https://gdal.org/">Documentación de GDAL/OGR</a> — Librería de referencia para lectura/escritura de datos ráster y vectoriales.</li>
 <li><a href="https://proj.org/">PROJ — Transformaciones de coordenadas</a> — Biblioteca para proyecciones y transformaciones de sistemas de referencia.</li>
-<li><a href="https://epsg.org/">EPSG Geodetic Parameter Dataset</a> — Registro oficial de sistemas de referencia de coordenadas (CRS).</li>
+<li><a href="https://epsg.org/">EPSG</a> — Registro EPSG de sistemas de referencia de coordenadas (CRS).</li>
 <li><a href="https://www.ign.es/">Instituto Geográfico Nacional (IGN España)</a> — Cartografía oficial, geodesia, nivelación y redes GNSS.</li>
-<li><a href="https://www.cnig.es/">Registro Central de Cartografía (CNIG)</a> — Centro de descargas de datos geográficos oficiales de España.</li>
+<li><a href="https://www.cnig.es/">Centro Nacional de Información geográfica (CNIG)</a> — Centro de descargas de datos geográficos oficiales de España.</li>
 <li><a href="https://www.ogc.org/">OGC — Open Geospatial Consortium</a> — Estándares abiertos geoespaciales (WMS, WFS, WMTS, GeoPackage, etc.).</li>
+<li><a href="https://ogcapi.ogc.org/">OGC APIs</a> — Nueva familia de estándares OGC basados en OpenAPI/REST (Features, Tiles, Maps, Coverages…), el futuro de los servicios geoespaciales.</li>
 </ul>
 <h2 id="software-de-fuente-abierta">Software de fuente abierta</h2>
 <p>Herramientas libres para adquisición, procesado, análisis y publicación de datos geoespaciales.</p>
@@ -65,16 +66,17 @@
 <li><a href="https://geoserver.org/">GeoServer</a> — Servidor de datos geoespaciales (WMS/WFS/WCS).</li>
 <li><a href="https://mapserver.org/">MapServer</a> — Servidor de mapas rápido y ligero.</li>
 <li><a href="https://pgrouting.org/">pgRouting</a> — Análisis de rutas sobre PostGIS.</li>
+<li><a href="https://pygeoapi.io/">pygeoapi</a> — Servidor geoespacial en Python que implementa las OGC APIs (Features, Tiles, Coverages, Processes…).</li>
 </ul>
 <h3 id="cartografia-web-y-visualizacion">Cartografía web y visualización</h3>
 <ul>
 <li><a href="https://leafletjs.com/">Leaflet</a> — Librería JavaScript ligera para mapas interactivos.</li>
 <li><a href="https://openlayers.org/">OpenLayers</a> — Librería JavaScript avanzada para mapas web.</li>
 <li><a href="https://maplibre.org/">MapLibre GL</a> — Renderizado de mapas vectoriales por GPU (fork libre de Mapbox GL).</li>
-<li><a href="https://github.com/IGN-CNIG/API-IDEE">API-IDEE (IGN/CNIG)</a> — API de la Infraestructura de Datos Espaciales de España para crear visualizadores de mapas interoperables.</li>
+<li><a href="https://github.com/IGN-CNIG/API-IDEE">API-IDEE</a> — API de la Infraestructura de Datos Espaciales de España para crear visualizadores de mapas interoperables.</li>
 <li><a href="https://cesium.com/platform/cesiumjs/">CesiumJS</a> — Librería JavaScript de código abierto para visualizadores 3D.</li>
 </ul>
-<h3 id="librerias-y-geoprocesado">Librerías y geoprocesado</h3>
+<h3 id="librerias-python">Librerías Python</h3>
 <ul>
 <li><a href="https://pypi.org/project/GDAL/">GDAL (bindings de Python)</a> — Wrapper oficial de Python para GDAL/OGR (módulo <code>osgeo</code>); acceso completo a la librería desde Python.</li>
 <li><a href="https://pyogrio.readthedocs.io/">pyogrio</a> — Wrapper vectorial rápido sobre GDAL/OGR para leer/escribir datos vectoriales en Python.</li>
@@ -83,9 +85,21 @@
 <li><a href="https://rasterio.readthedocs.io/">Rasterio</a> — Lectura/escritura de datos ráster en Python.</li>
 <li><a href="https://fiona.readthedocs.io/">Fiona</a> — Acceso a formatos vectoriales en Python.</li>
 </ul>
+<h3 id="librerias-javascript">Librerías JavaScript</h3>
+<ul>
+<li><a href="https://turfjs.org/">Turf.js</a> — Motor modular de análisis geoespacial sobre GeoJSON en navegador y Node.js.</li>
+<li><a href="https://proj4js.org/">proj4js</a> — Transformación de coordenadas entre sistemas de referencia y proyecciones (paquete npm <code>proj4</code>).</li>
+<li><a href="https://bjornharrtell.github.io/jsts/">JSTS</a> — Port a JavaScript de JTS Topology Suite para predicados espaciales y operaciones geométricas.</li>
+<li><a href="https://deck.gl/">Deck.gl</a> — Framework de alto rendimiento sobre WebGL para explorar y analizar grandes conjuntos de datos geoespaciales.</li>
+<li><a href="https://maplibre.org/geojson-vt/">geojson-vt</a> — Corte eficiente de GeoJSON masivo en teselas vectoriales al vuelo en el navegador.</li>
+<li><a href="https://terradraw.io/">Terra Draw</a> — Dibujo y edición de geometrías compatible con Leaflet, MapLibre, OpenLayers y otros motores de mapas.</li>
+<li><a href="https://geotiffjs.github.io/geotiff.js/">geotiff.js</a> — Lectura y acceso a datos ráster GeoTIFF directamente en navegador o Node.js.</li>
+<li><a href="https://flatgeobuf.org/">FlatGeobuf</a> — Formato geoespacial binario de alto rendimiento para streaming y acceso aleatorio a grandes conjuntos de datos.</li>
+</ul>
 <h2 id="datos-y-recursos">Datos y recursos</h2>
 <p>Fuentes de datos abiertos y recursos de aprendizaje.</p>
 <ul>
+<li><a href="https://www.idee.es/segun-tipo-de-servicio">Directorio de Servicios de la IDEE</a> — Catálogo de servicios web geoespaciales (WMS, WFS, WMTS, CSW, etc.) de la Infraestructura de Datos Espaciales de España, organizados por tipo.</li>
 <li><a href="https://www.openstreetmap.org/">OpenStreetMap</a> — Cartografía colaborativa libre a escala mundial.</li>
 <li><a href="https://www.copernicus.eu/">Copernicus / Sentinel Hub</a> — Datos de observación de la Tierra del programa europeo Copernicus.</li>
 <li><a href="https://earthexplorer.usgs.gov/">USGS EarthExplorer</a> — Descarga de imágenes de satélite y modelos del terreno.</li>
