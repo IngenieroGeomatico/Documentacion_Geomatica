@@ -4,6 +4,8 @@
 
 > Punto de acceso a **documentación**, **software de fuente abierta** y **recursos** útiles para la **Topografía** y la **Geomática**. El objetivo es ayudar a los **Ingenieros en Geomática y Topografía** a encontrar recursos necesarios para nuestra bonita profesión.
 
+[![Ver la web](https://img.shields.io/badge/Ver_la_web-1f4e79?style=for-the-badge&logo=github&logoColor=white)](https://ingenierogeomatico.github.io/Documentacion_Geomatica/)
+
 Este repositorio es un directorio vivo y curado de enlaces de interés en el ámbito de la Ingeniería Geomática. El propio `README.md` es la fuente desde la cual se genera automáticamente la web publicada en GitHub Pages.
 
 ---
