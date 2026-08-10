@@ -54,6 +54,7 @@
 <li><a href="https://www.rtklib.com/">RTKLIB</a> — Posicionamiento GNSS de precisión (RTK, PPP) de código abierto.</li>
 <li><a href="https://gnss-sdr.org/">GNSS-SDR</a> — Receptor GNSS definido por software.</li>
 <li><a href="https://docs.emlid.com/">Emlid / documentación RTK</a> — Referencia sobre flujos de trabajo RTK/PPK.</li>
+<li><a href="https://www.gnu.org/software/gama/">GNU Gama</a> — Ajuste riguroso de redes geodésicas y topográficas por mínimos cuadrados (línea de comandos).</li>
 </ul>
 <h3 id="fotogrametria-lidar-y-nubes-de-puntos">Fotogrametría, LiDAR y nubes de puntos</h3>
 <ul>
@@ -62,6 +63,16 @@
 <li><a href="https://pdal.io/">PDAL — Point Data Abstraction Library</a> — Procesado de nubes de puntos LiDAR.</li>
 <li><a href="https://rapidlasso.de/">LAStools (open components)</a> — Herramientas para datos LiDAR en formato LAS/LAZ.</li>
 <li><a href="https://alicevision.org/">Meshroom (AliceVision)</a> — Reconstrucción 3D fotogramétrica.</li>
+</ul>
+<h4 id="librerias">Librerías</h4>
+<ul>
+<li><a href="https://colmap.github.io/">COLMAP</a> — Pipeline de Structure-from-Motion (SfM) y Multi-View Stereo (MVS) de propósito general, con bindings de Python (pycolmap).</li>
+<li><a href="https://github.com/openMVG/OpenMVG">OpenMVG</a> — Librería de geometría de vistas múltiples centrada en pipelines de SfM (C++).</li>
+<li><a href="https://cdcseacave.github.io/openMVS/">OpenMVS</a> — Librería de Multi-View Stereo para reconstrucción densa y mallado (C++), complemento habitual de COLMAP.</li>
+<li><a href="https://micmac.ensg.eu/">MicMac</a> — Suite fotogramétrica completa de reconstrucción 3D del IGN francés (C++).</li>
+<li><a href="https://www.open3d.org/">Open3D</a> — Librería moderna de procesado de datos 3D, mallas y nubes de puntos (Python/C++).</li>
+<li><a href="https://pointclouds.org/">PCL — Point Cloud Library</a> — Librería de referencia para procesado de nubes de puntos 2D/3D (C++).</li>
+<li><a href="https://laspy.readthedocs.io/">laspy</a> — Lectura y escritura de nubes de puntos LiDAR en formato LAS/LAZ desde Python.</li>
 </ul>
 <h3 id="bases-de-datos-y-servidores-geoespaciales">Bases de datos y servidores geoespaciales</h3>
 <ul>
@@ -80,7 +91,7 @@
 <li><a href="https://cesium.com/platform/cesiumjs/">CesiumJS</a> — Librería JavaScript de código abierto para visualizadores 3D.</li>
 </ul>
 <h3 id="librerias-python">Librerías Python</h3>
-<p>Datos vectoriales y ráster (base):</p>
+<h4 id="datos-vectoriales-y-raster-base">Datos vectoriales y ráster (base)</h4>
 <ul>
 <li><a href="https://pypi.org/project/GDAL/">GDAL (bindings de Python)</a> — Wrapper oficial de Python para GDAL/OGR (módulo <code>osgeo</code>); acceso completo a la librería desde Python.</li>
 <li><a href="https://pyogrio.readthedocs.io/">pyogrio</a> — Wrapper vectorial rápido sobre GDAL/OGR para leer/escribir datos vectoriales en Python.</li>
@@ -89,14 +100,14 @@
 <li><a href="https://rasterio.readthedocs.io/">Rasterio</a> — Lectura/escritura de datos ráster en Python.</li>
 <li><a href="https://fiona.readthedocs.io/">Fiona</a> — Acceso a formatos vectoriales en Python.</li>
 </ul>
-<p>Geodesia, coordenadas y GNSS:</p>
+<h4 id="geodesia-coordenadas-y-gnss">Geodesia, coordenadas y GNSS</h4>
 <ul>
 <li><a href="https://pyproj4.github.io/pyproj/">pyproj</a> — Interfaz de Python para PROJ: proyecciones cartográficas y transformación de coordenadas.</li>
 <li><a href="https://pypi.org/project/PyGeodesy/">PyGeodesy</a> — Cálculos geodésicos elipsoidales y esféricos (distancias, rumbos, intersecciones) en Python puro.</li>
 <li><a href="https://github.com/geospace-code/georinex">georinex</a> — Lectura rápida de ficheros RINEX (2, 3, 4) de observación y navegación GNSS.</li>
 <li><a href="https://github.com/Stanford-NavLab/gnss_lib_py">gnss-lib-py</a> — Marco modular para parsear, analizar y visualizar datos GNSS y estimar posición.</li>
 </ul>
-<p>Teledetección y análisis ráster:</p>
+<h4 id="teledeteccion-y-analisis-raster">Teledetección y análisis ráster</h4>
 <ul>
 <li><a href="https://corteva.github.io/rioxarray/">rioxarray</a> — Extensión geoespacial de Xarray que integra Rasterio con arrays multidimensionales etiquetados.</li>
 <li><a href="https://docs.xarray.dev/">xarray</a> — Arrays N-dimensionales etiquetados, base para el análisis de datos climáticos y de teledetección.</li>
@@ -105,7 +116,7 @@
 <li><a href="https://stackstac.readthedocs.io/">stackstac</a> — Convierte ítems STAC en cubos de datos Xarray de carga perezosa con Dask.</li>
 <li><a href="https://satpy.readthedocs.io/">Satpy</a> — Lectura, manipulación y escritura de datos de satélites meteorológicos.</li>
 </ul>
-<p>Cartografía temática y visualización:</p>
+<h4 id="cartografia-tematica-y-visualizacion">Cartografía temática y visualización</h4>
 <ul>
 <li><a href="https://scitools.org.uk/cartopy/">Cartopy</a> — Procesado de datos geoespaciales y creación de mapas de calidad para publicación.</li>
 <li><a href="https://contextily.readthedocs.io/">contextily</a> — Añade mapas base de teselas de internet como fondo en gráficos.</li>
@@ -113,7 +124,7 @@
 <li><a href="https://leafmap.org/">leafmap</a> — Mapas interactivos ligeros para diversos formatos y proveedores de datos geoespaciales.</li>
 <li><a href="https://geemap.org/">geemap</a> — Análisis y cartografía interactiva específicos para Google Earth Engine.</li>
 </ul>
-<p>Acceso a bases de datos espaciales:</p>
+<h4 id="acceso-a-bases-de-datos-espaciales">Acceso a bases de datos espaciales</h4>
 <ul>
 <li><a href="https://www.psycopg.org/">psycopg</a> — Adaptador moderno de PostgreSQL para Python con soporte asyncio (sucesor de psycopg2); base para conectar con PostGIS.</li>
 <li><a href="https://www.sqlalchemy.org/">SQLAlchemy</a> — Toolkit SQL y ORM estándar de Python.</li>
