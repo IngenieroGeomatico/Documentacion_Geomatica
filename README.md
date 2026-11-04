@@ -18,7 +18,7 @@ Este repositorio es un directorio vivo y curado de enlaces de interés en el ám
 2. [Estándares, formatos y servicios web](#2-estándares-formatos-y-servicios-web)
 3. [Software SIG, topografía y 3D](#3-software-sig-topografía-y-3d)
 4. [Bases de datos, servidores y backend geoespacial](#4-bases-de-datos-servidores-y-backend-geoespacial)
-5. [Cartografía web, visores y movilidad](#5-cartografía-web-visores-y-movilidad)
+5. [Cartografía web, visualizadores y movilidad](#5-cartografía-web-visualizadores-y-movilidad)
 6. [Ecosistema de librerías de desarrollo](#6-ecosistema-de-librerías-de-desarrollo)
 7. [Herramientas de propósito general](#7-herramientas-de-propósito-general)
 8. [Datos y recursos abiertos](#8-datos-y-recursos-abiertos)
@@ -55,7 +55,7 @@ Especificaciones de formatos de datos, sistemas de referencia y protocolos de in
 - [Vector Tiles (MVT)](https://github.com/mapbox/vector-tile-spec) — Especificación binaria de teselas vectoriales para renderizado web eficiente por GPU (Mapbox / de facto).
 - [Shapefile](https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf) — Formato clásico multiactivo de Esri para geometría y atributos (estándar de facto).
 - [GML](https://www.ogc.org/standards/gml/) — Geography Markup Language: codificación XML para modelar y transportar entidades geográficas (OGC/ISO).
-- [KML](https://www.ogc.org/standards/kml/) — Keyhole Markup Language: gramática XML para visualización en globos virtuales y visores (OGC).
+- [KML](https://www.ogc.org/standards/kml/) — Keyhole Markup Language: gramática XML para visualización en globos virtuales y visualizadores (OGC).
 - [WKT / WKB](https://www.ogc.org/standards/sfa/) — Well-Known Text y Well-Known Binary para representación textual y binaria de geometrías (OGC/ISO).
 
 ### Formatos ráster y multidimensionales
@@ -204,11 +204,11 @@ Infraestructura backend para almacenamiento, consulta, publicación y geoprocesa
 
 ---
 
-## 5. Cartografía web, visores y movilidad
+## 5. Cartografía web, visualizadores y movilidad
 
 Librerías cliente para la creación de mapas interactivos en el navegador, motores de enrutamiento y herramientas de estilos.
 
-### Visores y clientes de mapas web
+### Visualizadores y clientes de mapas web
 
 - [Leaflet](https://leafletjs.com/) — Librería JavaScript ligera, modular y amigable para mapas interactivos 2D.
 - [OpenLayers](https://openlayers.org/) — Librería JavaScript avanzada y completa para cartografía web con soporte de proyecciones, vectoriales y ráster.
@@ -216,7 +216,7 @@ Librerías cliente para la creación de mapas interactivos en el navegador, moto
 - [API-IDEE](https://github.com/IGN-CNIG/API-IDEE) — API oficial del IGN-CNIG para crear visualizadores web interoperables con capas de la IDEE de España.
 - [CesiumJS](https://cesium.com/platform/cesiumjs/) — Motor de visualización 3D geoespacial para globos terráqueos interactivos y visualización de 3D Tiles en el navegador.
 - [iTowns](https://www.itowns-project.org/) — Framework 3D/2D del IGN francés sobre Three.js para visualización de datos espaciales masivos.
-- [Terria.js](https://terria.io/) — Framework para construir portales y visores de datos espaciales complejos sobre CesiumJS y Leaflet.
+- [Terria.js](https://terria.io/) — Framework para construir portales y visualizadores de datos espaciales complejos sobre CesiumJS y Leaflet.
 - [MapStore](https://mapstore.geosolutionsgroup.com/) — Plataforma WebGIS modular para crear geoportales y paneles de control sin programar.
 - [GeoMoose](https://geomoose.org/) — Framework ligero para portales cartográficos basados en OpenLayers.
 - [Mapbender](https://mapbender.org/) — Framework en PHP/Symfony para administrar y publicar geoportales seguros.
@@ -380,7 +380,7 @@ Proyectos y herramientas de código abierto desarrollados y mantenidos por [Inge
 - [serviciosIDEE2QGIS](https://github.com/IngenieroGeomatico/serviciosIDEE2QGIS) — Complemento de QGIS para cargar de forma rápida y sencilla los servicios web de la IDEE (IGN-CNIG).
 - [apiidee-agent](https://github.com/IngenieroGeomatico/apiidee-agent) — Asistente y agente en Python para interactuar con las capacidades de la API-IDEE.
 - [descarga_limites_administrativos](https://github.com/IngenieroGeomatico/descarga_limites_administrativos) — Flujo automatizado de descarga y homogeneización de límites territoriales de fuentes oficiales.
-- [Galeria_de_mapas](https://github.com/IngenieroGeomatico/Galeria_de_mapas) — Catálogo de visores cartográficos web temáticos desarrollados con distintas tecnologías.
+- [Galeria_de_mapas](https://github.com/IngenieroGeomatico/Galeria_de_mapas) — Catálogo de visualizadores cartográficos web temáticos desarrollados con distintas tecnologías.
 - [pygeoapi_complementos](https://github.com/IngenieroGeomatico/pygeoapi_complementos) — Colección de plugins, proveedores y extensiones personalizadas para el servidor pygeoapi.
 - [pygdal_PG_datasource](https://github.com/IngenieroGeomatico/pygdal_PG_datasource) — Ejemplos y utilidades para interactuar con orígenes de datos PostGIS mediante GDAL en Python.
 - [dockerInstall_PostGIS_GDAL_Pygeoapi_andMore](https://github.com/IngenieroGeomatico/dockerInstall_PostGIS_GDAL_Pygeoapi_andMore) — Entorno de despliegue reproducible en Docker con un stack geoespacial completo (PostGIS, GDAL, pygeoapi...).
