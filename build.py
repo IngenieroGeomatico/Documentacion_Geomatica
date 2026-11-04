@@ -109,12 +109,15 @@ def render_page(title: str, body_html: str) -> str:
   </header>
 
   <main id="contenido" class="wrap content">
-    <div class="search-container" role="search">
-      <div class="search-input-wrap">
-        <span class="search-icon" aria-hidden="true">🔍</span>
-        <input type="search" id="search-input" class="search-input" placeholder="Buscar recursos, herramientas, librerías, formatos..." aria-label="Buscar recursos en la página" autocomplete="off">
-        <kbd class="search-shortcut" title="Presiona / para buscar">/</kbd>
-        <button type="button" id="search-clear" class="search-clear" aria-label="Limpiar búsqueda" hidden>&times;</button>
+    <div class="search-container" id="search-container" role="search">
+      <div class="search-bar-row">
+        <div class="search-input-wrap">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input type="search" id="search-input" class="search-input" placeholder="Buscar recursos, herramientas, librerías, formatos..." aria-label="Buscar recursos en la página" autocomplete="off">
+          <kbd class="search-shortcut" title="Presiona / para buscar">/</kbd>
+          <button type="button" id="search-clear" class="search-clear" aria-label="Limpiar búsqueda" hidden>&times;</button>
+        </div>
+        <button type="button" id="search-close" class="search-close" aria-label="Cerrar buscador" title="Ocultar buscador (presiona / para volver a abrir)">&times;</button>
       </div>
       <div id="search-meta" class="search-meta" aria-live="polite"></div>
     </div>
@@ -127,6 +130,10 @@ def render_page(title: str, body_html: str) -> str:
 
     {body_html}
   </main>
+
+  <button type="button" id="search-open-btn" class="search-open-btn" aria-label="Abrir buscador" title="Abrir buscador (o presiona /)" hidden>
+    🔍 Buscar
+  </button>
 
   <button type="button" id="back-to-top" class="back-to-top" aria-label="Volver arriba" title="Volver arriba">
     ↑
@@ -145,8 +152,11 @@ def render_page(title: str, body_html: str) -> str:
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {{
+      const searchContainer = document.getElementById('search-container');
       const searchInput = document.getElementById('search-input');
       const searchClear = document.getElementById('search-clear');
+      const searchClose = document.getElementById('search-close');
+      const searchOpenBtn = document.getElementById('search-open-btn');
       const searchMeta = document.getElementById('search-meta');
       const searchEmpty = document.getElementById('search-empty');
       const searchQueryText = document.getElementById('search-query-text');
@@ -242,11 +252,45 @@ def render_page(title: str, body_html: str) -> str:
 
       searchInput.addEventListener('input', updateSearch);
 
+      function hideSearch() {{
+        if (searchInput.value) {{
+          searchInput.value = '';
+          updateSearch();
+        }}
+        if (searchContainer) {{
+          searchContainer.classList.add('is-hidden');
+        }}
+        if (searchOpenBtn) {{
+          searchOpenBtn.hidden = false;
+        }}
+      }}
+
+      function showSearch(focus = true) {{
+        if (searchContainer) {{
+          searchContainer.classList.remove('is-hidden');
+        }}
+        if (searchOpenBtn) {{
+          searchOpenBtn.hidden = true;
+        }}
+        if (focus) {{
+          searchInput.focus();
+          searchInput.select();
+        }}
+      }}
+
       searchClear.addEventListener('click', () => {{
         searchInput.value = '';
         searchInput.focus();
         updateSearch();
       }});
+
+      if (searchClose) {{
+        searchClose.addEventListener('click', hideSearch);
+      }}
+
+      if (searchOpenBtn) {{
+        searchOpenBtn.addEventListener('click', () => showSearch(true));
+      }}
 
       if (searchResetBtn) {{
         searchResetBtn.addEventListener('click', () => {{
@@ -259,12 +303,15 @@ def render_page(title: str, body_html: str) -> str:
       document.addEventListener('keydown', (e) => {{
         if (e.key === '/' && document.activeElement !== searchInput && !['INPUT', 'TEXTAREA'].includes(document.activeElement ? document.activeElement.tagName : '')) {{
           e.preventDefault();
-          searchInput.focus();
-          searchInput.select();
+          showSearch(true);
         }} else if (e.key === 'Escape' && document.activeElement === searchInput) {{
-          searchInput.value = '';
-          updateSearch();
-          searchInput.blur();
+          if (searchInput.value) {{
+            searchInput.value = '';
+            updateSearch();
+          }} else {{
+            searchInput.blur();
+            hideSearch();
+          }}
         }}
       }});
 
