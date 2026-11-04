@@ -12,336 +12,384 @@ Este repositorio es un directorio vivo y curado de enlaces de interés en el ám
 
 ---
 
-## Documentación y referencia
-
-Manuales, normativa y material formativo de referencia.
-
-- [OSGeo — Open Source Geospatial Foundation](https://www.osgeo.org/) — Fundación que agrupa los principales proyectos geoespaciales libres.
-- [Documentación oficial de QGIS](https://docs.qgis.org/) — Manual de usuario, guía de formación y manual de PyQGIS.
-- [Documentación de GDAL/OGR](https://gdal.org/) — Librería de referencia para lectura/escritura de datos ráster y vectoriales.
-- [PROJ — Transformaciones de coordenadas](https://proj.org/) — Biblioteca para proyecciones y transformaciones de sistemas de referencia.
-- [Instituto Geográfico Nacional (IGN España)](https://www.ign.es/) — Cartografía oficial, geodesia, nivelación y redes GNSS.
-- [Centro Nacional de Información geográfica (CNIG)](https://www.cnig.es/) — Centro de descargas de datos geográficos oficiales de España.
-- [OGC — Open Geospatial Consortium](https://www.ogc.org/) — Organización que define los estándares abiertos geoespaciales.
-- [Referencia de funciones PostGIS](https://postgis.net/docs/reference.html) — Documentación oficial de las funciones espaciales SQL (`ST_*`) y operadores de PostGIS.
-
-## Estándares y formatos
-
-Formatos de datos, servicios web y sistemas de referencia estandarizados en el ámbito geoespacial.
-
-### Formatos de datos vectoriales
-
-- [GeoJSON](https://geojson.org/) — Formato de intercambio de datos geoespaciales basado en JSON (IETF, RFC 7946).
-- [GeoPackage](https://www.geopackage.org/) — Contenedor abierto basado en SQLite para datos vectoriales y ráster (OGC).
-- [GML](https://www.ogc.org/standards/gml/) — Codificación XML para modelar, transportar y almacenar entidades geográficas (OGC/ISO).
-- [KML](https://www.ogc.org/standards/kml/) — Gramática XML para la visualización geográfica en globos virtuales (OGC).
-- [Shapefile](https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf) — Formato clásico de Esri para geometría vectorial y atributos (estándar de facto).
-- [FlatGeobuf](https://flatgeobuf.org/) — Formato binario de alto rendimiento basado en FlatBuffers (estándar de facto).
-- [GeoParquet](https://geoparquet.org/) — Formato columnar binario para datos geoespaciales sobre Apache Parquet.
-- [Vector Tiles (MVT)](https://github.com/mapbox/vector-tile-spec) — Formato binario de teselas vectoriales para renderizado web (Mapbox, de facto).
-- [WKT / WKB](https://www.ogc.org/standards/sfa/) — Representación en texto/binario de geometrías, definida en Simple Features (OGC/ISO).
-
-### Formatos de datos ráster
-
-- [GeoTIFF](https://www.ogc.org/standards/geotiff/) — TIFF extendido con metadatos geoespaciales (OGC).
-- [Cloud Optimized GeoTIFF (COG)](https://www.cogeo.org/) — GeoTIFF optimizado para acceso remoto y eficiente en la nube (de facto).
-- [NetCDF](https://www.unidata.ucar.edu/software/netcdf/) — Formato autodescriptivo para datos multidimensionales orientados a arrays (Unidata).
-- [Zarr](https://zarr.dev/) — Formato de arrays N-dimensionales comprimidos y en bloques (estándar comunitario OGC).
-
-### Formatos de nubes de puntos
-
-- [LAS/LAZ](https://www.asprs.org/divisions-committees/lidar-division/laser-file-format-exchange-activities) — Formato binario estándar para el intercambio de datos LiDAR (ASPRS).
-- [COPC](https://copc.io/) — Cloud Optimized Point Cloud, nube de puntos optimizada para la nube basada en LAS.
-- [3D Tiles](https://www.ogc.org/standard/3dtiles/) — Especificación para streaming y renderizado de datos 3D geoespaciales masivos (OGC).
-
-### Formatos cloud-native
-
-Formatos optimizados para acceso parcial y eficiente desde almacenamiento en la nube. Varios ya aparecen arriba (COG, Zarr, GeoParquet, FlatGeobuf, COPC).
-
-- [PMTiles](https://pmtiles.org/) — Formato de archivo único para pirámides de teselas (ráster o vectoriales) servibles directamente desde la nube.
-- [Cloud-Native Geospatial Guide](https://guide.cloudnativegeo.org/) — Guía de referencia sobre formatos geoespaciales cloud-optimized (COG, Zarr, COPC, GeoParquet, FlatGeobuf, PMTiles).
-
-### Servicios web OGC
-
-Servicios clásicos de la OGC para publicar y consumir datos geoespaciales:
-
-- [WMS](https://www.ogc.org/standards/wms/) — Web Map Service: solicitud de imágenes de mapa georreferenciadas.
-- [WFS](https://www.ogc.org/standards/wfs/) — Web Feature Service: acceso directo a datos vectoriales (entidades).
-- [WMTS](https://www.ogc.org/standards/wmts/) — Web Map Tile Service: servicio de teselas de mapa prerrenderizadas.
-- [TMS](https://wiki.osgeo.org/wiki/Tile_Map_Service_Specification) — Tile Map Service: especificación de la OSGeo para servir teselas de mapa mediante URLs predecibles (precursor de WMTS).
-- [WCS](https://www.ogc.org/standards/wcs/) — Web Coverage Service: acceso a datos de cobertura (coverages) multidimensionales.
-- [CSW](https://www.ogc.org/standards/cat/) — Catalogue Service: publicación y búsqueda de catálogos de metadatos.
-- [WPS](https://www.ogc.org/standards/wps/) — Web Processing Service: ejecución de geoprocesos remotos.
-- [SOS](https://www.ogc.org/standards/sos/) — Sensor Observation Service: acceso a datos y observaciones de sensores.
-
-### OGC APIs y catálogos modernos
-
-Nueva familia de estándares OGC basados en OpenAPI/REST, sucesores de los servicios clásicos:
-
-- [OGC APIs](https://ogcapi.ogc.org/) — Página general de la familia de OGC APIs (Features, Tiles, Maps, Coverages, Processes, Records…).
-- [STAC — SpatioTemporal Asset Catalog](https://stacspec.org/) — Especificación comunitaria para catalogar e indexar activos espaciotemporales (imágenes de satélite, etc.).
-
-### Estilos de mapas web
-
-- [MapLibre Style Spec](https://maplibre.org/maplibre-style-spec/) — Especificación de los documentos JSON de estilo de MapLibre GL (fuentes, capas, simbología).
-
-### Sistemas de referencia y metadatos
-
-- [EPSG](https://epsg.org/) — Registro autoritativo de sistemas de referencia de coordenadas (CRS) y transformaciones.
-- [WKT-CRS (ISO 19162)](https://www.iso.org/standard/74039.html) — Representación en texto conocido (WKT) de sistemas de referencia de coordenadas.
-- [ISO 19115](https://www.iso.org/standard/53798.html) — Estándar que define el esquema de metadatos para información geográfica.
-- [INSPIRE](https://inspire.ec.europa.eu/) — Directiva europea que establece la infraestructura de información espacial en la UE.
-
-## Software de fuente abierta
-
-Herramientas libres para adquisición, procesado, análisis y publicación de datos geoespaciales.
-
-### SIG de escritorio y campo
-
-- [QGIS](https://qgis.org/) — Sistema de Información Geográfica de escritorio, el estándar libre de facto.
-- [GRASS GIS](https://grass.osgeo.org/) — SIG con potente análisis ráster, vectorial y geoespacial.
-- [SAGA GIS](https://saga-gis.sourceforge.io/) — Análisis geocientífico, especialmente modelos digitales del terreno.
-- [gvSIG Desktop](https://www.gvsig.com/) — SIG de escritorio con fuerte comunidad hispanohablante.
-- [QField](https://qfield.org/) — Aplicación móvil basada en QGIS para la captura y edición de datos geoespaciales en campo.
-- [Mergin Maps](https://merginmaps.com/) — Plataforma de captura de datos en campo colaborativa con sincronización, integrada con QGIS.
-- [WhiteboxTools](https://www.whiteboxgeo.com/) — Plataforma avanzada de geoprocesado y análisis de terreno (geomorfometría, hidrología).
-- [Orfeo ToolBox (OTB)](https://www.orfeo-toolbox.org/) — Biblioteca y herramientas de procesado de imágenes de teledetección (clasificación, segmentación, ortorrectificación).
-- [Marble](https://marble.kde.org/) — Globo virtual y atlas mundial de escritorio (KDE), útil para docencia y visualización.
-
-### Geodesia, GNSS y topografía
-
-- [RTKLIB](https://www.rtklib.com/) — Posicionamiento GNSS de precisión (RTK, PPP) de código abierto.
-- [RTKLIB-EX (demo5)](https://github.com/rtklibexplorer/RTKLIB) — Fork mantenido de RTKLIB, optimizado para receptores GNSS de bajo coste y constelaciones actuales.
-- [GNSS-SDR](https://gnss-sdr.org/) — Receptor GNSS definido por software.
-- [Ginan](https://gnss-geodesy.github.io/ginan/) — Toolkit de GNSS de alta precisión (PPP, órbitas/relojes, modelado atmosférico) de Geoscience Australia.
-- [Anubis](https://www.pecny.cz/gop/index.php/gnss/anubis/) — Control de calidad y preprocesado de datos RINEX (2/3/4), reemplazo del difunto `teqc`.
-- [Emlid / documentación RTK](https://docs.emlid.com/) — Referencia sobre flujos de trabajo RTK/PPK.
-- [GNU Gama](https://www.gnu.org/software/gama/) — Ajuste riguroso de redes geodésicas y topográficas por mínimos cuadrados (línea de comandos).
-
-#### Librerías
-
-- 🐍 [pyproj](https://pyproj4.github.io/pyproj/) — Interfaz de Python para PROJ: proyecciones cartográficas y transformación de coordenadas.
-- 🐍 [PyGeodesy](https://pypi.org/project/PyGeodesy/) — Cálculos geodésicos elipsoidales y esféricos (distancias, rumbos, intersecciones) en Python puro.
-- 🐍 [georinex](https://github.com/geospace-code/georinex) — Lectura rápida de ficheros RINEX (2, 3, 4) de observación y navegación GNSS.
-- 🐍 [gnss-lib-py](https://github.com/Stanford-NavLab/gnss_lib_py) — Marco modular para parsear, analizar y visualizar datos GNSS y estimar posición.
-- 🟨 [proj4js](https://proj4js.org/) — Transformación de coordenadas entre sistemas de referencia y proyecciones (paquete npm `proj4`).
-
-### Fotogrametría, LiDAR y nubes de puntos
-
-- [OpenDroneMap (ODM / WebODM)](https://www.opendronemap.org/) — Fotogrametría con drones de código abierto.
-- [CloudCompare](https://www.cloudcompare.org/) — Edición y comparación de nubes de puntos 3D y mallas.
-- [PDAL — Point Data Abstraction Library](https://pdal.io/) — Procesado de nubes de puntos LiDAR.
-- [LAStools (open components)](https://rapidlasso.de/) — Herramientas para datos LiDAR en formato LAS/LAZ.
-- [Meshroom (AliceVision)](https://alicevision.org/) — Reconstrucción 3D fotogramétrica.
-- [Entwine](https://entwine.io/) — Indexado y organización de nubes de puntos masivas para streaming web y escritorio.
-- [e-foto](http://efoto.uerj.br/) — Estación fotogramétrica digital completa de código abierto (GPL), orientada a docencia e investigación.
-- [PerfectTIN](https://github.com/phma/perfecttin) — Conversión de nubes de puntos en redes de triángulos irregulares (TIN).
-
-#### Librerías
-
-- 🐍 [COLMAP](https://colmap.github.io/) — Pipeline de Structure-from-Motion (SfM) y Multi-View Stereo (MVS) de propósito general, con bindings de Python (pycolmap).
-- [OpenMVG](https://github.com/openMVG/OpenMVG) — Librería de geometría de vistas múltiples centrada en pipelines de SfM (C++).
-- [OpenMVS](https://cdcseacave.github.io/openMVS/) — Librería de Multi-View Stereo para reconstrucción densa y mallado (C++), complemento habitual de COLMAP.
-- [MicMac](https://micmac.ensg.eu/) — Suite fotogramétrica completa de reconstrucción 3D del IGN francés (C++).
-- 🐍 [Open3D](https://www.open3d.org/) — Librería moderna de procesado de datos 3D, mallas y nubes de puntos (Python/C++).
-- [PCL — Point Cloud Library](https://pointclouds.org/) — Librería de referencia para procesado de nubes de puntos 2D/3D (C++).
-- 🐍 [laspy](https://laspy.readthedocs.io/) — Lectura y escritura de nubes de puntos LiDAR en formato LAS/LAZ desde Python.
-- [OSSIM](https://ossimlabs.github.io/) — Librería C++ de alto rendimiento para procesado de imágenes de teledetección y fotogrametría.
-
-### Bases de datos y servidores geoespaciales
-
-- [PostGIS](https://postgis.net/) — Extensión geoespacial para PostgreSQL.
-- [SpatiaLite](https://www.gaia-gis.it/fossil/libspatialite/index) — Extensión espacial para SQLite; base de datos geoespacial ligera de fichero único.
-- [DuckDB (extensión spatial)](https://duckdb.org/docs/extensions/spatial) — Base de datos analítica en proceso con soporte espacial, muy eficiente para grandes volúmenes.
-- [GeoServer](https://geoserver.org/) — Servidor de datos geoespaciales (WMS/WFS/WCS).
-- [MapServer](https://mapserver.org/) — Servidor de mapas rápido y ligero.
-- [QGIS Server](https://docs.qgis.org/latest/en/docs/server_manual/) — Servicio web OGC (WMS/WFS/WMTS/OGC API) que publica directamente proyectos de QGIS.
-- [pgRouting](https://pgrouting.org/) — Análisis de rutas sobre PostGIS.
-- [pygeoapi](https://pygeoapi.io/) — Servidor geoespacial en Python que implementa las OGC APIs (Features, Tiles, Coverages, Processes…).
-- [Martin](https://martin.maplibre.org/) — Servidor de teselas vectoriales de alto rendimiento en Rust (PostGIS, MBTiles, PMTiles).
-- [pg_tileserv](https://github.com/CrunchyData/pg_tileserv) — Servidor de teselas vectoriales MVT ligero, exclusivo para PostGIS, con capas dinámicas por funciones SQL.
-- [TiTiler](https://developmentseed.org/titiler/) — Servidor dinámico de teselas ráster para datos cloud-optimized (COG).
-- [deegree](https://www.deegree.org/) — Marco Java de servicios web OGC (WMS, WFS, CSW, WPS…).
-- [MobilityDB](https://mobilitydb.com/) — Extensión de PostGIS/PostgreSQL para objetos móviles y trayectorias espaciotemporales.
-- [rasdaman](https://rasdaman.org/) — Base de datos y servidor de análisis de cubos de datos ráster multidimensionales (datacube).
-- [GeoWebCache](https://www.geowebcache.org/) — Servidor de caché de teselas para acelerar servicios WMS/WMTS.
-- [ZOO-Project](https://zoo-project.org/) — Servidor de geoprocesos OGC (WPS/OGC API Processes) con soporte multilenguaje.
-- [PyWPS](https://pywps.org/) — Implementación en Python de un servidor OGC WPS de geoprocesos.
-- [actinia](https://actinia.mundialis.de/) — API REST de geoprocesado de alto rendimiento basada en GRASS GIS.
-- [Giswater](https://www.giswater.org/) — Plataforma de gestión de redes de agua y saneamiento sobre PostGIS.
-- [GeoHealthCheck](https://geohealthcheck.org/) — Monitorización de disponibilidad y calidad de servicios web OGC.
-- [GeoNetwork](https://geonetwork-opensource.org/) — Catálogo de metadatos geoespaciales (CSW) para infraestructuras de datos espaciales.
-- [GeoNode](https://geonode.org/) — Plataforma/CMS geoespacial para gestionar y publicar datos y mapas.
-
-#### Librerías
-
-- 🐍 [psycopg](https://www.psycopg.org/) — Adaptador moderno de PostgreSQL para Python con soporte asyncio (sucesor de psycopg2); base para conectar con PostGIS.
-- 🐍 [SQLAlchemy](https://www.sqlalchemy.org/) — Toolkit SQL y ORM estándar de Python.
-- 🐍 [GeoAlchemy2](https://geoalchemy-2.readthedocs.io/) — Extensión geoespacial de SQLAlchemy para trabajar con bases de datos como PostGIS.
-- 🐍 [OWSLib](https://geopython.github.io/OWSLib/) — Cliente de Python para servicios web OGC (WMS, WFS, WCS, CSW…).
-- 🐍 [pygeometa](https://pygeometa.readthedocs.io/) — Generación de metadatos geoespaciales a partir de ficheros YAML.
-- 🐍 [mappyfile](https://mappyfile.readthedocs.io/) — Manipulación de mapfiles de MapServer desde Python.
-- [SFCGAL](https://sfcgal.org/) — Librería C++ de geometría 3D (basada en CGAL); backend de funciones 3D de PostGIS.
-
-### Cartografía web y visualización
-
-- [Leaflet](https://leafletjs.com/) — Librería JavaScript ligera para mapas interactivos.
-- [OpenLayers](https://openlayers.org/) — Librería JavaScript avanzada para mapas web.
-- [MapLibre GL](https://maplibre.org/) — Renderizado de mapas vectoriales por GPU (fork libre de Mapbox GL).
-- [API-IDEE](https://github.com/IGN-CNIG/API-IDEE) — API de la Infraestructura de Datos Espaciales de España para crear visualizadores de mapas interoperables.
-- [CesiumJS](https://cesium.com/platform/cesiumjs/) — Librería JavaScript de código abierto para visualizadores 3D.
-- [iTowns](https://www.itowns-project.org/) — Framework del IGN francés para visualización geoespacial 3D/2D a gran escala en el navegador.
-- [Terria.js](https://terria.io/) — Framework para crear catálogos y visores geoespaciales 3D interactivos (sobre Cesium/Leaflet).
-- [MapStore](https://mapstore.geosolutionsgroup.com/) — Plataforma para crear aplicaciones WebGIS y geoportales sin programar.
-- [GeoMoose](https://geomoose.org/) — Framework de cartografía web para datos geoespaciales distribuidos.
-- [Mapbender](https://mapbender.org/) — Framework PHP para gestionar y publicar geoportales e infraestructuras de datos.
-
-#### Librerías
-
-- 🟨 [Deck.gl](https://deck.gl/) — Framework de alto rendimiento sobre WebGL para explorar y analizar grandes conjuntos de datos geoespaciales.
-- 🟨 [Terra Draw](https://terradraw.io/) — Dibujo y edición de geometrías compatible con Leaflet, MapLibre, OpenLayers y otros motores de mapas.
-- 🟨 [geojson-vt](https://maplibre.org/geojson-vt/) — Corte eficiente de GeoJSON masivo en teselas vectoriales al vuelo en el navegador.
-- 🟨 [geotiff.js](https://geotiffjs.github.io/geotiff.js/) — Lectura y acceso a datos ráster GeoTIFF directamente en navegador o Node.js.
-- 🟨 [georaster](https://github.com/geotiffjs/georaster) — Parsea formatos ráster (GeoTIFF, etc.) a una estructura unificada para mapas web.
-- 🟨 [PMTiles](https://pmtiles.org/) — Formato de archivo único para pirámides de teselas (ráster o vectoriales) servibles desde almacenamiento en la nube.
-- 🟨 [GeoStyler](https://geostyler.org/) — Librería para estilar datos geoespaciales mediante interfaz gráfica (SLD, Mapbox/MapLibre, OpenLayers…).
-
-### Teselas vectoriales y estilos
-
-Herramientas para generar teselas vectoriales y crear/editar estilos de mapas (MapLibre/Mapbox GL).
-
-- [Maputnik](https://maplibre.org/maputnik/) — Editor visual de estilos JSON de MapLibre/Mapbox GL.
-- [Tippecanoe](https://github.com/felt/tippecanoe) — Generación de teselas vectoriales a partir de grandes colecciones de GeoJSON (fork mantenido por Felt).
-- [Planetiler](https://github.com/onthegomap/planetiler) — Generador rápido de teselas vectoriales a escala planetaria a partir de datos de OSM.
-- [OpenMapTiles](https://openmaptiles.org/) — Esquema y herramientas para generar teselas vectoriales a partir de OpenStreetMap.
-- [VersaTiles](https://versatiles.org/) — Formato y herramientas de alto rendimiento para generar y servir teselas vectoriales.
-- [Spreet](https://github.com/maplibre/spreet) — Generador de hojas de sprites para estilos de MapLibre GL a partir de SVG.
-- [Charites](https://github.com/unvt/charites) — Gestión de estilos de MapLibre/Mapbox GL escritos en YAML para facilitar su edición.
-
-### 3D Tiles y visualización 3D
-
-- [3D Tiles Tools (CesiumGS)](https://github.com/CesiumGS/3d-tiles-tools) — Herramientas oficiales para convertir, optimizar, procesar y analizar datos 3D Tiles.
-- [py3dtiles](https://py3dtiles.org/) — Librería y CLI en Python para generar y gestionar conjuntos de datos 3D Tiles (desde nubes de puntos, etc.).
-- [Recursos y generadores de 3D Tiles](https://github.com/CesiumGS/3d-tiles/blob/main/RESOURCES.md#generators) — Catálogo oficial de herramientas y librerías para generar tilesets 3D Tiles.
-
-### Entornos y distribuciones
-
-Paquetes que reúnen e instalan de una vez un stack completo de software geoespacial.
-
-- [OSGeoLive](https://live.osgeo.org/) — Distribución Linux (basada en Lubuntu) arrancable con software geoespacial preinstalado.
-- [OSGeo4W](https://trac.osgeo.org/osgeo4w/) — Instalador para Windows de un stack completo de proyectos OSGeo (QGIS, GDAL, GRASS…).
-
-### Geocodificación y routing
-
-Servidores de geocodificación (búsqueda de direcciones y topónimos) y motores de cálculo de rutas.
-
-- [Nominatim](https://nominatim.org/) — Motor de geocodificación y geocodificación inversa basado en datos de OpenStreetMap.
-- [Photon](https://photon.komoot.io/) — Geocodificador basado en OSM con búsqueda tolerante a errores y sesgo por localización (Komoot).
-- [OSRM (Open Source Routing Machine)](https://project-osrm.org/) — Motor de cálculo de rutas de alto rendimiento sobre datos de OSM.
-- [Valhalla](https://valhalla.github.io/valhalla/) — Motor de routing multimodal (coche, bici, peatón, transporte público) sobre OSM.
-- [osm2pgsql](https://osm2pgsql.org/) — Herramienta para importar datos de OpenStreetMap en PostgreSQL/PostGIS.
-- [Overpass API](https://overpass-api.de/) — API de consulta de solo lectura para extraer datos de OpenStreetMap de forma selectiva.
-
-## Librerías de propósito geoespacial
-
-Librerías de programación de uso transversal que no encajan en una única categoría de software. El icono indica el lenguaje: 🐍 Python · 🟨 JavaScript · ☕ Java.
-
-### Datos vectoriales y ráster (base)
-
-- 🐍 [GDAL (bindings de Python)](https://pypi.org/project/GDAL/) — Wrapper oficial de Python para GDAL/OGR (módulo `osgeo`); acceso completo a la librería desde Python.
-- 🐍 [pyogrio](https://pyogrio.readthedocs.io/) — Wrapper vectorial rápido sobre GDAL/OGR para leer/escribir datos vectoriales en Python.
-- 🐍 [Shapely](https://shapely.readthedocs.io/) — Geometría vectorial en Python.
-- 🐍 [GeoPandas](https://geopandas.org/) — Análisis de datos geoespaciales en Python.
-- 🐍 [Rasterio](https://rasterio.readthedocs.io/) — Lectura/escritura de datos ráster en Python.
-- 🐍 [Fiona](https://fiona.readthedocs.io/) — Acceso a formatos vectoriales en Python.
-- 🟨 [Turf.js](https://turfjs.org/) — Motor modular de análisis geoespacial sobre GeoJSON en navegador y Node.js.
-- 🟨 [JSTS](https://bjornharrtell.github.io/jsts/) — Port a JavaScript de JTS Topology Suite para predicados espaciales y operaciones geométricas.
-- ☕ [GeoTools](https://geotools.org/) — Toolkit de Java para manipulación de datos geoespaciales, base de GeoServer y otros proyectos.
-- [MDAL](https://mdal.xyz/) — Librería C++ para datos de malla y series temporales (formatos de mallas), backend usado por QGIS.
-
-### Teledetección y análisis ráster
-
-- 🐍 [rioxarray](https://corteva.github.io/rioxarray/) — Extensión geoespacial de Xarray que integra Rasterio con arrays multidimensionales etiquetados.
-- 🐍 [xarray](https://docs.xarray.dev/) — Arrays N-dimensionales etiquetados, base para el análisis de datos climáticos y de teledetección.
-- 🐍 [rasterstats](https://pythonhosted.org/rasterstats/) — Estadísticas zonales de datos ráster a partir de geometrías vectoriales.
-- 🐍 [pystac / pystac-client](https://pystac.readthedocs.io/) — Trabajo con catálogos SpatioTemporal Asset Catalogs (STAC) para descubrir y acceder a datos de observación de la Tierra.
-- 🐍 [stackstac](https://stackstac.readthedocs.io/) — Convierte ítems STAC en cubos de datos Xarray de carga perezosa con Dask.
-- 🐍 [Satpy](https://satpy.readthedocs.io/) — Lectura, manipulación y escritura de datos de satélites meteorológicos.
-- 🐍 [Open Data Cube](https://www.opendatacube.org/) — Infraestructura para gestionar y analizar grandes volúmenes de datos de observación de la Tierra.
-- 🐍 [TorchGeo](https://torchgeo.readthedocs.io/) — Librería de PyTorch con datasets, samplers, transforms y modelos preentrenados para deep learning con datos geoespaciales.
-
-### Cartografía temática y visualización
-
-- 🐍 [Cartopy](https://scitools.org.uk/cartopy/) — Procesado de datos geoespaciales y creación de mapas de calidad para publicación.
-- 🐍 [contextily](https://contextily.readthedocs.io/) — Añade mapas base de teselas de internet como fondo en gráficos.
-- 🐍 [mapclassify](https://mapclassify.readthedocs.io/) — Esquemas de clasificación para mapas coropléticos.
-- 🐍 [leafmap](https://leafmap.org/) — Mapas interactivos ligeros para diversos formatos y proveedores de datos geoespaciales.
-- 🐍 [geemap](https://geemap.org/) — Análisis y cartografía interactiva específicos para Google Earth Engine.
-
-### Formatos e indexación
-
-- 🟨 [FlatGeobuf](https://flatgeobuf.org/) — Formato geoespacial binario de alto rendimiento para streaming y acceso aleatorio a grandes conjuntos de datos.
-- 🟨 [TopoJSON](https://github.com/topojson/topojson) — Extensión de GeoJSON que codifica topología para reducir notablemente el tamaño de los ficheros.
-- 🟨 [H3-js](https://uber.github.io/h3-js/) — Port a JavaScript del sistema de indexación geoespacial hexagonal jerárquico H3 de Uber.
-- 🟨 [shpjs](https://github.com/calvinmetcalf/shpjs) — Lectura de Shapefiles (SHP, DBF, PRJ) directamente en el navegador o Node.js.
-- 🟨 [wkx](https://github.com/cschwarz/wkx) — Parseo y serialización de geometrías en Well-Known Text (WKT) y Well-Known Binary (WKB).
-
-## Herramientas de propósito general
-
-Software libre y librerías que, aunque no son específicamente geomáticos, resultan muy útiles en el día a día: edición de imágenes y vídeo, maquetación de planos, cómputo científico, etc.
-
-### Edición gráfica y multimedia
-
-- [GIMP](https://www.gimp.org/) — Editor de imágenes rasterizadas (retoque fotográfico, texturas, mapas de bits).
-- [Inkscape](https://inkscape.org/) — Editor de gráficos vectoriales SVG, ideal para planos, símbolos y maquetación cartográfica.
-- [Krita](https://krita.org/) — Pintura digital e ilustración, útil para diseño y edición de texturas.
-- [Blender](https://www.blender.org/) — Suite de creación 3D (modelado, renderizado, animación); útil para visualización de modelos y terreno.
-- [Kdenlive](https://kdenlive.org/) — Editor de vídeo no lineal, para montar animaciones y presentaciones de resultados.
-- [OBS Studio](https://obsproject.com/) — Grabación de pantalla y streaming, útil para tutoriales y documentación audiovisual.
-
-### Cómputo científico y estadística
-
-- [NumPy](https://numpy.org/) — Cálculo numérico con arrays N-dimensionales, base del ecosistema científico de Python.
-- [SciPy](https://scipy.org/) — Algoritmos científicos (optimización, álgebra lineal, estadística, interpolación).
-- [pandas](https://pandas.pydata.org/) — Análisis y manipulación de datos tabulares.
-- [Matplotlib](https://matplotlib.org/) — Creación de gráficos y visualizaciones estáticas y de calidad para publicación.
-- [Jupyter](https://jupyter.org/) — Cuadernos interactivos para análisis, prototipado y documentación reproducible.
-- [scikit-learn](https://scikit-learn.org/) — Aprendizaje automático de propósito general (clasificación, regresión, clustering).
-- [PSPP](https://www.gnu.org/software/pspp/) — Programa de análisis estadístico (descriptivos, T-tests, ANOVA, regresión…), alternativa libre a SPSS.
-
-## Datos y recursos
-
-Fuentes de datos abiertos y recursos de aprendizaje.
-
-- [Directorio de Servicios de la IDEE](https://www.idee.es/segun-tipo-de-servicio) — Catálogo de servicios web geoespaciales (WMS, WFS, WMTS, CSW, etc.) de la Infraestructura de Datos Espaciales de España, organizados por tipo.
-- [OpenStreetMap](https://www.openstreetmap.org/) — Cartografía colaborativa libre a escala mundial.
-- [Copernicus / Sentinel Hub](https://www.copernicus.eu/) — Datos de observación de la Tierra del programa europeo Copernicus.
-- [USGS EarthExplorer](https://earthexplorer.usgs.gov/) — Descarga de imágenes de satélite y modelos del terreno.
-- [Natural Earth](https://www.naturalearthdata.com/) — Cartografía base de dominio público a varias escalas.
-- [Wikidata](https://www.wikidata.org/) — Base de conocimiento libre con millones de entidades geolocalizadas (coordenadas) consultables vía SPARQL; útil para enriquecer datos SIG con identificadores autoritativos.
-- [GeoNames](https://www.geonames.org/) — Base de datos geográfica libre con más de 25 millones de topónimos y sus coordenadas, códigos administrativos y de país.
-- [Awesome Geospatial](https://github.com/sacridini/Awesome-Geospatial) — Lista curada de recursos geoespaciales.
+### 📑 Índice de contenidos
+
+1. [Documentación y referencia oficial](#1-documentación-y-referencia-oficial)
+2. [Estándares, formatos y servicios web](#2-estándares-formatos-y-servicios-web)
+3. [Software SIG, topografía y 3D](#3-software-sig-topografía-y-3d)
+4. [Bases de datos, servidores y backend geoespacial](#4-bases-de-datos-servidores-y-backend-geoespacial)
+5. [Cartografía web, visores y movilidad](#5-cartografía-web-visores-y-movilidad)
+6. [Ecosistema de librerías de desarrollo](#6-ecosistema-de-librerías-de-desarrollo)
+7. [Herramientas de propósito general](#7-herramientas-de-propósito-general)
+8. [Datos y recursos abiertos](#8-datos-y-recursos-abiertos)
+9. [Proyectos propios](#9-proyectos-propios)
 
 ---
 
-## Proyectos propios
+## 1. Documentación y referencia oficial
 
-Proyectos de código abierto desarrollados por [IngenieroGeomatico](https://github.com/IngenieroGeomatico).
+Organismos, fundaciones, especificaciones y manuales técnicos de referencia.
 
-- [QGIS2API-IDEE](https://github.com/IngenieroGeomatico/QGIS2API-IDEE) — Complemento de QGIS que exporta un visualizador cartográfico web basado en la API-IDEE.
-- [serviciosIDEE2QGIS](https://github.com/IngenieroGeomatico/serviciosIDEE2QGIS) — Complemento de QGIS para añadir de forma rápida servicios web (WMS, WMTS, WFS…) de la IDEE (IGN-CNIG).
-- [apiidee-agent](https://github.com/IngenieroGeomatico/apiidee-agent) — Agente en Python para trabajar con la API-IDEE.
-- [descarga_limites_administrativos](https://github.com/IngenieroGeomatico/descarga_limites_administrativos) — Descarga centralizada de límites administrativos de fuentes libres, unificados a un mismo formato.
-- [Galeria_de_mapas](https://github.com/IngenieroGeomatico/Galeria_de_mapas) — Galería de visualizadores cartográficos web.
-- [pygeoapi_complementos](https://github.com/IngenieroGeomatico/pygeoapi_complementos) — Complementos y extensiones para pygeoapi.
-- [pygdal_PG_datasource](https://github.com/IngenieroGeomatico/pygdal_PG_datasource) — Fuente de datos PostGIS con GDAL desde Python.
-- [dockerInstall_PostGIS_GDAL_Pygeoapi_andMore](https://github.com/IngenieroGeomatico/dockerInstall_PostGIS_GDAL_Pygeoapi_andMore) — Despliegue con Docker de un stack geoespacial (PostGIS, GDAL, pygeoapi y más).
+- [OSGeo — Open Source Geospatial Foundation](https://www.osgeo.org/) — Fundación que agrupa y da soporte a los principales proyectos geoespaciales libres.
+- [OGC — Open Geospatial Consortium](https://www.ogc.org/) — Organización internacional que define los estándares abiertos de interoperabilidad geoespacial.
+- [Instituto Geográfico Nacional (IGN España)](https://www.ign.es/) — Organismo oficial responsable de geodesia, cartografía oficial, nivelación y redes GNSS en España.
+- [Centro Nacional de Información Geográfica (CNIG)](https://www.cnig.es/) — Centro de descargas y difusión de datos geográficos oficiales de España.
+- [Documentación oficial de QGIS](https://docs.qgis.org/) — Manuales de usuario, guías de formación y documentación de PyQGIS.
+- [Documentación de GDAL/OGR](https://gdal.org/) — Librería de referencia para lectura, transformación y escritura de datos ráster y vectoriales.
+- [PROJ — Transformaciones de coordenadas](https://proj.org/) — Biblioteca base para conversiones y transformaciones de sistemas de referencia de coordenadas.
+- [Referencia de funciones PostGIS](https://postgis.net/docs/reference.html) — Documentación oficial de las funciones SQL espaciales (`ST_*`) y operadores de PostGIS.
+- [Cloud-Native Geospatial Guide](https://guide.cloudnativegeo.org/) — Guía de referencia sobre la arquitectura y formatos geoespaciales optimizados para la nube.
+
+---
+
+## 2. Estándares, formatos y servicios web
+
+Especificaciones de formatos de datos, sistemas de referencia y protocolos de intercambio geoespacial.
+
+### Formatos vectoriales
+
+- [GeoJSON](https://geojson.org/) — Formato de intercambio geoespacial abierto basado en JSON (IETF, RFC 7946).
+- [GeoPackage](https://www.geopackage.org/) — Contenedor abierto y ligero basado en SQLite para almacenar datos vectoriales y ráster (OGC).
+- [FlatGeobuf](https://flatgeobuf.org/) — Formato binario de alto rendimiento basado en FlatBuffers para streaming y acceso espacial indexado (cloud-native).
+- [GeoParquet](https://geoparquet.org/) — Formato columnar binario optimizado para analítica geoespacial masiva sobre Apache Parquet.
+- [Vector Tiles (MVT)](https://github.com/mapbox/vector-tile-spec) — Especificación binaria de teselas vectoriales para renderizado web eficiente por GPU (Mapbox / de facto).
+- [Shapefile](https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf) — Formato clásico multiactivo de Esri para geometría y atributos (estándar de facto).
+- [GML](https://www.ogc.org/standards/gml/) — Geography Markup Language: codificación XML para modelar y transportar entidades geográficas (OGC/ISO).
+- [KML](https://www.ogc.org/standards/kml/) — Keyhole Markup Language: gramática XML para visualización en globos virtuales y visores (OGC).
+- [WKT / WKB](https://www.ogc.org/standards/sfa/) — Well-Known Text y Well-Known Binary para representación textual y binaria de geometrías (OGC/ISO).
+
+### Formatos ráster y multidimensionales
+
+- [GeoTIFF](https://www.ogc.org/standards/geotiff/) — Formato TIFF extendido con metadatos de georreferenciación (OGC).
+- [Cloud Optimized GeoTIFF (COG)](https://www.cogeo.org/) — GeoTIFF organizado internamente en teselas y pirámides para lectura por rangos HTTP en la nube.
+- [NetCDF](https://www.unidata.ucar.edu/software/netcdf/) — Formato autodescriptivo para matrices y datos científicos multidimensionales (Unidata).
+- [Zarr](https://zarr.dev/) — Formato de almacenamiento de arrays N-dimensionales comprimidos en bloques particionados (OGC Community Standard).
+
+### Nubes de puntos y 3D
+
+- [LAS/LAZ](https://www.asprs.org/divisions-committees/lidar-division/laser-file-format-exchange-activities) — Formato binario estándar para el intercambio de datos LiDAR y su variante comprimida LAZ (ASPRS).
+- [COPC](https://copc.io/) — Cloud Optimized Point Cloud: nube de puntos LAS/LAZ estructurada espacialmente para streaming en la nube.
+- [3D Tiles](https://www.ogc.org/standard/3dtiles/) — Especificación para streaming y renderizado jerárquico (LOD) de modelos 3D, mallas, nubes de puntos y Gaussian/Triangle Splats mediante glTF (OGC).
+- [glTF / KHR_gaussian_splatting](https://www.khronos.org/news/press/gltf-gaussian-splatting-press-release) — Estándar de transmisión de escenas 3D (glTF 2.0) y extensión oficial para splatting y radiometría.
+
+### Servicios web OGC clásicos
+
+- [WMS](https://www.ogc.org/standards/wms/) — Web Map Service: solicitud de imágenes de mapa prerrenderizadas georreferenciadas.
+- [WMTS](https://www.ogc.org/standards/wmts/) — Web Map Tile Service: servicio de teselas de imagen de mapa en cuadrículas predefinidas.
+- [TMS](https://wiki.osgeo.org/wiki/Tile_Map_Service_Specification) — Tile Map Service: especificación de la OSGeo para servicio de teselas mediante estructura de URLs predecibles.
+- [WFS](https://www.ogc.org/standards/wfs/) — Web Feature Service: consulta y descarga de datos vectoriales a nivel de entidad/geometría.
+- [WCS](https://www.ogc.org/standards/wcs/) — Web Coverage Service: acceso a datos ráster brutos y coberturas multidimensionales con sus valores numéricos.
+- [CSW](https://www.ogc.org/standards/cat/) — Catalogue Service for the Web: publicación y consulta de catálogos de metadatos geoespaciales.
+- [WPS](https://www.ogc.org/standards/wps/) — Web Processing Service: ejecución de procesos y análisis espaciales en remoto.
+- [SOS](https://www.ogc.org/standards/sos/) — Sensor Observation Service: consulta e intercambio de observaciones y lecturas de sensores.
+
+### OGC APIs y catálogos modernos
+
+- [OGC APIs](https://ogcapi.ogc.org/) — Familia modular de estándares RESTful basados en OpenAPI y JSON (Features, Tiles, Maps, Coverages, Processes, Records).
+- [STAC — SpatioTemporal Asset Catalog](https://stacspec.org/) — Especificación comunitaria moderna para catalogar, buscar e indexar imágenes de satélite y datos de observación.
+
+### Sistemas de referencia y metadatos
+
+- [EPSG](https://epsg.org/) — Registro oficial y autoritativo de sistemas de referencia de coordenadas (CRS), elipsoides, datums y transformaciones.
+- [WKT-CRS (ISO 19162)](https://www.iso.org/standard/74039.html) — Estándar para la representación textual de sistemas de referencia de coordenadas.
+- [ISO 19115](https://www.iso.org/standard/53798.html) — Estándar internacional que define el esquema de metadatos para la información geográfica.
+- [INSPIRE](https://inspire.ec.europa.eu/) — Directiva europea que establece las normas para la Infraestructura de Información Espacial en la UE.
+
+---
+
+## 3. Software SIG, topografía y 3D
+
+Aplicaciones de escritorio, herramientas de campo y suites de procesado técnico.
+
+### SIG de escritorio
+
+- [QGIS](https://qgis.org/) — El Sistema de Información Geográfica de escritorio de referencia en el mundo de código abierto.
+- [GRASS GIS](https://grass.osgeo.org/) — SIG avanzado con potente motor de modelado espacial, análisis ráster y vectorial.
+- [SAGA GIS](https://saga-gis.sourceforge.io/) — SIG orientado al análisis geocientífico, geomorfometría y modelos digitales del terreno (MDT).
+- [gvSIG Desktop](https://www.gvsig.com/) — SIG de escritorio libre con amplia trayectoria y fuerte comunidad hispanohablante.
+- [WhiteboxTools](https://www.whiteboxgeo.com/) — Plataforma de geoprocesamiento de alto rendimiento para análisis geoespacial, hidrológico y de relieve.
+- [Orfeo ToolBox (OTB)](https://www.orfeo-toolbox.org/) — Suite para procesado digital de imágenes de teledetección (clasificación, segmentación y ortorrectificación).
+- [Marble](https://marble.kde.org/) — Globo virtual y atlas interactivo de escritorio (KDE), ideal para docencia y visualización.
+
+### Trabajo de campo y movilidad
+
+- [QField](https://qfield.org/) — Aplicación móvil para Android e iOS basada en el motor de QGIS para toma de datos y edición en campo.
+- [Mergin Maps](https://merginmaps.com/) — Plataforma de captura y sincronización colaborativa de datos de campo integrada con QGIS.
+
+### Geodesia, GNSS y topografía
+
+- [RTKLIB](https://www.rtklib.com/) — Paquete de programas para posicionamiento GNSS de precisión (RTK, DGPS, PPP) de código abierto.
+- [RTKLIB-EX (demo5)](https://github.com/rtklibexplorer/RTKLIB) — Fork mantenido de RTKLIB, optimizado para receptores GNSS de bajo coste y constelaciones modernas.
+- [GNSS-SDR](https://gnss-sdr.org/) — Receptor GNSS de radio definida por software (SDR) multiconstelación y multifrecuencia.
+- [Ginan](https://gnss-geodesy.github.io/ginan/) — Toolkit de procesamiento GNSS de alta precisión (PPP, órbitas, relojes y troposfera) de Geoscience Australia.
+- [Anubis](https://www.pecny.cz/gop/index.php/gnss/anubis/) — Herramienta para control de calidad, análisis y preprocesado de ficheros RINEX (versiones 2, 3 y 4).
+- [GNU Gama](https://www.gnu.org/software/gama/) — Ajuste riguroso de redes geodésicas y topográficas 1D, 2D y 3D por mínimos cuadrados.
+- [Emlid RTK Docs](https://docs.emlid.com/) — Guías y documentación práctica sobre flujos de trabajo con receptores GNSS RTK/PPK.
+
+### Fotogrametría, LiDAR y mallas 3D
+
+- [OpenDroneMap (ODM / WebODM)](https://www.opendronemap.org/) — Ecosistema completo para fotogrametría con drones (ortomosaicos, modelos 3D y nubes de puntos).
+- [COLMAP](https://colmap.github.io/) — Pipeline y suite de Structure-from-Motion (SfM incremental y global GLOMAP) con Multi-View Stereo (MVS) de alta precisión.
+- [CloudCompare](https://www.cloudcompare.org/) — Software de referencia para visualización, edición, registro y comparación de nubes de puntos 3D y mallas.
+- [MeshLab](https://www.meshlab.net/) — Sistema avanzado de procesamiento, filtrado, limpieza, inspección y renderizado de mallas 3D y nubes de puntos.
+- [Meshroom (AliceVision)](https://alicevision.org/) — Suite de reconstrucción 3D fotogramétrica basada en pipelines nodales de Structure-from-Motion.
+- [Regard3D](https://www.regard3d.org/) — Programa de fotogrametría de escritorio con interfaz gráfica intuitiva basado en OpenMVG/OpenMVS.
+- [PDAL — Point Data Abstraction Library](https://pdal.io/) — Librería y suite CLI para filtrado, conversión y procesado de nubes de puntos LiDAR.
+- [LAStools (open components)](https://rapidlasso.de/) — Herramientas para manipulación y compresión de datos LiDAR en formato LAS/LAZ.
+- [Entwine](https://entwine.io/) — Indexador y generador de pirámides octree para nubes de puntos masivas (base de EPT/COPC).
+- [e-foto](http://efoto.uerj.br/) — Estación fotogramétrica digital completa (GPL) orientada a la enseñanza e investigación.
+- [PerfectTIN](https://github.com/phma/perfecttin) — Herramienta para convertir nubes de puntos en mallas de triángulos irregulares (TIN).
+- [Hugin](https://hugin.sourceforge.io/) — Software de ensamblado panorámico con calibración de parámetros ópticos y corrección de distorsión de lentes.
+- [Triangle Splatting](https://trianglesplatting.github.io/) — Representación de campos de radiancia (*radiance fields*) mediante microtriángulos; optimizada para renderizado en tiempo real y compatibilidad directa con mallas poligonales y motores gráficos.
+- [nerfstudio](https://docs.nerf.studio/) — Framework modular para reconstrucción 3D y renderizado volumétrico mediante NeRF, 3D Gaussian Splatting (3DGS) y exportación a mallas/splats.
+- [3D Tiles Tools](https://github.com/CesiumGS/3d-tiles-tools) — Utilidades oficiales de Cesium para optimizar, validar y convertir conjuntos de datos 3D Tiles.
+- [obj23dtiles](https://github.com/PrincessGod/obj23dtiles) — Conversor de modelos 3D (OBJ, glTF, GLB) a 3D Tiles (`b3dm` / `tileset.json`) con optimización de cajas envolventes (*bounding boxes*) y LOD.
+- [Recursos y generadores de 3D Tiles](https://github.com/CesiumGS/3d-tiles/blob/main/RESOURCES.md#generators) — Catálogo curado de herramientas para generar tilesets 3D Tiles.
+
+### Calibración de cámaras y visión por computador
+
+- [mrcal](https://mrcal.secretsauce.net/) — Toolkit del NASA JPL para calibración rigurosa de cámaras, modelado de incertidumbre y optimización fotogramétrica.
+- [Kalibr](https://github.com/ethz-asl/kalibr) — Toolbox del ETH Zurich para calibración precisa intrínseca/extrínseca multicámara y sincronización visual-inercial (cámara-IMU).
+- [Camodocal](https://github.com/hengli/camodocal) — Calibración para modelos de cámara omnidireccionales, gran angular y ojos de pez (*fisheye*).
+- [AprilTag](https://april.eecs.umich.edu/software/apriltag) — Sistema de dianas y marcadores visuales fiduciales para calibración de alta precisión, orientación y seguimiento.
+
+### Entornos y distribuciones preparadas
+
+- [OSGeoLive](https://live.osgeo.org/) — Distribución Linux en vivo (Lubuntu) con todo el stack de software geoespacial preinstalado y configurado.
+- [OSGeo4W](https://trac.osgeo.org/osgeo4w/) — Instalador modular para Windows de paquetes OSGeo (QGIS, GDAL/OGR, GRASS, Python...).
+
+---
+
+## 4. Bases de datos, servidores y backend geoespacial
+
+Infraestructura backend para almacenamiento, consulta, publicación y geoprocesamiento de datos espaciales.
+
+### Bases de datos espaciales
+
+- [PostGIS](https://postgis.net/) — Extensión espacial para PostgreSQL; el motor de base de datos relacional geoespacial de referencia.
+- [SpatiaLite](https://www.gaia-gis.it/fossil/libspatialite/index) — Extensión que añade capacidades espaciales a SQLite; base de datos ligera en un único archivo.
+- [DuckDB (extensión spatial)](https://duckdb.org/docs/extensions/spatial) — Base de datos OLAP embebida de alto rendimiento con soporte vectorial y ráster.
+- [MobilityDB](https://mobilitydb.com/) — Extensión de PostGIS/PostgreSQL para la gestión de objetos móviles, trayectorias y series temporales.
+- [rasdaman](https://rasdaman.org/) — Motor de base de datos y servidor de análisis para cubos de datos ráster multidimensionales masivos.
+
+### Servidores de mapas, datos y APIs
+
+- [GeoServer](https://geoserver.org/) — Servidor de datos geoespaciales en Java de referencia; implementa WMS, WFS, WCS, WMTS y OGC APIs.
+- [MapServer](https://mapserver.org/) — Servidor de mapas en C/C++ reconocido por su alta velocidad, bajo consumo y estabilidad.
+- [pygeoapi](https://pygeoapi.io/) — Servidor geoespacial en Python que implementa los estándares RESTful de la familia OGC APIs.
+- [QGIS Server](https://docs.qgis.org/latest/en/docs/server_manual/) — Servidor que publica proyectos `.qgz` de QGIS como servicios web estándar (WMS, WFS, OGC API).
+- [deegree](https://www.deegree.org/) — Framework Java para servicios web OGC e infraestructuras de datos espaciales corporativas.
+- [pgRouting](https://pgrouting.org/) — Extensión de PostGIS para análisis de rutas, caminos mínimos y problemas de grafos espaciales.
+
+### Servidores de teselas y optimización en nube
+
+- [Martin](https://martin.maplibre.org/) — Servidor de teselas vectoriales y ráster ultrarrápido escrito en Rust (PostGIS, MBTiles, PMTiles).
+- [pg_tileserv](https://github.com/CrunchyData/pg_tileserv) — Servidor ligero en Go para servir teselas vectoriales MVT directamente desde funciones y tablas de PostGIS.
+- [TiTiler](https://developmentseed.org/titiler/) — Servidor dinámico en Python para generación y visualización de teselas a partir de formatos COG, STAC y Zarr.
+- [GeoWebCache](https://www.geowebcache.org/) — Servidor de caché y aceleración de teselas para servicios WMS/WMTS.
+- [VersaTiles](https://versatiles.org/) — Formato de archivo único y servidor de teselas vectoriales de alto rendimiento sin dependencias pesadas.
+
+### Servidores de geoprocesamiento
+
+- [ZOO-Project](https://zoo-project.org/) — Plataforma de geoprocesos de código abierto compatible con WPS y OGC API - Processes con soporte multilenguaje.
+- [PyWPS](https://pywps.org/) — Servidor en Python para la publicación y ejecución remota de algoritmos de geoprocesado vía OGC WPS.
+- [actinia](https://actinia.mundialis.de/) — API REST de geoprocesado en la nube de alto rendimiento impulsada por el motor de GRASS GIS.
+
+### Catálogos y plataformas integrales
+
+- [GeoNetwork](https://geonetwork-opensource.org/) — Plataforma de catálogo de metadatos espaciales (CSW, ISO 19115/19139, DCAT) para IDEs.
+- [GeoNode](https://geonode.org/) — Sistema de gestión de contenidos (CMS) geoespacial para compartir mapas, capas y datos colaborativos.
+- [Giswater](https://www.giswater.org/) — Plataforma libre para la gestión de redes de abastecimiento, saneamiento y drenaje urbano sobre PostGIS y EPANET/SWMM.
+- [GeoHealthCheck](https://geohealthcheck.org/) — Aplicación de monitorización de disponibilidad, rendimiento y calidad de servicios web OGC.
+
+---
+
+## 5. Cartografía web, visores y movilidad
+
+Librerías cliente para la creación de mapas interactivos en el navegador, motores de enrutamiento y herramientas de estilos.
+
+### Visores y clientes de mapas web
+
+- [Leaflet](https://leafletjs.com/) — Librería JavaScript ligera, modular y amigable para mapas interactivos 2D.
+- [OpenLayers](https://openlayers.org/) — Librería JavaScript avanzada y completa para cartografía web con soporte de proyecciones, vectoriales y ráster.
+- [MapLibre GL](https://maplibre.org/) — Motor de mapas vectoriales por GPU para web (JS) y móvil (iOS/Android), fork comunitario y libre de Mapbox GL.
+- [API-IDEE](https://github.com/IGN-CNIG/API-IDEE) — API oficial del IGN-CNIG para crear visualizadores web interoperables con capas de la IDEE de España.
+- [CesiumJS](https://cesium.com/platform/cesiumjs/) — Motor de visualización 3D geoespacial para globos terráqueos interactivos y visualización de 3D Tiles en el navegador.
+- [iTowns](https://www.itowns-project.org/) — Framework 3D/2D del IGN francés sobre Three.js para visualización de datos espaciales masivos.
+- [Terria.js](https://terria.io/) — Framework para construir portales y visores de datos espaciales complejos sobre CesiumJS y Leaflet.
+- [MapStore](https://mapstore.geosolutionsgroup.com/) — Plataforma WebGIS modular para crear geoportales y paneles de control sin programar.
+- [GeoMoose](https://geomoose.org/) — Framework ligero para portales cartográficos basados en OpenLayers.
+- [Mapbender](https://mapbender.org/) — Framework en PHP/Symfony para administrar y publicar geoportales seguros.
+
+### Geocodificación, rutas y herramientas de OSM
+
+- [Nominatim](https://nominatim.org/) — Motor de geocodificación directa e inversa basado en datos de OpenStreetMap.
+- [Photon](https://photon.komoot.io/) — Geocodificador de autocompletado rápido tolerante a erratas basado en Elasticsearch y OSM (Komoot).
+- [OSRM (Open Source Routing Machine)](https://project-osrm.org/) — Motor de cálculo de rutas y matrices de distancia ultrarrápido en C++ sobre OpenStreetMap.
+- [Valhalla](https://valhalla.github.io/valhalla/) — Motor de enrutamiento multimodal de código abierto (vehículo, bicicleta, peatón, transporte público).
+- [osm2pgsql](https://osm2pgsql.org/) — Herramienta esencial para importar y transformar datos de OpenStreetMap a bases de datos PostgreSQL/PostGIS.
+- [Overpass API](https://overpass-api.de/) — API de consulta y extracción de subconjuntos específicos de datos de OpenStreetMap.
+
+### Generación de teselas y editores de estilos
+
+- [Maputnik](https://maplibre.org/maputnik/) — Editor visual de hojas de estilo JSON para MapLibre GL y Mapbox GL.
+- [Tippecanoe](https://github.com/felt/tippecanoe) — Herramienta CLI de referencia para generar teselas vectoriales multiescala a partir de GeoJSON masivo.
+- [Planetiler](https://github.com/onthegomap/planetiler) — Generador en Java capaz de crear un fichero MBTiles planetario completo a partir de OpenStreetMap en pocas horas.
+- [OpenMapTiles](https://openmaptiles.org/) — Conjunto de esquemas abiertos y herramientas para generar teselas de base cartográfica mundial.
+- [Spreet](https://github.com/maplibre/spreet) — Generador de sprites y atlas de iconos para estilos de MapLibre GL a partir de archivos SVG.
+- [Charites](https://github.com/unvt/charites) — Herramienta para diseñar y validar estilos de mapas en formato YAML legible.
+- [MapLibre Style Spec](https://maplibre.org/maplibre-style-spec/) — Especificación técnica del formato JSON de estilos cartográficos vectoriales.
+
+---
+
+## 6. Ecosistema de librerías de desarrollo
+
+Librerías y paquetes de programación para construir aplicaciones, análisis y flujos de datos.
+
+> **Iconos de lenguaje:** 🐍 Python · 🟨 JavaScript / TypeScript · ⚙️ C / C++ · 🦀 Rust · ☕ Java
+
+### Manipulación vectorial, geometría y análisis base
+
+- 🐍 [GDAL / OGR (Python)](https://pypi.org/project/GDAL/) — Bindings oficiales del módulo `osgeo` para acceso completo a la librería GDAL/OGR.
+- 🐍 [pyogrio](https://pyogrio.readthedocs.io/) — Interfaz vectorial rápida construida sobre GDAL/OGR con soporte directo de DataFrames.
+- 🐍 [Shapely](https://shapely.readthedocs.io/) — Manipulación y análisis de geometrías vectoriales 2D y 3D en Python (basado en GEOS).
+- 🐍 [GeoPandas](https://geopandas.org/) — Extensión geoespacial de `pandas` para operar con GeoDataFrames y geometrías vectoriales.
+- 🐍 [Fiona](https://fiona.readthedocs.io/) — Lectura y escritura ordenada de datos vectoriales en Python basada en OGR.
+- 🟨 [Turf.js](https://turfjs.org/) — Colección modular de algoritmos y análisis geoespacial espacial sobre GeoJSON en navegador y Node.js.
+- 🟨 [JSTS](https://bjornharrtell.github.io/jsts/) — Port a JavaScript de JTS Topology Suite para predicados espaciales y operaciones de geometría.
+- ☕ [GeoTools](https://geotools.org/) — Toolkit estándar de Java para manipulación de datos espaciales, motor base de GeoServer.
+- ⚙️ [MDAL](https://mdal.xyz/) — Librería C++ para lectura y procesado de mallas multidimensionales y series temporales (usada por QGIS).
+- ⚙️ [SFCGAL](https://sfcgal.org/) — Librería C++ de geometría 3D sobre CGAL; backend del soporte 3D avanzado de PostGIS.
+- 🟨 [wkx](https://github.com/cschwarz/wkx) — Parseo y serialización bidireccional de formatos WKT y WKB en JavaScript.
+- 🟨 [shpjs](https://github.com/calvinmetcalf/shpjs) — Librería para parsear archivos Shapefile (.zip, .shp, .dbf) en el navegador o backend.
+- 🟨 [TopoJSON](https://github.com/topojson/topojson) — Extensión de GeoJSON que codifica topología compartida, reduciendo drásticamente el tamaño de los datos.
+- 🟨 [H3-js](https://uber.github.io/h3-js/) — Bindings de JavaScript para el sistema de indexación geoespacial hexagonal jerárquico H3 de Uber.
+
+### Ráster, teledetección y cubos de datos
+
+- 🐍 [Rasterio](https://rasterio.readthedocs.io/) — Lectura, escritura y manipulación de datos ráster en Python basada en GDAL.
+- 🐍 [rioxarray](https://corteva.github.io/rioxarray/) — Extensión geoespacial que une Rasterio con arrays multidimensionales etiquetados de xarray.
+- 🐍 [xarray](https://docs.xarray.dev/) — Estructuras de datos N-dimensionales etiquetadas, pilar del análisis climático y satelital.
+- 🐍 [rasterstats](https://pythonhosted.org/rasterstats/) — Cálculo de estadísticas zonales ráster a partir de geometrías vectoriales.
+- 🐍 [pystac / pystac-client](https://pystac.readthedocs.io/) — Librerías en Python para interactuar con catálogos y APIs STAC de imágenes satelitales.
+- 🐍 [stackstac](https://stackstac.readthedocs.io/) — Transforma colecciones STAC en cubos de datos xarray con computación distribuida perezosa vía Dask.
+- 🐍 [Satpy](https://satpy.readthedocs.io/) — Lectura, calibración y composición de imágenes procedentes de satélites meteorológicos y de observación.
+- 🐍 [Open Data Cube](https://www.opendatacube.org/) — Arquitectura abierta para la gestión y análisis temporal de colecciones masivas de observación de la Tierra.
+- 🐍 [TorchGeo](https://torchgeo.readthedocs.io/) — Librería de PyTorch con datasets, transformaciones y modelos preentrenados de deep learning geoespacial.
+- 🟨 [geotiff.js](https://geotiffjs.github.io/geotiff.js/) — Parser e intérprete de metadatos e imágenes GeoTIFF/COG directamente en JavaScript.
+- 🟨 [georaster](https://github.com/geotiffjs/georaster) — Estructura estandarizada para cargar y visualizar formatos ráster en aplicaciones web.
+
+### Geodesia, proyecciones y GNSS
+
+- 🐍 [pyproj](https://pyproj4.github.io/pyproj/) — Interfaz de Python para la librería PROJ: proyecciones cartográficas y transformaciones geodésicas.
+- 🐍 [PyGeodesy](https://pypi.org/project/PyGeodesy/) — Funciones trigonométricas y cálculos geodésicos esféricos y elipsoidales en Python puro.
+- 🐍 [georinex](https://github.com/geospace-code/georinex) — Lectura y parseo estructurado de ficheros GNSS RINEX (2, 3 y 4) a DataFrames.
+- 🐍 [gnss-lib-py](https://github.com/Stanford-NavLab/gnss_lib_py) — Marco modular en Python para procesar, visualizar y resolver estimaciones de posición GNSS.
+- 🟨 [proj4js](https://proj4js.org/) — Puerto de PROJ a JavaScript para cálculo de proyecciones y transformación de coordenadas en cliente web.
+
+### Nubes de puntos, fotogrametría y 3D
+
+- 🐍 [laspy](https://laspy.readthedocs.io/) — Lectura, creación y edición de nubes de puntos LiDAR en formato LAS y LAZ desde Python.
+- 🐍 [Open3D](https://www.open3d.org/) — Librería moderna para el procesado, registro, filtrado y renderizado de geometrías 3D y nubes de puntos (Python/C++).
+- 🐍 [py3dtiles](https://py3dtiles.org/) — Generación, lectura y conversión de conjuntos 3D Tiles y nubes de puntos desde Python.
+- 🐍 [triangle-splatting](https://github.com/trianglesplatting/triangle-splatting) — Implementación oficial de Triangle Splatting en Python/CUDA para optimización y renderizado de radiance fields con triángulos.
+- 🐍 [gsplat](https://docs.gsplat.studio/) — Librería abierta acelerada en CUDA para rasterización y optimización de 3D Gaussian Splatting (base de nerfstudio y pipelines 3D).
+- 🟨 [gltf-pipeline](https://github.com/CesiumGS/gltf-pipeline) — Optimización, compresión Draco y conversión de modelos glTF/GLB para su integración en tilesets 3D Tiles.
+- 🐍 [pycolmap](https://github.com/colmap/pycolmap) — Bindings oficiales de Python para el pipeline de reconstrucción de COLMAP.
+- 🐍 [OpenSfM](https://github.com/mapillary/OpenSfM) — Pipeline de Structure-from-Motion en Python (Mapillary) para reconstrucción fotogramétrica a gran escala.
+- 🐍 [pyRANSAC-3D](https://github.com/leomariga/pyRANSAC-3D) — Ajuste y detección de primitivas geométricas 3D (planos, cilindros, esferas) en nubes de puntos con RANSAC.
+- ⚙️ [OpenCV](https://opencv.org/) — Librería de visión artificial de referencia (módulo `calib3d` para calibración con tableros CharuCo/Checkerboard, estéreo y homografías).
+- ⚙️ [Ceres Solver](http://ceres-solver.org/) — Optimizador no lineal de Google, motor de Bundle Adjustment y ajuste de haces en COLMAP y herramientas de SfM.
+- ⚙️ [OpenMVG](https://github.com/openMVG/OpenMVG) — Librería C++ para geometría de vistas múltiples (Structure-from-Motion).
+- ⚙️ [OpenMVS](https://cdcseacave.github.io/openMVS/) — Librería C++ para Multi-View Stereo, densificación y generación de mallas texturizadas 3D.
+- ⚙️ [TheiaSfM](https://theia-sfm.org/) — Librería C++ para Structure-from-Motion escalable y rápida con ajuste de haces multithreading.
+- ⚙️ [GTSAM](https://gtsam.org/) — Factor graphs en C++ y Python para SLAM visual, estimación de trayectoria y calibración de sensores.
+- ⚙️ [MicMac](https://micmac.ensg.eu/) — Suite fotogramétrica libre desarrollada por el IGN francés (ENSG) para investigación y aplicaciones de precisión.
+- ⚙️ [PCL — Point Cloud Library](https://pointclouds.org/) — Librería clásica de algoritmos 2D/3D para visión artificial y nubes de puntos.
+- ⚙️ [OSSIM](https://ossimlabs.github.io/) — Librería C++ de alto rendimiento para procesamiento fotogramétrico y corrección de imágenes de teledetección.
+
+### Visualización interactiva y cartografía temática
+
+- 🟨 [Deck.gl](https://deck.gl/) — Framework de visualización geoespacial acelerado por GPU (WebGL) para conjuntos de datos masivos.
+- 🟨 [Terra Draw](https://terradraw.io/) — Motor de dibujo y edición vectorial de geometrías compatible con Leaflet, MapLibre, OpenLayers y Google Maps.
+- 🟨 [geojson-vt](https://maplibre.org/geojson-vt/) — Generador de teselas vectoriales en cliente al vuelo a partir de grandes volúmenes de GeoJSON.
+- 🟨 [PMTiles](https://pmtiles.org/) — Implementación JS/TS del formato de archivo único para visualización de pirámides de teselas sin servidor.
+- 🟨 [GeoStyler](https://geostyler.org/) — Librería e interfaz gráfica para conversión y edición de estilos cartográficos (SLD, OpenLayers, MapLibre).
+- 🐍 [Cartopy](https://scitools.org.uk/cartopy/) — Librería de Python para producción de mapas temáticos de alta calidad cartográfica sobre Matplotlib.
+- 🐍 [leafmap](https://leafmap.org/) — Paquete de Python para análisis y visualización interactiva de datos geoespaciales con múltiples backends.
+- 🐍 [geemap](https://geemap.org/) — Paquete de Python para análisis interactivo y cartografía con Google Earth Engine.
+- 🐍 [contextily](https://contextily.readthedocs.io/) — Descarga y añade mapas base de teselas de internet como capas de fondo en gráficos.
+- 🐍 [mapclassify](https://mapclassify.readthedocs.io/) — Clasificación estadística de datos para la elaboración de mapas coropléticos.
+
+### Conexión a bases de datos, APIs y metadatos
+
+- 🐍 [psycopg](https://www.psycopg.org/) — Conector de referencia de PostgreSQL para Python con soporte asíncrono y base para consultas PostGIS.
+- 🐍 [SQLAlchemy](https://www.sqlalchemy.org/) — Toolkit SQL y ORM de referencia en Python.
+- 🐍 [GeoAlchemy2](https://geoalchemy-2.readthedocs.io/) — Extensión espacial para SQLAlchemy que facilita el modelado de datos geográficos en PostGIS y SpatiaLite.
+- 🐍 [OWSLib](https://geopython.github.io/OWSLib/) — Cliente en Python para interactuar y consumir servicios web OGC (WMS, WFS, WCS, CSW, WMTS).
+- 🐍 [pygeometa](https://pygeometa.readthedocs.io/) — Generación de metadatos geoespaciales normalizados a partir de esquemas simples en YAML.
+- 🐍 [mappyfile](https://mappyfile.readthedocs.io/) — Parseo, modificación y formateo programático de archivos Mapfile de MapServer.
+
+---
+
+## 7. Herramientas de propósito general
+
+Software y librerías transversales que complementan el flujo de trabajo en ingeniería, maquetación, visualización y análisis de datos.
+
+### Edición gráfica, multimedia y 3D
+
+- [Inkscape](https://inkscape.org/) — Editor de gráficos vectoriales SVG, indispensable para pulir maquetación de planos, simbología y rotulación.
+- [GIMP](https://www.gimp.org/) — Editor de imágenes matriciales para retoque fotográfico, ajuste de texturas y edición de mapas de bits.
+- [Krita](https://krita.org/) — Programa de pintura e ilustración digital, útil para retoque artístico y diseño de texturas de terreno.
+- [Blender](https://www.blender.org/) — Suite integral de creación 3D (modelado, renderizado y animación); ideal para renders de relieve y modelos de ciudades.
+- [Kdenlive](https://kdenlive.org/) — Editor de vídeo no lineal de código abierto para montaje de animaciones, vuelos virtuales y presentaciones.
+- [OBS Studio](https://obsproject.com/) — Software de grabación de pantalla y emisión en directo para tutoriales y formación.
+
+### Cómputo científico y análisis de datos
+
+- [NumPy](https://numpy.org/) — Paquete fundamental para computación numérica con arrays multidimensionales en Python.
+- [SciPy](https://scipy.org/) — Algoritmos científicos avanzados para optimización, álgebra lineal, transformadas, estadística e interpolación.
+- [pandas](https://pandas.pydata.org/) — Librería esencial de análisis y manipulación de datos tabulares en Python.
+- [Matplotlib](https://matplotlib.org/) — Creación de visualizaciones estáticas, animadas e interactivas con calidad de publicación.
+- [Jupyter](https://jupyter.org/) — Entorno interactivo de cuadernos para cálculo reproducible, prototipado y divulgación técnica.
+- [scikit-learn](https://scikit-learn.org/) — Algoritmos de aprendizaje automático clásico (clasificación, regresión, agrupamiento y reducción dimensional).
+- [PSPP](https://www.gnu.org/software/pspp/) — Software de análisis estadístico descriptivo e inferencial, alternativa libre a SPSS.
+
+---
+
+## 8. Datos y recursos abiertos
+
+Portales, repositorios de datos geográficos libres y catálogos comunitarios.
+
+- [Directorio de Servicios de la IDEE](https://www.idee.es/segun-tipo-de-servicio) — Directorio oficial de servicios web interoperables (WMS, WFS, WMTS, CSW...) de las administraciones públicas españolas.
+- [OpenStreetMap (OSM)](https://www.openstreetmap.org/) — Proyecto cartográfico colaborativo y abierto que proporciona cobertura geográfica global.
+- [Copernicus / Sentinel Hub](https://www.copernicus.eu/) — Programa europeo de observación de la Tierra con acceso libre a las constelaciones satelitales Sentinel.
+- [USGS EarthExplorer](https://earthexplorer.usgs.gov/) — Portal oficial del USGS para búsqueda y descarga de imágenes Landsat, datos satelitales y modelos de elevación.
+- [Natural Earth](https://www.naturalearthdata.com/) — Colección de datos cartográficos vectoriales y ráster de dominio público a múltiples escalas globales.
+- [Wikidata](https://www.wikidata.org/) — Base de conocimiento libre con millones de entidades geolocalizadas consultables mediante SPARQL.
+- [GeoNames](https://www.geonames.org/) — Base de datos geográfica con más de 25 millones de topónimos, coordenadas y códigos administrativos mundiales.
+- [Awesome Geospatial](https://github.com/sacridini/Awesome-Geospatial) — Lista comunitaria internacional con cientos de proyectos y librerías geoespaciales.
+
+---
+
+## 9. Proyectos propios
+
+Proyectos y herramientas de código abierto desarrollados y mantenidos por [IngenieroGeomatico](https://github.com/IngenieroGeomatico).
+
+- [QGIS2API-IDEE](https://github.com/IngenieroGeomatico/QGIS2API-IDEE) — Complemento para QGIS que exporta y genera un visualizador web interactivo basado en la API-IDEE.
+- [serviciosIDEE2QGIS](https://github.com/IngenieroGeomatico/serviciosIDEE2QGIS) — Complemento de QGIS para cargar de forma rápida y sencilla los servicios web de la IDEE (IGN-CNIG).
+- [apiidee-agent](https://github.com/IngenieroGeomatico/apiidee-agent) — Asistente y agente en Python para interactuar con las capacidades de la API-IDEE.
+- [descarga_limites_administrativos](https://github.com/IngenieroGeomatico/descarga_limites_administrativos) — Flujo automatizado de descarga y homogeneización de límites territoriales de fuentes oficiales.
+- [Galeria_de_mapas](https://github.com/IngenieroGeomatico/Galeria_de_mapas) — Catálogo de visores cartográficos web temáticos desarrollados con distintas tecnologías.
+- [pygeoapi_complementos](https://github.com/IngenieroGeomatico/pygeoapi_complementos) — Colección de plugins, proveedores y extensiones personalizadas para el servidor pygeoapi.
+- [pygdal_PG_datasource](https://github.com/IngenieroGeomatico/pygdal_PG_datasource) — Ejemplos y utilidades para interactuar con orígenes de datos PostGIS mediante GDAL en Python.
+- [dockerInstall_PostGIS_GDAL_Pygeoapi_andMore](https://github.com/IngenieroGeomatico/dockerInstall_PostGIS_GDAL_Pygeoapi_andMore) — Entorno de despliegue reproducible en Docker con un stack geoespacial completo (PostGIS, GDAL, pygeoapi...).
 
 ---
 
 ## Contribuir
 
-¿Conoces un recurso que debería estar aquí? Edita el `README.md` y abre un *pull request*. Recuerda: **el `README.md` es la fuente de la verdad** y la web se regenera automáticamente a partir de él.
+¿Conoces un recurso o herramienta de código abierto que debería estar aquí? Edita el `README.md` y abre un *pull request*. Recuerda: **el `README.md` es la única fuente de la verdad** y la web se regenera automáticamente a partir de él.
 
 ## Licencia
 
