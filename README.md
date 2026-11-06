@@ -22,7 +22,8 @@ Este repositorio es un directorio vivo y curado de enlaces de interés en el ám
 6. [Ecosistema de librerías de desarrollo](#6-ecosistema-de-librerías-de-desarrollo)
 7. [Herramientas de propósito general](#7-herramientas-de-propósito-general)
 8. [Datos y recursos abiertos](#8-datos-y-recursos-abiertos)
-9. [Proyectos propios](#9-proyectos-propios)
+9. [Aprendizaje y práctica de programación](#9-aprendizaje-y-práctica-de-programación)
+10. [Proyectos propios](#10-proyectos-propios)
 
 ---
 
@@ -340,6 +341,7 @@ Software y librerías transversales que complementan el flujo de trabajo en inge
 
 ### Edición gráfica, multimedia y 3D
 
+- [ArtCraft (Crafting Apps)](https://getartcraft.com/) — Suite de apps creativas de código abierto escritas en Rust (alternativa a Adobe): edición de imagen, vector, vídeo, PDF, maquetación, CAD, hojas de cálculo y más; funcionan en escritorio y navegador.
 - [Inkscape](https://inkscape.org/) — Editor de gráficos vectoriales SVG, indispensable para pulir maquetación de planos, simbología y rotulación.
 - [GIMP](https://www.gimp.org/) — Editor de imágenes matriciales para retoque fotográfico, ajuste de texturas y edición de mapas de bits.
 - [Krita](https://krita.org/) — Programa de pintura e ilustración digital, útil para retoque artístico y diseño de texturas de terreno.
@@ -374,7 +376,67 @@ Portales, repositorios de datos geográficos libres y catálogos comunitarios.
 
 ---
 
-## 9. Proyectos propios
+## 9. Aprendizaje y práctica de programación
+
+Sitios web, plataformas y retos para aprender a programar, practicar algoritmos y mejorar tus habilidades de código.
+
+### Referencia y tutoriales
+
+- [W3Schools](https://www.w3schools.com/) — Tutoriales y referencia de HTML, CSS, JavaScript, SQL, Python y más, con ejemplos interactivos "Try it Yourself".
+- [MDN Web Docs](https://developer.mozilla.org/) — Documentación web de referencia mantenida por Mozilla (HTML, CSS, JavaScript, Web APIs).
+- [freeCodeCamp](https://www.freecodecamp.org/) — Currículo interactivo gratuito basado en proyectos, con certificaciones.
+- [The Odin Project](https://www.theodinproject.com/) — Currículo full-stack gratuito y de código abierto basado en proyectos reales.
+- [Codecademy](https://www.codecademy.com/) — Lecciones interactivas en el navegador para decenas de lenguajes y tecnologías.
+- [Programiz](https://www.programiz.com/) — Tutoriales y compilador online para Python, C, C++, Java y otros lenguajes.
+- [GeeksforGeeks](https://www.geeksforgeeks.org/) — Artículos, tutoriales, problemas de programación y preparación de entrevistas.
+- [Khan Academy — Computación](https://www.khanacademy.org/computing) — Informática y programación para principiantes con ejercicios interactivos.
+- [CS50 (Harvard)](https://cs50.harvard.edu/) — Curso de introducción a la informática y la programación, gratuito y de código abierto.
+- [Exercism](https://exercism.org/) — Ejercicios de código con mentoría humana en más de 60 lenguajes.
+- [Sololearn](https://www.sololearn.com/) — Aprendizaje interactivo y móvil de programación.
+- [Codedex](https://www.codedex.io/) — Aprendizaje gamificado de programación con estética retro.
+- [Boot.dev](https://www.boot.dev/) — Currículo backend (Python, Go) basado en proyectos y gamificación.
+- [Egghead](https://egghead.io/) — Screencasts cortos y concisos para desarrolladores web.
+
+### Práctica y retos de código
+
+- [Codewars](https://www.codewars.com/) — Katas de programación en muchos lenguajes con ranking y comunidad.
+- [LeetCode](https://leetcode.com/) — Problemas de algoritmos y estructuras de datos; preparación de entrevistas técnicas.
+- [HackerRank](https://www.hackerrank.com/) — Desafíos de código, concursos y certificaciones por lenguaje.
+- [HackerEarth](https://www.hackerearth.com/) — Desafíos, hackathons y problemas de programación competitiva.
+- [Edabit](https://edabit.com/) — Retos cortos de código organizados por dificultad.
+- [CodingBat](https://codingbat.com/) — Ejercicios de lógica en Java y Python.
+- [CheckiO](https://checkio.org/) — Juego de programación en Python y JavaScript resolviendo misiones.
+- [CodinGame](https://www.codingame.com/) — Juegos y desafíos multilenguaje para practicar algoritmia de forma lúdica.
+- [Project Euler](https://projecteuler.net/) — Problemas matemáticos/computacionales que requieren programación.
+- [Advent of Code](https://adventofcode.com/) — Calendario anual de retos de programación (diciembre).
+- [Brilliant](https://brilliant.org/) — Matemáticas, ciencia e informática interactiva con problemas guiados.
+- [AtCoder](https://atcoder.jp/) — Plataforma de programación competitiva con concursos regulares.
+- [Codeforces](https://codeforces.com/) — Comunidad y competiciones de programación competitiva.
+- [TopCoder](https://www.topcoder.com/) — Competición algorítmica y desafíos de desarrollo.
+- [Kaggle](https://www.kaggle.com/) — Competición y aprendizaje de ciencia de datos y machine learning.
+
+### Code golf (mínimo número de caracteres/bytes)
+
+- [CSSBattle](https://cssbattle.dev/) — Reproducir diseños con el mínimo CSS posible (retos de code golf visual).
+- [code.golf](https://code.golf/) — Resolver problemas usando el menor número de bytes en múltiples lenguajes.
+- [Code Golf (Stack Exchange)](https://codegolf.stackexchange.com/) — Comunidad y retos de code golf con soluciones explicadas.
+- [JS1k](http://js1k.com/) — Demos JavaScript en menos de 1024 bytes (archivo histórico).
+
+### Entornos y editores online
+
+- [VS Code for the Web (vscode.dev)](https://vscode.dev/) — Versión web de Visual Studio Code, editable directamente en el navegador sin instalación.
+- [github.dev](https://github.dev/) — Abre cualquier repositorio de GitHub en VS Code web con un atajo de teclado (tecla `.`).
+- [StackBlitz](https://stackblitz.com/) — IDE online basado en VS Code para proyectos web y Node.js, con arranque instantáneo.
+- [CodeSandbox](https://codesandbox.io/) — Entorno online para prototipado y desarrollo web colaborativo.
+- [Gitpod](https://www.gitpod.io/) — Entornos de desarrollo en la nube listos al instante para repositorios.
+- [Replit](https://replit.com/) — IDE online colaborativo para múltiples lenguajes.
+- [CodePen](https://codepen.io/) — Playground online para HTML, CSS y JavaScript.
+- [JSFiddle](https://jsfiddle.net/) — Editor online para prototipado web rápido.
+- [Scratch](https://scratch.mit.edu/) — Programación visual por bloques para principiantes y educación.
+
+---
+
+## 10. Proyectos propios
 
 Proyectos y herramientas de código abierto desarrollados y mantenidos por [IngenieroGeomatico](https://github.com/IngenieroGeomatico).
 
