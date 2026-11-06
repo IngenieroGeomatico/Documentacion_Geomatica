@@ -110,6 +110,8 @@ Aplicaciones de escritorio, herramientas de campo y suites de procesado técnico
 - [WhiteboxTools](https://www.whiteboxgeo.com/) — Plataforma de geoprocesamiento de alto rendimiento para análisis geoespacial, hidrológico y de relieve.
 - [Orfeo ToolBox (OTB)](https://www.orfeo-toolbox.org/) — Suite para procesado digital de imágenes de teledetección (clasificación, segmentación y ortorrectificación).
 - [Marble](https://marble.kde.org/) — Globo virtual y atlas interactivo de escritorio (KDE), ideal para docencia y visualización.
+- [GeoLibre](https://geolibre.app/) — Plataforma SIG ligera y cloud-native que corre en navegador, escritorio, móvil y Jupyter para visualizar, explorar y analizar datos geoespaciales (MapLibre GL JS, DuckDB-WASM, deck.gl).
+- [RustGIS](https://github.com/opengeos/RustGIS) — SIG rápido y de código abierto escrito en Rust puro para cartografía, análisis y compartición de datos geoespaciales (escritorio y navegador web).
 
 ### Trabajo de campo y movilidad
 
