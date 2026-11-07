@@ -54,7 +54,8 @@
 <li><a href="#7-herramientas-de-propósito-general">Herramientas de propósito general</a></li>
 <li><a href="#8-datos-y-recursos-abiertos">Datos y recursos abiertos</a></li>
 <li><a href="#9-aprendizaje-y-práctica-de-programación">Aprendizaje y práctica de programación</a></li>
-<li><a href="#10-proyectos-propios">Proyectos propios</a></li>
+<li><a href="#10-inteligencia-artificial-ia-de-fuente-abierta">Inteligencia artificial (IA) de fuente abierta</a></li>
+<li><a href="#11-proyectos-propios">Proyectos propios</a></li>
 </ol>
 <hr>
 <h2 id="1-documentación-y-referencia-oficial">1. Documentación y referencia oficial<a class="headerlink" href="#1-documentación-y-referencia-oficial" title="Enlace a esta sección">🔗</a></h2>
@@ -442,7 +443,159 @@
 <li><a href="https://scratch.mit.edu/">Scratch</a> — Programación visual por bloques para principiantes y educación.</li>
 </ul>
 <hr>
-<h2 id="10-proyectos-propios">10. Proyectos propios<a class="headerlink" href="#10-proyectos-propios" title="Enlace a esta sección">🔗</a></h2>
+<h2 id="10-inteligencia-artificial-ia-de-fuente-abierta">10. Inteligencia artificial (IA) de fuente abierta<a class="headerlink" href="#10-inteligencia-artificial-ia-de-fuente-abierta" title="Enlace a esta sección">🔗</a></h2>
+<p>Recursos, herramientas, modelos y guías para aprovechar la IA en abierto: asistentes y agentes de código, creación de agentes/herramientas/habilidades, servidores MCP (incluidos los geoespaciales), modelos gratuitos, inferencia compatible con OpenAI, <em>fine-tuning</em> y fuentes para mantenerse al día.</p>
+<h3 id="asistentes-y-agentes-de-código-fuente-abierta">Asistentes y agentes de código (fuente abierta)<a class="headerlink" href="#asistentes-y-agentes-de-código-fuente-abierta" title="Enlace a esta sección">🔗</a></h3>
+<ul>
+<li><a href="https://opencode.ai/">OpenCode</a> — Agente de código para terminal con soporte de múltiples proveedores y modelos; permite definir agentes, herramientas y habilidades (skills) en archivos de configuración.</li>
+<li><a href="https://aider.chat/">Aider</a> — Asistente de programación en terminal que edita repositorios directamente y se integra con Git.</li>
+<li><a href="https://continue.dev/">Continue</a> — Extensión de VS Code/JetBrains para autocompletado y chat con modelos locales o remotos.</li>
+<li><a href="https://github.com/cline/cline">Cline</a> — Agente autónomo para VS Code con uso de herramientas, terminal y navegador.</li>
+<li><a href="https://github.com/RooVetGit/Roo-Code">Roo Code</a> — Fork evolucionado de Cline con modos/roles personalizables y soporte MCP.</li>
+<li><a href="https://tabbyml.com/">Tabby</a> — Asistente de código autoalojado y de código abierto (autocompletado y chat).</li>
+<li><a href="https://github.com/All-Hands-AI/OpenHands">OpenHands</a> — Plataforma de agentes de software autónomos (antes OpenDevin) para resolver tareas de desarrollo.</li>
+<li><a href="https://github.com/princeton-nlp/SWE-agent">SWE-agent</a> — Framework académico para agentes que resuelven incidencias de repositorios (SWE-bench).</li>
+<li><a href="https://github.com/AntonOsika/gpt-engineer">GPT Engineer</a> — Generación de proyectos completos a partir de un prompt.</li>
+<li><a href="https://github.com/huggingface/smolagents">smolagents (Hugging Face)</a> — Biblioteca ligera para construir agentes con herramientas y ejecución de código.</li>
+<li><a href="https://github.com/stanfordnlp/dspy">DSPy</a> — Framework para programar (no solo <em>promptear</em>) sistemas basados en LLMs con optimización automática de prompts.</li>
+<li><a href="https://www.langchain.com/">LangChain</a> — Framework para cadenas, agentes, herramientas y RAG sobre LLMs.</li>
+<li><a href="https://www.langchain.com/langgraph">LangGraph</a> — Orquestación de agentes con estado y grafos de control (human-in-the-loop, persistencia).</li>
+<li><a href="https://www.llamaindex.ai/">LlamaIndex</a> — Framework centrado en ingesta de datos, índices y agentes para RAG y flujos de trabajo.</li>
+<li><a href="https://www.crewai.com/">CrewAI</a> — Orquestación de equipos de agentes con roles, tareas y herramientas.</li>
+<li><a href="https://github.com/microsoft/autogen">AutoGen (Microsoft)</a> — Framework multiagente conversacional con human-in-the-loop.</li>
+<li><a href="https://github.com/microsoft/semantic-kernel">Semantic Kernel (Microsoft)</a> — SDK para integrar LLMs, plugins y memoria en aplicaciones.</li>
+<li><a href="https://haystack.deepset.ai/">Haystack (deepset)</a> — Framework para pipelines RAG, agentes y búsqueda semántica.</li>
+<li><a href="https://ai.pydantic.dev/">Pydantic AI</a> — Framework de agentes con validación tipada y herramientas declarativas en Python.</li>
+<li><a href="https://mastra.ai/">Mastra</a> — Framework de agentes en TypeScript/JavaScript.</li>
+<li><a href="https://www.agno.com/">Agno (Phidata)</a> — Framework para agentes con memoria, conocimiento y herramientas.</li>
+<li><a href="https://github.com/openai/openai-agents-python">OpenAI Agents SDK</a> — SDK abierto de OpenAI para agentes con <em>handoffs</em>, guardrails y trazabilidad.</li>
+</ul>
+<h3 id="cómo-crear-agentes-herramientas-y-habilidades-skills">Cómo crear agentes, herramientas y habilidades (skills)<a class="headerlink" href="#cómo-crear-agentes-herramientas-y-habilidades-skills" title="Enlace a esta sección">🔗</a></h3>
+<ul>
+<li><a href="https://opencode.ai/docs">Documentación de OpenCode</a> — Guía para configurar agentes, herramientas (tools), habilidades (skills), comandos y MCP en OpenCode.</li>
+<li><a href="https://modelcontextprotocol.io/">Model Context Protocol (MCP)</a> — Especificación abierta para conectar LLMs con herramientas y fuentes de datos externas.</li>
+<li><a href="https://modelcontextprotocol.io/quickstart/server">MCP — Quickstart (servidores)</a> — Cómo crear un servidor MCP en Python/TypeScript.</li>
+<li><a href="https://github.com/modelcontextprotocol/python-sdk">MCP Python SDK</a> — SDK oficial para implementar servidores y clientes MCP en Python.</li>
+<li><a href="https://github.com/modelcontextprotocol/typescript-sdk">MCP TypeScript SDK</a> — SDK oficial para implementar servidores y clientes MCP en TypeScript.</li>
+<li><a href="https://www.anthropic.com/research/building-effective-agents">Anthropic — Building effective agents</a> — Patrones y buenas prácticas para diseñar agentes (workflows vs. agentes, tool use).</li>
+<li><a href="https://platform.openai.com/docs/guides/function-calling">OpenAI — Function calling / Tools</a> — Guía de uso de herramientas (function calling) con la API de OpenAI.</li>
+<li><a href="https://python.langchain.com/docs/concepts/tools/">LangChain — Tools</a> — Conceptos y creación de herramientas en LangChain.</li>
+<li><a href="https://docs.llamaindex.ai/en/stable/module_guides/deploying/agents/tools/">LlamaIndex — Tools</a> — Herramientas y agentes en LlamaIndex.</li>
+<li><a href="https://docs.crewai.com/concepts/tools">CrewAI — Tools</a> — Creación y uso de herramientas en CrewAI.</li>
+<li><a href="https://ai.pydantic.dev/tools/">Pydantic AI — Tools</a> — Definición de herramientas tipadas en Pydantic AI.</li>
+<li><a href="https://huggingface.co/docs/smolagents/en/tools">Hugging Face — smolagents tools</a> — Cómo definir herramientas para smolagents.</li>
+<li><a href="https://dspy.ai/">DSPy — Signatures &amp; Modules</a> — Programación declarativa de módulos y firmas para LLMs.</li>
+</ul>
+<h3 id="servidores-mcp-de-fuente-abierta-incluidos-los-geoespaciales">Servidores MCP de fuente abierta (incluidos los geoespaciales)<a class="headerlink" href="#servidores-mcp-de-fuente-abierta-incluidos-los-geoespaciales" title="Enlace a esta sección">🔗</a></h3>
+<ul>
+<li><a href="https://github.com/modelcontextprotocol/servers">modelcontextprotocol/servers</a> — Colección de referencia de servidores MCP (filesystem, git, fetch, memory, sequential-thinking, etc.).</li>
+<li><a href="https://github.com/punkpeye/awesome-mcp-servers">Awesome MCP Servers</a> — Lista comunitaria de servidores MCP por categoría.</li>
+<li><a href="https://github.com/modelcontextprotocol/inspector">MCP Registry / Inspector</a> — Herramienta para inspeccionar y depurar servidores MCP.</li>
+<li><a href="https://github.com/sparkgeo/geo-mcp-servers">sparkgeo/geo-mcp-servers</a> — Registro curado de 80+ servidores MCP geoespaciales (geocodificación, rutas, imágenes satelitales, SIG de escritorio, etc.).</li>
+<li><a href="https://github.com/mahdin75/gis-mcp">mahdin75/gis-mcp</a> — Servidor MCP de código abierto para operaciones SIG y geoespaciales (geoprocesamiento, geometrías, ráster).</li>
+<li><a href="https://github.com/jjsantos01/qgis_mcp">jjsantos01/qgis_mcp</a> — Conecta QGIS con LLMs mediante MCP para controlar una sesión de QGIS.</li>
+<li><a href="https://github.com/nkarasiak/qgis-mcp">nkarasiak/qgis-mcp</a> — Alternativa de integración QGIS + MCP.</li>
+<li><a href="https://github.com/mapbox/mcp-server">mapbox/mcp-server</a> — Servidor MCP de Mapbox para geocodificación, isocronas, direcciones y mapas.</li>
+<li><a href="https://github.com/modelcontextprotocol/servers">geoserver-mcp</a> — Integración con GeoServer vía MCP (gestión de workspaces, capas y estilos) (ver registro de geo-mcp).</li>
+<li><a href="https://github.com/sparkgeo/geo-mcp-servers">PostGIS MCP servers</a> — Servidores MCP para consultar bases de datos espaciales PostGIS (ver registro geo-mcp).</li>
+<li><a href="https://github.com/sparkgeo/geo-mcp-servers">OSM MCP servers</a> — Servidores MCP para geocodificación, rutas y datos de OpenStreetMap (ver registro geo-mcp).</li>
+</ul>
+<h3 id="dónde-encontrar-modelos-gratuitos-de-código-abierto">Dónde encontrar modelos gratuitos / de código abierto<a class="headerlink" href="#dónde-encontrar-modelos-gratuitos-de-código-abierto" title="Enlace a esta sección">🔗</a></h3>
+<ul>
+<li><a href="https://huggingface.co/models">Hugging Face Hub</a> — El mayor repositorio de modelos abiertos (LLMs, visión, audio, embeddings, difusión).</li>
+<li><a href="https://ollama.com/library">Ollama Library</a> — Catálogo de modelos listos para ejecutar en local con Ollama.</li>
+<li><a href="https://openrouter.ai/models">OpenRouter</a> — Agregador de modelos con modelos gratuitos (free tier) y enrutado unificado.</li>
+<li><a href="https://groq.com/">Groq</a> — Inferencia ultrarrápida con capa gratuita (Llama, Mixtral, etc.).</li>
+<li><a href="https://aistudio.google.com/">Google AI Studio</a> — Acceso gratuito a modelos Gemini (con límites de uso).</li>
+<li><a href="https://mistral.ai/">Mistral (La Plateforme)</a> — Modelos abiertos y API con nivel gratuito.</li>
+<li><a href="https://www.kaggle.com/models">Kaggle Models</a> — Modelos preentrenados y datasets para experimentación.</li>
+<li><a href="https://modelscope.cn/models">ModelScope (Alibaba)</a> — Repositorio de modelos (especialmente chino) con descarga abierta.</li>
+<li><a href="https://lmstudio.ai/">LM Studio</a> — App de escritorio para descargar y ejecutar modelos GGUF locales.</li>
+<li><a href="https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard">Hugging Face — Open LLM Leaderboard</a> — Ranking de modelos abiertos por benchmarks.</li>
+<li><a href="https://lmarena.ai/">Chatbot Arena / LMSYS</a> — Comparativa ciega de modelos (incluye modelos abiertos).</li>
+<li><a href="https://artificialanalysis.ai/">Artificial Analysis</a> — Comparativa de calidad, velocidad y precio de modelos.</li>
+<li><a href="https://opensource.org/ai">OSI — Open Source AI Definition</a> — Definición de "IA de código abierto" (OSAID) y criterios.</li>
+</ul>
+<h3 id="crear-tu-propio-servidor-compatible-con-openai-inferencia-localremota">Crear tu propio servidor compatible con OpenAI (inferencia local/remota)<a class="headerlink" href="#crear-tu-propio-servidor-compatible-con-openai-inferencia-localremota" title="Enlace a esta sección">🔗</a></h3>
+<ul>
+<li><a href="https://ollama.com/">Ollama</a> — Ejecuta modelos en local y expone una API compatible con OpenAI (<code>/v1</code>).</li>
+<li><a href="https://github.com/vllm-project/vllm">vLLM</a> — Motor de inferencia de alto rendimiento con API compatible con OpenAI (PagedAttention, batching).</li>
+<li><a href="https://github.com/sgl-project/sglang">SGLang</a> — Motor de inferencia rápido con API compatible con OpenAI y RadixAttention.</li>
+<li><a href="https://localai.io/">LocalAI</a> — Reemplazo drop-in de la API de OpenAI que corre modelos locales (LLM, imágenes, audio, embeddings).</li>
+<li><a href="https://github.com/ggerganov/llama.cpp">llama.cpp (llama-server)</a> — Inferencia en CPU/GPU con servidor HTTP compatible con OpenAI.</li>
+<li><a href="https://github.com/huggingface/text-generation-inference">text-generation-inference (TGI)</a> — Servidor de inferencia de Hugging Face para modelos grandes (API compatible).</li>
+<li><a href="https://github.com/bentoml/OpenLLM">OpenLLM (BentoML)</a> — Servir LLMs de código abierto con API compatible con OpenAI y empaquetado Bento.</li>
+<li><a href="https://github.com/PygmalionAI/aphrodite-engine">Aphrodite Engine</a> — Motor de inferencia derivado de vLLM con API compatible.</li>
+<li><a href="https://github.com/theroyallab/tabbyAPI">TabbyAPI (ExLlamaV2)</a> — API compatible con OpenAI para modelos GGUF/ExLlama.</li>
+<li><a href="https://github.com/LostRuins/koboldcpp">KoboldCpp</a> — Servidor local de inferencia con interfaz web y API compatible.</li>
+<li><a href="https://github.com/oobabooga/text-generation-webui">text-generation-webui (oobabooga)</a> — Interfaz web y API para ejecutar modelos locales.</li>
+</ul>
+<h3 id="fine-tuning-y-entrenamiento">Fine-tuning y entrenamiento<a class="headerlink" href="#fine-tuning-y-entrenamiento" title="Enlace a esta sección">🔗</a></h3>
+<ul>
+<li><a href="https://huggingface.co/docs/transformers/">Hugging Face Transformers</a> — Librería base para cargar y entrenar modelos.</li>
+<li><a href="https://huggingface.co/docs/peft/">PEFT</a> — Métodos eficientes de fine-tuning (LoRA, QLoRA, adapters, prefix tuning).</li>
+<li><a href="https://huggingface.co/docs/trl/">TRL (Transformer Reinforcement Learning)</a> — SFT, DPO, PPO, GRPO y RLHF sobre LLMs.</li>
+<li><a href="https://github.com/unslothai/unsloth">Unsloth</a> — Fine-tuning 2-5x más rápido y con menos memoria (LoRA/QLoRA) para Llama, Mistral, Gemma, etc.</li>
+<li><a href="https://github.com/axolotl-ai-cloud/axolotl">Axolotl</a> — Framework de fine-tuning flexible por configuración YAML.</li>
+<li><a href="https://github.com/hiyouga/LLaMA-Factory">LLaMA-Factory</a> — Interfaz web y CLI para fine-tuning de 100+ LLMs (LoRA, QLoRA, full).</li>
+<li><a href="https://github.com/pytorch/torchtune">torchtune (Meta)</a> — Recetas de fine-tuning nativas en PyTorch.</li>
+<li><a href="https://github.com/ml-explore/mlx">MLX (Apple)</a> — Framework de Apple para entrenamiento/inferencia en Apple Silicon (incluye MLX-LM).</li>
+<li><a href="https://github.com/ml-explore/mlx-examples/tree/main/llms">MLX-LM</a> — Fine-tuning e inferencia de LLMs en Mac.</li>
+<li><a href="https://platform.openai.com/docs/guides/fine-tuning">OpenAI Fine-tuning API</a> — Fine-tuning gestionado (no abierto, pero útil para comparar).</li>
+<li><a href="https://www.together.ai/">Together AI — Fine-tuning</a> — Fine-tuning gestionado sobre modelos abiertos.</li>
+<li><a href="https://wandb.ai/">Weights &amp; Biases</a> — Seguimiento de experimentos y métricas de entrenamiento.</li>
+<li><a href="https://mlflow.org/">MLflow</a> — Gestión del ciclo de vida de ML (tracking, modelos, despliegue).</li>
+<li><a href="https://github.com/microsoft/DeepSpeed">DeepSpeed (Microsoft)</a> — Optimización de entrenamiento distribuido y ZeRO.</li>
+</ul>
+<h3 id="bases-de-datos-vectoriales-y-rag">Bases de datos vectoriales y RAG<a class="headerlink" href="#bases-de-datos-vectoriales-y-rag" title="Enlace a esta sección">🔗</a></h3>
+<ul>
+<li><a href="https://www.trychroma.com/">Chroma</a> — Base de datos vectorial embebida y de código abierto.</li>
+<li><a href="https://qdrant.tech/">Qdrant</a> — Base de datos vectorial de alto rendimiento escrita en Rust.</li>
+<li><a href="https://milvus.io/">Milvus</a> — Base de datos vectorial escalable para producción.</li>
+<li><a href="https://weaviate.io/">Weaviate</a> — Base de datos vectorial con módulos de IA integrados.</li>
+<li><a href="https://lancedb.com/">LanceDB</a> — Base de datos vectorial embebida sobre Apache Arrow/Lance.</li>
+<li><a href="https://github.com/pgvector/pgvector">pgvector</a> — Extensión de PostgreSQL para búsqueda vectorial (complementa PostGIS).</li>
+<li><a href="https://github.com/facebookresearch/faiss">FAISS (Meta)</a> — Biblioteca de búsqueda de similitud de vectores.</li>
+<li><a href="https://github.com/infiniflow/ragflow">RAGFlow</a> — Motor RAG de código abierto con orquestación de flujos.</li>
+<li><a href="https://github.com/Cinnamon/kotaemon">Kotaemon</a> — Herramienta de RAG local con interfaz de chat.</li>
+</ul>
+<h3 id="evaluación-observabilidad-y-prompts">Evaluación, observabilidad y prompts<a class="headerlink" href="#evaluación-observabilidad-y-prompts" title="Enlace a esta sección">🔗</a></h3>
+<ul>
+<li><a href="https://langfuse.com/">Langfuse</a> — Observabilidad y trazabilidad de LLMs (traces, costes, evaluaciones) de código abierto.</li>
+<li><a href="https://phoenix.arize.com/">Arize Phoenix</a> — Observabilidad y evaluación de LLMs/RAG de código abierto.</li>
+<li><a href="https://www.promptfoo.dev/">Promptfoo</a> — Evaluación y red-teaming de prompts y modelos en CLI.</li>
+<li><a href="https://docs.ragas.io/">RAGAS</a> — Métricas de evaluación para pipelines RAG.</li>
+<li><a href="https://github.com/confident-ai/deepeval">DeepEval</a> — Framework de evaluación de LLMs (unit tests para IA).</li>
+<li><a href="https://inspect.ai-safety-institute.org.uk/">Inspect AI (UK AISI)</a> — Framework de evaluación de capacidades y seguridad de modelos.</li>
+<li><a href="https://github.com/BerriAI/litellm">LiteLLM</a> — Proxy unificado compatible con OpenAI para 100+ proveedores (enrutado, costes, fallbacks).</li>
+<li><a href="https://openrouter.ai/">OpenRouter</a> — Enrutador de modelos con fallbacks y modelos gratuitos.</li>
+</ul>
+<h3 id="para-estar-al-día-en-ia-de-código-abierto">Para estar al día en IA de código abierto<a class="headerlink" href="#para-estar-al-día-en-ia-de-código-abierto" title="Enlace a esta sección">🔗</a></h3>
+<ul>
+<li><a href="https://huggingface.co/papers">Hugging Face Daily Papers</a> — Papers recientes destacados por la comunidad.</li>
+<li><a href="https://paperswithcode.com/">Papers With Code</a> — Papers con código y benchmarks.</li>
+<li><a href="https://arxiv.org/">arXiv (cs.AI, cs.CL, cs.LG)</a> — Preprints de investigación en IA.</li>
+<li><a href="https://www.deeplearning.ai/the-batch/">The Batch (DeepLearning.AI)</a> — Newsletter semanal de Andrew Ng.</li>
+<li><a href="https://importai.substack.com/">Import AI (Jack Clark)</a> — Newsletter sobre avances en IA.</li>
+<li><a href="https://www.latent.space/">Latent Space</a> — Podcast y newsletter sobre IA aplicada.</li>
+<li><a href="https://www.reddit.com/r/LocalLLaMA/">r/LocalLLaMA</a> — Comunidad de modelos locales y open source.</li>
+<li><a href="https://www.reddit.com/r/MachineLearning/">r/MachineLearning</a> — Investigación y discusión académica.</li>
+<li><a href="https://huggingface.co/blog">Hugging Face Blog</a> — Anuncios y guías del ecosistema abierto.</li>
+<li><a href="https://epochai.org/">Epoch AI</a> — Análisis de tendencias de cómputo y modelos.</li>
+<li><a href="https://lmarena.ai/">LM Arena</a> — Ranking y comparativas actualizadas de modelos.</li>
+</ul>
+<h3 id="ia-geoespacial-modelos-y-herramientas">IA geoespacial (modelos y herramientas)<a class="headerlink" href="#ia-geoespacial-modelos-y-herramientas" title="Enlace a esta sección">🔗</a></h3>
+<ul>
+<li><a href="https://torchgeo.readthedocs.io/">TorchGeo</a> — Datasets, transformaciones y modelos preentrenados de deep learning geoespacial (PyTorch).</li>
+<li><a href="https://github.com/facebookresearch/segment-anything">segment-anything (SAM / SAM 2)</a> — Segmentación de imágenes de propósito general aplicable a ortofotos y satélite.</li>
+<li><a href="https://huggingface.co/ibm-nasa-geospatial">Prithvi (IBM/NASA)</a> — Modelos fundacionales para observación de la Tierra.</li>
+<li><a href="https://clay-foundation.github.io/model/">Clay Foundation Model</a> — Modelo fundacional para datos de observación de la Tierra.</li>
+<li><a href="https://openeo.org/">openEO</a> — API abierta para procesamiento de datos de observación de la Tierra en la nube.</li>
+<li><a href="https://earthengine.google.com/">Google Earth Engine</a> — Plataforma de análisis geoespacial (acceso gratuito para investigación/educación).</li>
+<li><a href="https://github.com/sentinel-hub/eo-learn">eo-learn</a> — Pipelines de machine learning para datos de observación de la Tierra.</li>
+</ul>
+<hr>
+<h2 id="11-proyectos-propios">11. Proyectos propios<a class="headerlink" href="#11-proyectos-propios" title="Enlace a esta sección">🔗</a></h2>
 <p>Proyectos y herramientas de código abierto desarrollados y mantenidos por <a href="https://github.com/IngenieroGeomatico">IngenieroGeomatico</a>.</p>
 <ul>
 <li><a href="https://github.com/IngenieroGeomatico/QGIS2API-IDEE">QGIS2API-IDEE</a> — Complemento para QGIS que exporta y genera un visualizador web interactivo basado en la API-IDEE.</li>
