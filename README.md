@@ -282,6 +282,8 @@ Librerías y paquetes de programación para construir aplicaciones, análisis y 
 - 🐍 [TorchGeo](https://torchgeo.readthedocs.io/) — Librería de PyTorch con datasets, transformaciones y modelos preentrenados de deep learning geoespacial.
 - 🟨 [geotiff.js](https://geotiffjs.github.io/geotiff.js/) — Parser e intérprete de metadatos e imágenes GeoTIFF/COG directamente en JavaScript.
 - 🟨 [georaster](https://github.com/geotiffjs/georaster) — Estructura estandarizada para cargar y visualizar formatos ráster en aplicaciones web.
+- 🟨 [gdal3.js](https://gdal3.js.org/) — Port de GDAL a WebAssembly para leer, transformar y convertir datos ráster y vectoriales en el navegador.
+- 🟨 [Loam](https://github.com/azavea/loam) — Wrapper JavaScript para usar GDAL (compilado a WebAssembly) en aplicaciones web.
 
 ### Geodesia, proyecciones y GNSS
 
